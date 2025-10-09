@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BEAUTY</title>
+    <!--======================================================================================================================
+     link-for-bootstrap-css 
+     =======================================================================================================================-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!--======================================================================================================================= 
+    link-for-custom-css 
+    =========================================================================================================================-->
+    <link rel="stylesheet" href="./css/product.css" />
+  </head>
+  <body>
+    <!--=========================================================================================================================
+     header-section 
+     ==========================================================================================================================-->
+
+    <header class="position-relative">
+      <div class="container">
+        <nav class="navbar navbar-expand-xl">
+          <div class="container">
+            <!------------------------------------------------------------------------
+     button 
+     --------------------------------------------------------------------------->
+
+            <button class="btn" type="submit">
+              <img src="./asset/images/Search (5).png" alt="" />Search...
+            </button>
+
+            <!--------------------------------------------------------------------------- 
+    navbar-brand 
+    ---------------------------------------------------------------------------->
+            <div class="navbar-brand position-absolute">
+              <a href=""><img src="./asset/images/Frame 179.png" alt="" /></a>
+            </div>
+
+            <!--------------------------------------------------------------------------- 
+    navbar-toggler 
+    ------------------------------------------------------------------------------->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!----------------------------------------------------------------------------- 
+    navbar-collapse 
+    ------------------------------------------------------------------------------->
+            <div class="offcanvas offcanvas-start" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <div class="offcanvas-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <!-- nav-item -->
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <!-- nav-item -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                  >
+                    About Us
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <!-- nav-item -->
+                <li class="nav-item unic dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                  >
+                    Products
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- nav-item -->
+
+                <li class="nav-item prime dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                  >
+                    Multimedia
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- nav-item -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                  >
+                    Blog
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- nav-item -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                  >
+                    Contact Us
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <!--------------------------------------------------------------------------
+       navbar-button 
+       -------------------------------------------------------------------------->
+
+                <div class="navbar-button">
+                  <a class="friends-btn" href=""
+                    ><img src="./asset/images/Friends.png" alt=""
+                  /></a>
+                  <a class="cart-btn" href=""
+                    ><img src="./asset/images/Shopping cart.png" alt=""
+                  /></a>
+                  <a class="hrt-btn" href=""
+                    ><img src="./asset/images/Heart (2).png" alt=""
+                  /></a>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!--=========================================================================================================================
+      banner-section 
+      =========================================================================================================================-->
+    <section
+      class="banner-section d-flex justify-content-center align-items-center"
+    >
+      <div class="container">
+        <h1 class="tittle-one">Product</h1>
+        <p class="banner-para">Home / Product</p>
+      </div>
+    </section>
+    <!--========================================================================================================================
+       about-us-section 
+       ========================================================================================================================-->
+    <section class="about-section">
+      <div class="container">
+        <div class="row">
+          <!----------------------------------------------------------------------------------
+           about-first-part 
+           --------------------------------------------------------------------------------->
+          <div class="col-12 col-xl-4">
+            <div class="about-first-part">
+              <!------------------------------------------
+               first-card 
+               ------------------------------------------>
+              <div class="first-card">
+                <a
+                  class="search-btn text-decoration-none d-inline-block"
+                  href=""
+                  >Search Product</a
+                >
+                <br />
+                <a
+                  class="search-pdt-btn text-decoration-none d-inline-block d-flex justify-content-between align-items-center"
+                  href=""
+                  >Search Product
+                  <span
+                    ><img src="./asset/images/search (1) 1.png" alt="" /></span
+                ></a>
+              </div>
+              <!----------------------------------------- 
+              secoend-card 
+              ------------------------------------------>
+              <div class="secoend-card">
+                <a class="color-btn text-decoration-none d-inline-block" href="">Product Colors</a>
+                <div class="color-no">
+                  <div
+                    class="first-item d-flex justify-content-between align-items-center"
+                  >
+                    <p>Blue</p>
+                    <p>(1)</p>
+                  </div>
+                  <div
+                    class="secoend-item d-flex justify-content-between align-items-center"
+                  >
+                    <p>Gray</p>
+                    <p>(2)</p>
+                  </div>
+                  <div
+                    class="third-item d-flex justify-content-between align-items-center"
+                  >
+                    <p>Red</p>
+                    <p>(3)</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-----------------------------------------
+               third-card 
+               ----------------------------------------->
+              <div class="third-card">
+                <a class="price-btn text-decoration-none d-inline-block" href="">Filter by price</a>
+                <p class="price-para">Price: $0 - $20</p>
+                <form action="">
+                  <button class="filter-btn" type="submit">FILTER</button>
+                </form>
+              </div>
+              <!----------------------------------------- 
+              fourth-card
+              ------------------------------------------>
+              <div class="fourth-card">
+                <form action="">
+                  <button class="rec-btn" type="button">Recent Products</button>
+                </form>
+                <!------------------------------------------------------
+                about-small-card 
+                ------------------------------------------------------->
+                <div class="about-small-card d-flex align-items-center">
+                  <div class="about-small-card-img">
+                    <img src="./asset/images/image 5 (4).png" alt="" />
+                  </div>
+                  <div class="small-card-cntn text-center">
+                    <p>YAZ Persian Herb Face Oil</p>
+                    <div class="about-sign">
+                      <img src="./asset/images/stars 14.png" alt="" />
+                    </div>
+                    <p>29,900 Kr.</p>
+                  </div>
+                </div>
+                <!------------------------------------------------------------
+                 about-small-card 
+                 ------------------------------------------------------------>
+                <div class="about-small-card d-flex align-items-center">
+                  <div class="about-small-card-img">
+                    <img src="./asset/images/image 2 (3).png" alt="" />
+                  </div>
+                  <div class="small-card-cntn text-center">
+                    <p>YAZ Vitamin A Hand Cream</p>
+                    <div class="about-sign">
+                      <img src="./asset/images/stars 14.png" alt="" />
+                    </div>
+                    <p>14,900 Kr.</p>
+                  </div>
+                </div>
+                <!-------------------------------------------------------------- 
+                about-small-card
+                ------------------------------------------------------------ -->
+                <div class="about-small-card d-flex align-items-center">
+                  <div class="about-small-card-img">
+                    <img
+                      src="./asset/images/YAZ Vitamin A - Face 4.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="small-card-cntn text-center">
+                    <p>YAZ Vitamin A Hand Cream</p>
+                    <div class="about-sign">
+                      <img src="./asset/images/stars 14.png" alt="" />
+                    </div>
+                    <p>14,900 Kr.</p>
+                  </div>
+                </div>
+                <!--------------------------------------------------------------------- 
+                about-small-card 
+                --------------------------------------------------------------------->
+                <div class="about-small-card d-flex align-items-center">
+                  <div class="about-small-card-img">
+                    <img
+                      src="./asset/images/YAZ HAIR SHAMPOO (20 3.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="small-card-cntn text-center">
+                    <p>YAZ Vitamin A Face Mask</p>
+                    <div class="about-sign">
+                      <img src="./asset/images/stars 14.png" alt="" />
+                    </div>
+                    <p>36,000 Kr</p>
+                  </div>
+                </div>
+                <!---------------------------------------------------------------
+                 about-small-card 
+                 ---------------------------------------------------------------->
+                <div class="about-small-card d-flex align-items-center">
+                  <div class="about-small-card-img">
+                    <img src="./asset/images/image 5 (5).png" alt="" />
+                  </div>
+                  <div class="small-card-cntn text-center">
+                    <p>YAZ Hair Shampoo</p>
+                    <div class="about-sign">
+                      <img src="./asset/images/stars 14.png" alt="" />
+                    </div>
+                    <p>16,900 Kr.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!------------------------------------------------------------------------------- 
+          about-secoend-part 
+          --------------------------------------------------------------------------------->
+          <div class="col-sm-12 col-xl-8">
+            <div class="about-secoend-part">
+              <div class="about-img">
+                <img src="./asset/images/Frame 213.png" alt="" />
+              </div>
+              <div class="about-btn">
+                <div class="row">
+                  <div class="col-8"></div>
+                  <div class="col-4"></div>
+                </div>
+              </div>
+              <div class="about-wrp">
+                <div class="row">
+                  <!------------------------------------------------------ 
+                about-card-one 
+                ------------------------------------------------------->
+                  <div class="col-sm-4">
+                    <div class="about-card mx-auto">
+                      <div class="about-card-img">
+                        <img src="./asset/images/image 1 (3).png" alt="" />
+                      </div>
+                      <div class="about-card-cntn">
+                        <p>YAZ Vitamin A Hand Cream</p>
+                        <div class="about-sign">
+                          <img src="./asset/images/stars 14.png" alt="" />
+                        </div>
+                        <p>14,900 Kr.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!------------------------------------------------------ 
+                about-card-two 
+                ------------------------------------------------------->
+                  <div class="col-sm-4">
+                    <div class="about-card mx-auto">
+                      <div class="about-card-img">
+                        <img
+                          src="./asset/images/YAZ Vitamin A - Face 3.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="about-card-cntn">
+                        <p>YAZ Vitamin A Face Mask</p>
+                        <div class="about-sign">
+                          <img src="./asset/images/stars 14.png" alt="" />
+                        </div>
+                        <p>36,000 Kr.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--------------------------------------------------------
+                about-card-three 
+                ---------------------------------------------------------->
+                  <div class="col-sm-4">
+                    <div class="about-card mx-auto">
+                      <div class="about-card-img">
+                        <img
+                          src="./asset/images/YAZ HAIR SHAMPOO (20 2.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="about-card-cntn">
+                        <p>YAZ Hair Shampoo</p>
+                        <div class="about-sign">
+                          <img src="./asset/images/stars 14.png" alt="" />
+                        </div>
+                        <p>16,900 Kr.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-----------------------------------------------------------
+                 about-card-four 
+                 ----------------------------------------------------------->
+                  <div class="col-sm-4">
+                    <div class="about-card mx-auto">
+                      <div class="about-card-img">
+                        <img src="./asset/images/image 4 (6).png" alt="" />
+                      </div>
+                      <div class="about-card-cntn">
+                        <p>YAZ Persian Herb Face Oil</p>
+                        <div class="about-sign">
+                          <img src="./asset/images/stars 14.png" alt="" />
+                        </div>
+                        <p>29,900 Kr.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-------------------------------------------------------------- 
+                about-card-five 
+                -------------------------------------------------------------->
+                  <div class="col-sm-4">
+                    <div class="about-card mx-auto">
+                      <div class="about-card-img">
+                        <img src="./asset/images/image 2 (2).png" alt="" />
+                      </div>
+                      <div class="about-card-cntn">
+                        <p>YAZ Vitamin A Face Cream</p>
+                        <div class="about-sign">
+                          <img src="./asset/images/stars 14.png" alt="" />
+                        </div>
+                        <p>27,900 Kr.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--------------------------------------------------------------- 
+                about-card-six 
+                ---------------------------------------------------------------->
+                  <div class="col-sm-4">
+                    <div class="about-card mx-auto">
+                      <div class="about-card-img">
+                        <img src="./asset/images/image 3 (2).png" alt="" />
+                      </div>
+                      <div class="about-card-cntn">
+                        <p>Shaving cream clean cut</p>
+                        <div class="about-sign">
+                          <img src="./asset/images/stars 14.png" alt="" />
+                        </div>
+                        <p>14,400 Kr.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!------------------------------------------------------------------- 
+                about-card-seven 
+                -------------------------------------------------------------------->
+                  <div class="col-sm-4">
+                    <div class="about-card mx-auto">
+                      <div class="about-card-img">
+                        <img
+                          src="./asset/images/YAZ_PERSIAN_HERBS_Øj_2__3_-removebg-preview.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="about-card-cntn">
+                        <p>YAZ Persian Herb Med Oil</p>
+                        <div class="about-sign">
+                          <img src="./asset/images/stars 14.png" alt="" />
+                        </div>
+                        <p>12,000 Kr.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!---------------------------------------------------------------
+                 about-card-eight 
+                 --------------------------------------------------------------->
+                  <div class="col-sm-4">
+                    <div class="about-card mx-auto">
+                      <div class="about-card-img">
+                        <img src="./asset/images/Frame 226.png" alt="" />
+                      </div>
+                      <div class="about-card-cntn">
+                        <p>YAZ Saya Eye Cream</p>
+                        <div class="about-sign">
+                          <img src="./asset/images/stars 14.png" alt="" />
+                        </div>
+                        <p>30,000 Kr.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!---------------------------------------------------------- 
+                about-card-nine 
+                ----------------------------------------------------------->
+                  <div class="col-sm-4">
+                    <div class="about-card mx-auto">
+                      <div class="about-card-img">
+                        <img
+                          src="./asset/images/image_5__6_-removebg-preview.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="about-card-cntn mx-auto text-center">
+                        <p>YAZ Antioxidant Serum</p>
+                        <div class="about-sign">
+                          <img src="./asset/images/stars 14.png" alt="" />
+                        </div>
+                        <p>35,000 Kr.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--=======================================================================================================================
+          offer-section 
+          ====================================================================================================================-->
+    <section class="offer-section">
+      <div class="container">
+        <div class="row">
+          <!-----------------------------------------------------
+             card-one 
+             ----------------------------------------------------->
+          <div class="col-sm-12 col-md-6 col-xxl-3">
+            <div class="offer-card mx-auto">
+              <div class="offer-card-img-one">
+                <img src="./asset/images/premium-badge 1.png" alt="" />
+              </div>
+              <div class="offer-card-text">
+                <p class="offer-para">Premium Qualikty</p>
+                <span class="offer-sub-para">Top-quality,related product</span>
+              </div>
+            </div>
+          </div>
+          <!--------------------------------------------------------
+           card-two
+           --------------------------------------------------------->
+          <div class="col-sm-12 col-md-6 col-xxl-3">
+            <div class="offer-card mx-auto">
+              <div class="offer-card-img-two">
+                <img src="./asset/images/discount 1.png" alt="" />
+              </div>
+              <div class="offer-card-text">
+                <p class="offer-para">Special Discounts</p>
+                <span class="offer-sub-para">Exclusive seasonal offers</span>
+              </div>
+            </div>
+          </div>
+          <!---------------------------------------------------------- 
+          card-three 
+          ----------------------------------------------------------->
+          <div class="col-sm-12 col-md-6 col-xxl-3">
+            <div class="offer-card mx-auto">
+              <div class="offer-card-img-three">
+                <img src="./asset/images/fast 1.png" alt="" />
+              </div>
+              <div class="offer-card-text">
+                <p class="offer-para">Fast Delivery</p>
+                <span class="offer-sub-para">Quick & safe shipping</span>
+              </div>
+            </div>
+          </div>
+          <!--------------------------------------------------------- 
+          card-four 
+          ----------------------------------------------------------->
+          <div class="col-sm-12 col-md-6 col-xxl-3">
+            <div class="offer-card mx-auto">
+              <div class="offer-card-img-four">
+                <img src="./asset/images/Frame 140.png" alt="" />
+              </div>
+              <div class="offer-card-text">
+                <p class="offer-para">24/7 Support</p>
+                <span class="offer-sub-para">Always here to help.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--======================================================================================================================= 
+          footer-section 
+          ====================================================================================================================-->
+    <section class="footer-section">
+      <div class="container">
+        <div class="footer-wrp">
+          <!------------------------------------------------------- 
+                    footer-first-part 
+                    -------------------------------------------------------->
+          <div class="footer-first-part">
+            <div class="footer-brand">
+              <a href=""
+                ><img src="./asset/images/beauty logo with ele 2.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <!-------------------------------------------------------- 
+                    footer-secoend-part 
+                    --------------------------------------------------------->
+          <div class="footer-secoend-part">
+            <div class="row">
+              <!---------------------------------------
+               part-one 
+               --------------------------------------->
+              <div class="col-sm-12 col-lg-6 col-xl-4">
+                <p class="footer-para">
+                  LuxeShop is your trusted destination for premium, natural, and
+                  innovation beauty products. Every product is carefully
+                  selected to enhance your confidence and natural glow.
+                </p>
+                <ul class="d-flex flex-wrap align-items-center list-unstyled">
+                  <li class="pay-item">
+                    <a href=""
+                      ><img src="./asset/images/Frame 151.png" alt=""
+                    /></a>
+                  </li>
+                  <li class="pay-item">
+                    <a href=""
+                      ><img src="./asset/images/Frame 155.png" alt=""
+                    /></a>
+                  </li>
+                  <li class="pay-item">
+                    <a href=""
+                      ><img src="./asset/images/Frame 154.png" alt=""
+                    /></a>
+                  </li>
+                  <li class="pay-item">
+                    <a href=""
+                      ><img src="./asset/images/Frame 153.png" alt=""
+                    /></a>
+                  </li>
+                  <li class="pay-item">
+                    <a href=""
+                      ><img src="./asset/images/Frame 152.png" alt=""
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+              <!--------------------------------------- 
+              part-two 
+              --------------------------------------->
+              <div class="col-sm-12 col-lg-6 col-xl-4">
+                <div class="footer-hed">Contact Us</div>
+                <ul class="list-unstyled">
+                  <li class="footer-item">
+                    <a class="text-decoration-none footer-link" href=""
+                      ><span class="prior"
+                        ><img
+                          src="./asset/images/Location (1).png"
+                          alt="" /></span
+                      >Tage-Hansens Gade 35, 8000 Aarhus</a
+                    >
+                  </li>
+                  <li class="footer-item">
+                    <a class="text-decoration-none footer-link" href=""
+                      ><span class="prior"
+                        ><img src="./asset/images/Email (1).png" alt="" /></span
+                      >info@luxeshop.com</a
+                    >
+                  </li>
+                  <li class="footer-item">
+                    <a class="text-decoration-none footer-link" href=""
+                      ><span class="prior"
+                        ><img src="./asset/images/Comment.png" alt="" /></span
+                      >+1952724472</a
+                    >
+                  </li>
+                  <li class="footer-item">
+                    <a class="text-decoration-none footer-link" href=""
+                      ><span class="prior"
+                        ><img
+                          src="./asset/images/Telephone (1).png"
+                          alt="" /></span></a
+                    >0019-52724472
+                  </li>
+                </ul>
+              </div>
+              <!----------------------------------------- 
+              part-three 
+              ------------------------------------------>
+              <div class="col-sm-12 col-lg-6 col-xl-2">
+                <div class="footer-hed">Quick Access</div>
+                <ul class="list-unstyled">
+                  <li class="footer-item">
+                    <a class="text-decoration-none footer-link" href=""
+                      >Why Us</a
+                    >
+                  </li>
+                  <li class="footer-item">
+                    <a class="text-decoration-none footer-link" href=""
+                      >Term & conditions</a
+                    >
+                  </li>
+                  <li class="footer-item">
+                    <a class="text-decoration-none footer-link" href=""
+                      >Bank Transfer Information</a
+                    >
+                  </li>
+                  <li class="footer-item">
+                    <a class="text-decoration-none footer-link" href=""
+                      >Delivery Information</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!---------------------------------------- 
+              part-four
+              ----------------------------------------->
+              <div class="col-sm-12 col-lg-6 col-xl-2">
+                <div></div>
+                <ul class="list-unstyled">
+                  <li class="footer-item main">
+                    <a class="text-decoration-none footer-link" href=""
+                      >How to Pay</a
+                    >
+                  </li>
+                  <li class="footer-item">
+                    <a class="text-decoration-none footer-link" href=""
+                      >Returns & Refunds</a
+                    >
+                  </li>
+                  <li class="footer-item">
+                    <a class="text-decoration-none footer-link" href=""
+                      >How to Order</a
+                    >
+                  </li>
+                  <li class="footer-item">
+                    <a class="text-decoration-none footer-link" href=""
+                      >Get in Touch</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-------------------------------------------------------- 
+                    footer-third-part 
+                    --------------------------------------------------------->
+          <div class="footer-third-part">
+            <div class="social-icon">
+              <ul class="d-flex align-items-center list-unstyled">
+                <li class="social-item">
+                  <a class="text-decoration-none" href=""
+                    ><img src="./asset/images/Frame 146.png" alt=""
+                  /></a>
+                </li>
+                <li class="social-item">
+                  <a class="text-decoration-none" href=""
+                    ><img src="./asset/images/Frame 150.png" alt=""
+                  /></a>
+                </li>
+                <li class="social-item">
+                  <a class="text-decoration-none" href=""
+                    ><img src="./asset/images/Frame 149.png" alt=""
+                  /></a>
+                </li>
+                <li class="social-item">
+                  <a class="text-decoration-none" href=""
+                    ><img src="./asset/images/Frame 148.png" alt=""
+                  /></a>
+                </li>
+                <li class="social-item">
+                  <a class="text-decoration-none" href=""
+                    ><img src="./asset/images/Frame 147 (1).png" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!------------------------------------------------------- 
+                    footer-fourth-part 
+                    --------------------------------------------------------->
+          <div class="footer-fourth-part">
+            <div class="footer-btm d-flex flex-wrap justify-content-between">
+              <div
+                class="footer-btm-one d-flex justify-content-center align-items-center"
+              >
+                <div class="btm-one-img">
+                  <img src="./asset/images/Frame 171.png" alt="" />
+                </div>
+                <div>
+                  <p class="footer-btm-para">
+                    2025<a class="text-decoration-none" href="">LuxeShop,</a
+                    ><a class="text-decoration-none" href=""
+                      >All rights reserved</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="footer-btm-two">
+                <p class="footer-btm-para">Design by Susmita</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--================================================================================================================= 
+          link-for-bootstrap-css 
+          ===================================================================================================================-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--================================================================================================================ 
+          link-for-js 
+          =====================================================================================================================-->
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,809 @@
+/*=============================================================================================================================== 
+import-font
+============================================================================================================================== */
+
+/*----------------------------------------------------------------------------------
+ playfair-display-fonts
+ --------------------------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+/*----------------------------------------------------------------------------------
+  poppin-font 
+  -----------------------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*=================================================================================================================================
+ global-css 
+ ===============================================================================================================================*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*============================================================================================================================= 
+common-section 
+===============================================================================================================================*/
+.container {
+  max-width: 1710px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-color: #a68268;
+  --secoendary-color: #f2f2f2;
+  --secoendary-color-two: #e8e7e6;
+  --tersiary-color: #f7f8fc;
+  --text-color: #312319;
+  --text-color-two: #f7eede;
+  --text-color-three: #7f604a;
+  --line-color: #dfcbbd;
+}
+
+.tittle-one {
+  max-width: 410px;
+  margin: 0 auto;
+  font-size: 153.2px;
+  font-weight: 400;
+  line-height: 100%;
+  color: white;
+  font-family: "Playfair Display", serif !important;
+}
+
+.tittle-two {
+  font-size: 55px;
+  font-weight: 400;
+  line-height: 100%;
+  color: black;
+  font-family: "Playfair Display", serif !important;
+}
+
+.tittle-two > span {
+  font-size: 55px;
+  font-weight: 400;
+  line-height: 100%;
+  color: var(--primary-color);
+  font-family: "Playfair Display", serif !important;
+}
+
+/*===============================================================================================================================
+ header-section 
+ ===============================================================================================================================*/
+header {
+  padding: 50px 0 10px;
+}
+
+.btn > img {
+  max-width: 30px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.navbar-brand > a > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.navbar-brand > a {
+  max-width: 171px;
+}
+.navbar-brand {
+  left: 50%;
+  transform: translate(-50%, 25%);
+}
+
+.nav-item {
+  margin-right: 42px;
+}
+
+.friends-btn > img {
+  max-width: 30px;
+  width: 100%;
+  object-fit: contain;
+  margin-left: 32px;
+}
+
+.cart-btn > img {
+  max-width: 30px;
+  width: 100%;
+  object-fit: contain;
+  margin-left: 32px;
+}
+
+.hrt-btn > img {
+  max-width: 30px;
+  width: 100%;
+  object-fit: contain;
+  margin-left: 32px;
+}
+
+/*==============================================================================================================================
+  banner-section
+  ============================================================================================================================ */
+.banner-section {
+  min-height: 572px;
+  background: url("../asset/images/Frame\ 182\ \(1\).png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-para {
+  max-width: 224px;
+  margin: 0 auto;
+  color: white;
+}
+
+/*================================================================================================================================ 
+  result-section 
+  ==============================================================================================================================*/
+.result-section {
+  padding: 125px 0;
+}
+
+.result-row {
+  align-items: center;
+}
+
+.result-hed {
+  margin: 20px 0 62px;
+}
+
+.result-para {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 100%;
+  color: black;
+  margin-bottom: 113px;
+}
+
+.btm-img {
+  max-width: 30px;
+  margin-right: 15px;
+}
+
+.btm-img > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.cntn-btm-two > a > img {
+  max-width: 30px;
+  width: 100%;
+  object-fit: contain;
+  margin-right: 11px;
+}
+
+.cntn-btm-three > a > img {
+  max-width: 30px;
+  width: 100%;
+  object-fit: contain;
+  margin-right: 11px;
+}
+
+.contact-no {
+  color: black;
+}
+
+.contact-no > a {
+  color: var(--primary-color);
+}
+
+.mail {
+  color: var(--text-color);
+}
+
+/*-----------------------------------------------------------
+ result-img 
+ ----------------------------------------------------------*/
+
+.result-img > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.result-img {
+  max-width: 910px;
+  max-height: 641px;
+  border-radius: 40px;
+}
+
+/*=============================================================================================================================== 
+about-section
+=============================================================================================================================== */
+.about-section {
+  background: var(--secoendary-color);
+  border-radius: 62px;
+}
+
+.about-wrp {
+  padding: 118px 51px;
+}
+
+.about-row {
+  align-items: center;
+}
+
+/*-------------------------------------------------------------------------- 
+about-img 
+---------------------------------------------------------------------------*/
+
+.about-img {
+  display: flex;
+  align-items: center;
+}
+
+.about-first-img > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.about-first-img {
+  max-width: 452px;
+  border-radius: 40px;
+  margin-right: 23px;
+}
+
+.about-secoend-img > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.about-secoend-img {
+  max-width: 452px;
+  border-radius: 40px;
+}
+
+/*============================================================================================================================== 
+team-section 
+================================================================================================================================*/
+
+.team-section {
+  padding: 125px 0 127px;
+}
+
+.team-card {
+  max-width: 520px;
+}
+.team-img-one {
+  max-width: 440px;
+  border-radius: 40px;
+
+  transition: 0.6s linear infinite;
+}
+
+.team-img-one > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.team-img-two {
+  max-width: 440px;
+  border-radius: 40px;
+  margin-top: 130px;
+  transition: 0.6s linear infinite;
+}
+
+.team-img-two > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.team-img-three {
+  max-width: 440px;
+  border-radius: 40px;
+  transition: 0.6s linear infinite;
+}
+
+.team-img-three > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.team-img-four {
+  max-width: 440px;
+  border-radius: 40px;
+  margin-top: 130px;
+  transition: 0.6s linear infinite;
+}
+
+.team-img-four > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/*--------------------------------------------------------------------- 
+team-img-hover-effect
+--------------------------------------------------------------------- */
+.team-img-one:hover {
+  transform: translateY(10%);
+}
+
+.team-img-two:hover {
+  transform: translateY(-10%);
+}
+
+.team-img-three:hover {
+  transform: translateY(10%);
+}
+
+.team-img-four:hover {
+  transform: translateY(-10%);
+}
+
+/*============================================================================================================================
+ testimonial-section 
+ ==============================================================================================================================*/
+.test-wrp {
+  min-height: 240px;
+  background: url("../asset/images/WhatsApp\ Image\ 2025-10-05\ at\ 00.57.14_1b218c43.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  border-radius: 62px;
+  margin-bottom: 99px;
+  padding: 80px 300px 60px 380px;
+}
+
+.test-para {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 100%;
+  color: var(--text-color-three);
+}
+
+/*========================================================================================================================== 
+    footer-section 
+    ===========================================================================================================================*/
+.footer-wrp {
+  background: var(--secoendary-color);
+  border-top-left-radius: 65px;
+  border-top-right-radius: 65px;
+}
+
+.footer-wrp {
+  padding: 138px 53px 52px;
+  position: relative;
+}
+
+/*------------------------------- 
+footer-brand 
+--------------------------------*/
+
+.footer-brand > a > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.footer-brand > a {
+  max-width: 144px;
+}
+
+.footer-brand {
+  max-width: 144px;
+  position: absolute;
+  top: -15%;
+  left: 50%;
+  transform: translate(-50%, 25%);
+}
+
+.pay-item {
+  margin-left: 8px;
+  margin-bottom: 10px;
+}
+
+.pay-item > a > img {
+  max-width: 72px;
+  width: 100%;
+  object-fit: contain;
+}
+
+/*-------------------------------- 
+socaial-icon 
+--------------------------------*/
+
+.social-icon > ul {
+  max-width: 398px;
+  margin: 0 auto;
+}
+
+.social-item {
+  margin-right: 32px;
+}
+
+.social-item > a > img {
+  max-width: 34px;
+  width: 100%;
+  object-fit: contain;
+}
+
+/*---------------------------------- 
+footer-item
+----------------------------------*/
+.footer-item {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+  color: var(--text-color) !important;
+  margin-bottom: 50px;
+}
+
+.footer-link {
+  color: var(--text-color);
+}
+
+.prior {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.main {
+  margin-top: 60px;
+}
+
+.footer-hed {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 100%;
+  margin-bottom: 30px;
+  color: var(--text-color-three);
+}
+
+.footer-para {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+  color: var(--text-color-three);
+  margin-bottom: 54px;
+}
+
+.footer-third-part {
+  margin-top: 42px;
+  position: relative;
+}
+
+.footer-third-part::after {
+  content: "";
+  height: 1px;
+  width: 1320px;
+  background: var(--text-color-three);
+  position: absolute;
+  top: 150%;
+}
+
+.footer-fourth-part {
+  margin-top: 37px;
+}
+
+.footer-btm-para {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 100%;
+  color: black !important;
+}
+
+.footer-btm-para > a {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 100%;
+  color: black !important;
+}
+
+.btm-one-img > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.btm-one-img {
+  max-width: 35px;
+  margin-right: 15px;
+}
+
+/*------------------------------------------------------------------------ 
+footer-link-hover-effect
+------------------------------------------------------------------------ */
+
+.footer-link:hover {
+  color: var(--primary-color);
+}
+
+/******************************************************************************************************************************
+  mediaQuries 
+  ******************************************************************************************************************************/
+
+/*=====================================================================================
+   mediaQuries at 1400px
+   ==================================================================================== */
+
+@media screen and (max-width: 1400px) {
+  /*--------------------------------------------------------------------- 
+  header-section 
+  -------------------------------------------------------------------*/
+  .nav-item {
+    margin-right: 22px;
+  }
+
+  /*-------------------------------------------------------------------- 
+  footer-section 
+  -------------------------------------------------------------------*/
+
+  .footer-third-part::after {
+    width: 1100px;
+  }
+}
+
+/*=====================================================================================
+   mediaQuries at 1200px
+   ==================================================================================== */
+
+@media screen and (max-width: 1200px) {
+  /*--------------------------------------------------------------- 
+comm0n-section
+------------------------------------------------------------------ */
+  .col-24 {
+    width: 33.33%;
+  }
+
+  /*------------------------------------------------------------------ 
+header-section 
+--------------------------------------------------------------------*/
+
+  .navbar-button {
+    margin-top: 20px;
+  }
+  .friends-btn > img {
+    margin-left: 0;
+  }
+
+  /*----------------------------------------------------------------- 
+footer-section 
+------------------------------------------------------------------*/
+  .footer-secoend-part {
+    text-align: center;
+  }
+
+  .pay-list {
+    max-width: 474px;
+    margin: 0 auto 20px;
+  }
+  .footer-brand {
+    transform: translate(-50%, 60%);
+  }
+
+  .footer-third-part::after {
+    width: 900px;
+  }
+}
+/*=====================================================================================
+   mediaQuries at 992px
+   ==================================================================================== */
+
+@media screen and (max-width: 992px) {
+  /*-------------------------------------------------------------- 
+  testimonial-section 
+  ---------------------------------------------------------------*/
+  .test-wrp {
+    padding: 60px 100px 60px 160px;
+  }
+
+  /*-------------------------------------------------------------
+   result-section
+   --------------------------------------------------------------- */
+
+  .result-img {
+    margin-bottom: 30px;
+  }
+
+  /*--------------------------------------------------------------------- 
+  footer-section 
+  ---------------------------------------------------------------------*/
+
+  .footer-brand {
+    transform: translate(-50%, 110%);
+  }
+
+  .main {
+    margin-top: 20px;
+  }
+
+  .footer-third-part::after {
+    width: 650px;
+  }
+}
+
+/*=====================================================================================
+   mediaQuries at 768px
+   ==================================================================================== */
+
+@media screen and (max-width: 768px) {
+  /*--------------------------------------------------------
+     common-section
+     ------------------------------------------------------ */
+  .col-24 {
+    width: 50%;
+  }
+
+  .tittle-two {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  .tittle-two > span {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  /*-----------------------------------------------------------
+   team-section
+   ---------------------------------------------------------- */
+  .team-section{
+    padding-bottom: 80px;
+  }
+  
+   .team-hed {
+    text-align: center;
+  }
+
+  .team-para {
+    text-align: center;
+  }
+  .team-img-two {
+    margin-top: 10px;
+  }
+
+  .team-img-four {
+    margin-top: 10px;
+  }
+
+  .team-cntn {
+    text-align: center;
+    margin: 20px 0 30px;
+  }
+
+
+  /*-------------------------------------------------------- 
+  test-section 
+  --------------------------------------------------------*/
+.test-section{
+  padding-bottom: 50px;
+}
+
+   .test-card {
+    text-align: center;
+  }
+
+  /*--------------------------------------------------------- 
+  result-section 
+  ----------------------------------------------------------*/
+
+  .result-section {
+    padding: 75px 0;
+  }
+
+  .result-para {
+    margin-bottom: 50px;
+  }
+
+  /*------------------------------------------------------- 
+  footer-section 
+  --------------------------------------------------------*/
+
+  .footer-brand {
+    transform: translate(-50%, 110%);
+  }
+
+  .footer-third-part::after {
+    width: 475px;
+  }
+}
+
+/*=====================================================================================
+   mediaQuries at 576px
+   ==================================================================================== */
+
+@media screen and (max-width: 576px) {
+  /*---------------------------------------------------------------
+     common-section 
+     ---------------------------------------------------------------*/
+  .col-24 {
+    width: 100%;
+  }
+
+  .tittle-one {
+    font-size: 72px;
+  }
+
+  .tittle-two {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .tittle-two > span {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  /*------------------------------------------------------ 
+  header-section 
+  --------------------------------------------------------*/
+
+  .navbar-brand > a {
+    max-width: 100px;
+    transform: translate(-75%, 25%);
+  }
+
+  /*----------------------------------------------------------
+   result-section 
+   ----------------------------------------------------------*/
+  .result-para {
+    font-size: 14px;
+  }
+
+  /*-------------------------------------------------------- 
+  testimonial-section 
+  ----------------------------------------------------------*/
+
+  .test-wrp {
+    padding: 60px;
+  }
+
+ 
+
+  /*--------------------------------------------------------
+   banner-section 
+   --------------------------------------------------------*/
+
+  .banner-section {
+    min-height: 400px;
+  }
+
+  /*--------------------------------------------------------- 
+  footer-section
+  ------------------------------------------------------- */
+
+  .footer-brand {
+    top: -15%;
+    transform: translate(-50%, 90%);
+  }
+
+  .footer-item {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  .footer-para {
+    font-size: 16px;
+  }
+
+  .footer-third-part::after {
+    top: 120%;
+    width: 230px;
+  }
+
+  .social-item {
+    margin-right: 4px;
+  }
+  .footer-btm-para {
+    font-size: 18px;
+  }
+
+  .footer-btm-para > a {
+    font-size: 18px;
+  }
+}

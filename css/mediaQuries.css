@@ -1,0 +1,597 @@
+/*================================================================================================================================= 
+mediaQuries at 1400px 
+================================================================================================================================*/
+@media screen and (max-width: 1400px) {
+  /*--------------------------------------------------------------------- 
+  header-section 
+  -------------------------------------------------------------------*/
+  .nav-item {
+    margin-right: 22px;
+  }
+
+  /*----------------------------------------------------------------- 
+  footer-section 
+  ----------------------------------------------------------------*/
+
+  .footer-third-part::after {
+    width: 1100px;
+  }
+}
+
+/*==============================================================================================================================
+ mediaQuries at 1200px
+ ============================================================================================================================== */
+@media screen and (max-width: 1200px) {
+  /*--------------------------------------------------------------- 
+comm0n-section
+---------------------------------------------------------------- */
+  .col-24 {
+    width: 33.33%;
+  }
+
+  .tittle-one {
+    font-size: 122px;
+  }
+
+  /*------------------------------------------------------------------ 
+header-section 
+--------------------------------------------------------------------*/
+
+  .navbar-button {
+    margin-top: 20px;
+  }
+  .friends-btn > img {
+    margin-left: 0;
+  }
+
+  /*----------------------------------------------------------------
+   banner-section
+   --------------------------------------------------------------- */
+
+  .sub-para {
+    max-width: 100%;
+  }
+
+  /*------------------------------------------------------------- 
+    journal-section 
+    --------------------------------------------------------------*/
+  .journal-card {
+    margin-bottom: 100px;
+  }
+
+  /*-------------------------------------------------------------- 
+    product-section 
+    ----------------------------------------------------------------*/
+
+  .product-mid-card {
+    margin-top: 40px;
+  }
+  .product-top {
+    text-align: center;
+  }
+
+  .product-top::after {
+    max-width: 500px;
+    bottom: -25%;
+  }
+
+  /*------------------------------------------------------
+   newsletter-section 
+   -----------------------------------------------------*/
+
+  .news-hed {
+    font-size: 64px;
+    margin: 25px 0;
+  }
+
+  .news-sub {
+    font-size: 36px;
+  }
+
+  .newsletter-btn {
+    max-width: 300px;
+  }
+  /*----------------------------------------------------------------- 
+footer-section 
+------------------------------------------------------------------*/
+  .pay-list {
+    max-width: 474px;
+    margin: 0 auto 20px;
+  }
+
+  .footer-secoend-part {
+    text-align: center;
+  }
+  .footer-brand {
+    transform: translate(-50%, 60%);
+  }
+
+  .footer-third-part::after {
+    width: 900px;
+  }
+}
+
+/*==============================================================================================================================
+ mediaQuries at 992px
+ ============================================================================================================================== */
+@media screen and (max-width: 992px) {
+  /*----------------------------------------------------------------
+   common-section
+   --------------------------------------------------------------- */
+  .tittle-one {
+    font-size: 92px;
+  }
+  /*------------------------------------------------------------------ 
+product-section 
+--------------------------------------------------------------------*/
+  .product-top::after {
+    max-width: 400px;
+  }
+
+  .discover-card-one {
+    /* min-height: 400px; */
+    margin-bottom: 20px;
+  }
+
+  .discover-card-two {
+    /* min-height: 400px; */
+    margin-bottom: 20px;
+  }
+
+  .discover-card-three {
+    /* min-height: 400px; */
+    margin-bottom: 20px;
+  }
+
+  .discover-para {
+    font-size: 24px;
+  }
+
+  /*------------------------------------------------------
+   choose-section 
+   ----------------------------------------------------*/
+  .choose-hed {
+    margin-top: 40px;
+  }
+
+  /*----------------------------------------------------- 
+newsletter-section 
+-----------------------------------------------------*/
+
+  .newsletter-section {
+    min-height: 100px;
+  }
+
+  .newsletter-cntn {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .newsletter-btn {
+    margin-bottom: 30px;
+    margin: 0 auto 20px;
+  }
+
+  .newsletter-img {
+    max-width: 400px;
+    max-height: 350px;
+    margin: 0 auto 20px;
+  }
+  /*------------------------------------------------------------ 
+  journal-section 
+  ------------------------------------------------------------*/
+  .journal-para {
+    font-size: 18px;
+  }
+
+  /*--------------------------------------------------------------------- 
+  footer-section 
+  ---------------------------------------------------------------------*/
+
+  .footer-brand {
+    transform: translate(-50%, 110%);
+  }
+
+  .main {
+    margin-top: 20px;
+  }
+
+  .footer-third-part::after {
+    width: 650px;
+  }
+}
+
+/*==============================================================================================================================
+ mediaQuries at 768px
+ ============================================================================================================================= */
+@media screen and (max-width: 768px) {
+  /*---------------------------------------------------------------
+     common-section
+     -------------------------------------------------------------- */
+  .col-24 {
+    width: 50%;
+  }
+
+  .tittle-one {
+    font-size: 72px;
+  }
+
+  .tittle-two {
+    font-size: 42px;
+  }
+
+  .tittle-two > span {
+    font-size: 42px;
+  }
+
+  /*-----------------------------------------------------
+   about-section 
+   ------------------------------------------------------*/
+
+  .about-hed::after {
+    transform: translate(-90%);
+  }
+
+  .about-sub-para {
+    font-size: 24px;
+  }
+
+  /*-----------------------------------------------------
+  discover-section
+  ---------------------------------------------------- */
+
+  .discover-para {
+    font-size: 24px;
+  }
+
+  /*----------------------------------------------------------------- 
+  product-section 
+  ------------------------------------------------------------------*/
+
+  .product-section {
+    padding-top: 75px;
+  }
+
+  .product-top::after {
+    max-width: 250px;
+    bottom: 2%;
+  }
+
+  .product-card {
+    margin-bottom: 20px;
+  }
+  .product-mid-card {
+    max-width: 300px;
+  }
+  .product-img-one {
+    max-width: 250px;
+    max-height: fit-content;
+  }
+
+  .product-img-two {
+    max-width: 250px;
+    max-height: fit-content;
+  }
+
+  .product-img-three {
+    max-width: 250px;
+    max-height: fit-content;
+  }
+
+  .product-img-four {
+    max-width: 200px;
+    max-height: fit-content;
+  }
+
+  .product-mid-card {
+    max-height: 300px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+  }
+
+  /*------------------------------------------------------
+   choose-section 
+   ------------------------------------------------------*/
+
+  .choose-section {
+    padding: 60px 0;
+  }
+
+  .choose-para {
+    font-size: 18px;
+  }
+
+  .sign-para {
+    font-size: 18px;
+  }
+
+  .sign-sub-para {
+    font-size: 14px;
+  }
+
+  /*----------------------------------------------------- 
+  customer-section
+  ----------------------------------------------------- */
+  .cust-hed::before {
+    transform: translate(-10%, -10%);
+  }
+
+  .cust-para {
+    /* margin-top: 70px; */
+    font-size: 24px;
+  }
+
+  /*--------------------------------------------------------
+   beauty-journal-section 
+   ------------------------------------------------------*/
+  .journal-sub-para {
+    font-size: 24px;
+    margin: 30px 0 80px;
+  }
+  /*-------------------------------------------------------- 
+  offer-section 
+  ---------------------------------------------------------*/
+
+  .offer-section {
+    padding: 80px 0 120px;
+  }
+  .offer-card {
+    margin-bottom: 20px;
+  }
+
+  /*------------------------------------------------------- 
+  footer-section 
+  --------------------------------------------------------*/
+
+  .footer-brand {
+    transform: translate(-50%, 110%);
+  }
+
+  .footer-third-part::after {
+    width: 475px;
+  }
+}
+
+/*===============================================================================================================================
+mediaQuries at 576px
+============================================================================================================================= */
+@media screen and (max-width: 576px) {
+  /*---------------------------------------------------------------
+     common-section 
+     ---------------------------------------------------------------*/
+  .col-24 {
+    width: 100%;
+  }
+
+  .tittle-one {
+    font-size: 42px;
+  }
+
+  .tittle-two {
+    font-size: 24px;
+  }
+
+  .tittle-two > span {
+    font-size: 24px;
+  }
+
+  /*----------------------------------------------------------------- 
+  header-section 
+  -----------------------------------------------------------------*/
+
+  .navbar-brand > a {
+    max-width: 100px;
+    transform: translate(-75%, 25%);
+  }
+
+  /*-------------------------------------------------------------------
+ banner-section
+ ------------------------------------------------------------------ */
+
+  .banner-section {
+    min-height: 500px;
+  }
+
+  .sub-para {
+    font-size: 18px;
+  }
+
+  .primary-btn {
+    font-size: 20px;
+  }
+
+  /*-----------------------------------------------------
+   about-section 
+   ----------------------------------------------------*/
+
+  .about-hed::after {
+    transform: translate(-70%, -10%);
+  }
+
+  .about-hed {
+    font-size: 24px !important;
+  }
+
+  .about-hed > span {
+    font-size: 24px !important;
+  }
+
+  .about-sub-para {
+    font-size: 18px;
+  }
+
+  .about-para {
+    font-size: 14px;
+  }
+
+  /*------------------------------------------------------- 
+discover-section 
+------------------------------------------------------*/
+
+  .discover-card-one {
+    min-height: 400px;
+  }
+  .discover-card-two {
+    min-height: 400px;
+  }
+
+  .discover-card-three {
+    min-height: 400px;
+  }
+
+  /*---------------------------------------------------------------
+   product-section
+   --------------------------------------------------------------- */
+  .product-section {
+    padding-top: 40px;
+  }
+
+  .product-top::after {
+    max-width: 100px;
+    bottom: -15%;
+  }
+
+  .product-para {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .product-card {
+    margin-bottom: 40px;
+  }
+
+  .mid-para {
+    font-size: 16px;
+  }
+
+  .product-mid-card {
+    max-width: 250px;
+  }
+
+  .product-btm-card {
+    max-height: fit-content;
+    margin-top: 20px;
+  }
+
+  .btm-para {
+    font-size: 14px;
+  }
+
+  .btm-sub-para {
+    font-size: 12px;
+  }
+
+  /*------------------------------------------------------
+   newsletter-section 
+   -----------------------------------------------------*/
+
+  .news-hed {
+    font-size: 42px;
+    margin: 10px 0;
+  }
+
+  .news-sub {
+    font-size: 24px;
+  }
+
+  .newsletter-btn {
+    max-width: 250px;
+  }
+  .news-btn {
+    font-size: 16px;
+  }
+
+  /*------------------------------------------------------
+   choose-section 
+   ------------------------------------------------------*/
+
+  .choose-section {
+    padding: 50px 0 100px;
+  }
+
+  .sign-img {
+    margin-right: 20px;
+  }
+
+  /*-----------------------------------------------------
+   customer-section 
+   ----------------------------------------------------*/
+  .cust-hed::before {
+    transform: translate(-30%, -20%);
+  }
+
+  .cust-hed {
+    font-size: 24px !important;
+  }
+
+  .cust-hed > span {
+    font-size: 24px !important;
+  }
+
+  .cust-para {
+    font-size: 18px;
+  }
+
+  /*------------------------------------------------------------ 
+  journal-section 
+  ------------------------------------------------------------*/
+  .journal-para {
+    max-height: fit-content;
+
+    padding: 20px;
+  }
+
+  .journal-sub-para {
+    font-size: 18px;
+    margin: 30px 0 30px;
+  }
+
+  /*-------------------------------------------------------- 
+  offer-section 
+  ---------------------------------------------------------*/
+
+  .offer-section {
+    padding: 100px 0 120px;
+  }
+
+  .offer-para {
+    font-size: 18px;
+  }
+
+  .offer-sub-para {
+    font-size: 16px;
+  }
+  /*----------------------------------------------------- 
+  footer-section
+  --------------------------------------------------- */
+
+  .footer-brand {
+    top: -15%;
+    transform: translate(-50%, 90%);
+  }
+
+  .footer-item {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  .footer-para {
+    font-size: 16px;
+  }
+
+  .footer-third-part::after {
+    top: 120%;
+    width: 230px;
+  }
+
+  .social-item {
+    margin-right: 4px;
+  }
+  .footer-btm-para {
+    font-size: 18px;
+  }
+
+  .footer-btm-para > a {
+    font-size: 18px;
+  }
+}

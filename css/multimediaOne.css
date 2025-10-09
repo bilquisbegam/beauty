@@ -1,0 +1,897 @@
+/*============================================================================================================================== 
+import-font
+============================================================================================================================== */
+/*----------------------------------------------------------------------------------
+ playfair-display-fonts
+ --------------------------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+/*----------------------------------------------------------------------------------
+  poppin-font 
+  -----------------------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*=============================================================================================================================
+ global-css 
+ ===============================================================================================================================*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*===============================================================================================================================
+ common-section 
+ ===============================================================================================================================*/
+.container {
+  max-width: 1710px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.tittle-one {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 100%;
+  color: white;
+  font-family: "Playfair Display", serif !important;
+  margin-bottom: 16px;
+}
+
+.sub-para {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 100%;
+  color: white;
+}
+
+/*-----------------------------------------------------
+ color
+ ------------------------------------------------------ */
+:root {
+  --primary-color: #a68268;
+  --secoendary-color: #f2f2f2;
+  --secoendary-color-two: #e8e7e6;
+  --tersiary-color: #f7f8fc;
+  --text-color: #312319;
+  --text-color-two: #f7eede;
+  --text-color-three: #7f604a;
+  --line-color: #dfcbbd;
+}
+
+/*===============================================================================================================================
+ header-section 
+ ===============================================================================================================================*/
+header {
+  padding: 50px 0 10px;
+}
+
+.btn > img {
+  max-width: 30px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.navbar-brand > a > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.navbar-brand > a {
+  max-width: 171px;
+}
+.navbar-brand {
+  left: 50%;
+  transform: translate(-50%, 25%);
+  z-index: 99;
+}
+
+.nav-item {
+  margin-right: 42px;
+}
+
+.friends-btn > img {
+  max-width: 30px;
+  width: 100%;
+  object-fit: contain;
+  margin-left: 32px;
+}
+
+.cart-btn > img {
+  max-width: 30px;
+  width: 100%;
+  object-fit: contain;
+  margin-left: 32px;
+}
+
+.hrt-btn > img {
+  max-width: 30px;
+  width: 100%;
+  object-fit: contain;
+  margin-left: 32px;
+}
+
+/*-------------------------------------------------------------------------
+ nav-link-hover-effect
+ -------------------------------------------------------------------------- */
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+/*===============================================================================================================================
+ banner-section
+ =============================================================================================================================== */
+
+.banner-section {
+  min-height: 572px;
+  background: url("../asset/images/Frame\ 269\ \(3\).png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  border-radius: 62px;
+}
+
+.banner-section::after {
+  content: "";
+  height: 450px;
+  width: 450px;
+  background: url("../asset/images/wildflower\ \(2\)\ 2.png");
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/*=============================================================================================================================== 
+about-section 
+===============================================================================================================================*/
+.about-section {
+  padding: 118px 0 318px;
+}
+
+.about-top {
+  gap: 40px;
+  position: relative;
+}
+
+.about-top::after {
+  content: "";
+  height: 1px;
+  width: 952px;
+  background: var(--primary-color);
+  position: absolute;
+  top: 80%;
+}
+
+.about-para {
+  position: relative;
+}
+
+.about-para::before {
+  content: "";
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  position: absolute;
+  top: 120%;
+}
+
+.about-para::before {
+  content: "";
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  position: absolute;
+}
+
+.about-para::before {
+  content: "";
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  position: absolute;
+  top: 120%;
+}
+
+.about-para::after {
+  content: "";
+  height: 1px;
+  width: 140px;
+  background: var(--primary-color);
+  position: absolute;
+  top: 120%;
+  right: 65%;
+}
+
+.about-big-card {
+  max-width: 1232px;
+  max-height: 2114px;
+  padding: 45px 38px 50px;
+  box-shadow: 0 4px 39px #f7f8fc;
+}
+/*--------------------------------------------------------
+ about-img 
+ ------------------------------------------------------*/
+.about-big-img > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.about-big-img {
+  max-width: 976px;
+  margin-bottom: 46px;
+}
+
+.about-small-img > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.about-small-img {
+  max-width: 377px;
+}
+
+/*---------------------------------------------------------------------- 
+form 
+----------------------------------------------------------------------*/
+.tittle-three {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 100%;
+  margin: 46px 0 25px;
+  color: black;
+}
+
+.tittle-four {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+  margin-bottom: 25px;
+  color: black;
+}
+
+#comment {
+  min-width: 926px;
+  min-height: 236px;
+  border-radius: 25px;
+  border: none;
+  background: var(--secoendary-color);
+}
+
+.cmnt {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: black;
+  margin: 25px 0 23px;
+}
+
+#name {
+  min-width: 926px;
+  min-height: 64px;
+  border-radius: 25px;
+  border: none;
+  background: var(--secoendary-color);
+}
+.nam {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 100%;
+  color: black;
+  margin: 23px 0 9px;
+  letter-spacing: 3%;
+}
+#email {
+  min-width: 926px;
+  min-height: 64px;
+  border-radius: 25px;
+  border: none;
+  background: var(--secoendary-color);
+}
+
+.mail {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 100%;
+  color: black;
+  margin: 9px 0;
+  letter-spacing: 3%;
+}
+
+#web {
+  min-width: 926px;
+  min-height: 64px;
+  border-radius: 25px;
+  border: none;
+  background: var(--secoendary-color);
+}
+.wb {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 100%;
+  color: black;
+  margin: 9px 0;
+  letter-spacing: 3%;
+}
+
+.button {
+  max-width: 240px;
+  max-height: 46px;
+  padding: 8px 45px;
+  border-radius: 40px;
+  color: white;
+  background: var(--primary-color);
+  border: none;
+  margin-top: 33px;
+}
+
+/*-----------------------------------------------------
+ about-left-side 
+ -----------------------------------------------------*/
+
+.about-small-card {
+  max-width: 551px;
+  max-height: 468px;
+  box-shadow: -5px 7px 36.4px #f7f8fc;
+  margin-top: 50px;
+}
+
+.about-card {
+  max-width: 426px;
+  max-height: 118px;
+  border-radius: 13px;
+  background: var(--secoendary-color);
+  margin-bottom: 20px;
+}
+
+.about-card-img > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.about-card-img {
+  max-width: 132px;
+  max-height: 118px;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+}
+
+.small-para {
+  margin-left: 35px;
+}
+
+/*========================================================================================================================== 
+    footer-section 
+    ===========================================================================================================================*/
+.footer-section {
+  background: var(--secoendary-color);
+  border-top-left-radius: 65px;
+  border-top-right-radius: 65px;
+}
+
+.footer-wrp {
+  padding: 138px 53px 52px;
+  position: relative;
+}
+
+/*------------------------------- 
+footer-brand 
+--------------------------------*/
+
+.footer-brand > a > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.footer-brand > a {
+  max-width: 144px;
+}
+
+.footer-brand {
+  max-width: 144px;
+  position: absolute;
+  top: -15%;
+  left: 50%;
+  transform: translate(-50%, 25%);
+}
+
+.pay-item {
+  margin-left: 8px;
+  margin-bottom: 10px;
+}
+
+.pay-item > a > img {
+  max-width: 72px;
+  width: 100%;
+  object-fit: contain;
+}
+
+/*-------------------------------- 
+socaial-icon 
+--------------------------------*/
+
+.social-icon > ul {
+  max-width: 298px;
+  margin: 0 auto;
+}
+
+.social-item {
+  margin-right: 32px;
+}
+
+.social-item > a > img {
+  max-width: 34px;
+  width: 100%;
+  object-fit: contain;
+}
+
+/*---------------------------------- 
+footer-item
+----------------------------------*/
+.footer-item {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+  margin-bottom: 50px;
+}
+
+.footer-link {
+  color: var(--text-color);
+}
+
+.prior {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.main {
+  margin-top: 60px;
+}
+
+.footer-hed {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 100%;
+  margin-bottom: 30px;
+  color: var(--text-color-three);
+}
+
+.footer-para {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+  color: var(--text-color-three);
+  margin-bottom: 54px;
+}
+
+.footer-third-part {
+  margin-top: 42px;
+  position: relative;
+}
+
+.footer-third-part::after {
+  content: "";
+  height: 1px;
+  width: 1320px;
+  background: var(--text-color-three);
+  position: absolute;
+  top: 150%;
+}
+
+.footer-fourth-part {
+  margin-top: 37px;
+}
+
+.footer-btm-para {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 100%;
+  color: black !important;
+}
+
+.footer-btm-para > a {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 100%;
+  color: black !important;
+}
+
+.btm-one-img > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.btm-one-img {
+  max-width: 35px;
+  margin-right: 15px;
+}
+
+/*------------------------------------------------------------------------ 
+footer-link-hover-effect
+------------------------------------------------------------------------ */
+
+.footer-link:hover {
+  color: var(--primary-color);
+}
+
+/******************************************************************************************************************************
+  mediaQuries 
+  ******************************************************************************************************************************/
+
+/*=====================================================================================
+   mediaQuries at 1400px
+   ==================================================================================== */
+
+@media screen and (max-width: 1400px) {
+  /*--------------------------------------------------------------------- 
+  header-section 
+  -------------------------------------------------------------------*/
+  .nav-item {
+    margin-right: 22px;
+  }
+
+  /*------------------------------------------------------------------
+   about-section 
+   ------------------------------------------------------------------*/
+
+  #comment {
+    min-width: 726px;
+  }
+
+  #name {
+    min-width: 726px;
+  }
+
+  #email {
+    min-width: 726px;
+  }
+
+  #web {
+    min-width: 726px;
+  }
+
+  /*----------------------------------------------------------------- 
+  footer-section 
+  ----------------------------------------------------------------*/
+
+  .footer-third-part::after {
+    width: 1100px;
+  }
+}
+
+/*=====================================================================================
+   mediaQuries at 1200px
+   ==================================================================================== */
+
+@media screen and (max-width: 1200px) {
+  /*--------------------------------------------------------------- 
+comm0n-section
+---------------------------------------------------------------- */
+  .col-24 {
+    width: 33.33%;
+  }
+
+  /*------------------------------------------------------------------ 
+header-section 
+--------------------------------------------------------------------*/
+
+  .navbar-button {
+    margin-top: 20px;
+  }
+  .friends-btn > img {
+    margin-left: 0;
+  }
+
+  /*------------------------------------------------------------------
+   about-section 
+   ------------------------------------------------------------------*/
+  .about-top::after {
+    width: 600px;
+  }
+
+  .about-para::after {
+    width: 100px;
+  }
+  #comment {
+    min-width: 576px;
+  }
+
+  #name {
+    min-width: 576px;
+  }
+
+  #email {
+    min-width: 576px;
+  }
+
+  #web {
+    min-width: 576px;
+  }
+
+  /*----------------------------------------------------------------- 
+footer-section 
+------------------------------------------------------------------*/
+
+  .footer-brand {
+    transform: translate(-50%, 60%);
+  }
+
+  .footer-third-part::after {
+    width: 900px;
+  }
+}
+/*=====================================================================================
+   mediaQuries at 992px
+   ==================================================================================== */
+
+@media screen and (max-width: 992px) {
+  /*------------------------------------------------------------------
+   about-section 
+   ------------------------------------------------------------------*/
+
+  .about-section {
+    padding: 100px 0 250px;
+  }
+
+  .about-top::after {
+    width: 450px;
+  }
+
+  .about-para::after {
+    width: 80px;
+  }
+
+  #comment {
+    min-width: 436px;
+  }
+
+  #name {
+    min-width: 436px;
+  }
+
+  #email {
+    min-width: 436px;
+  }
+
+  #web {
+    min-width: 436px;
+  }
+
+  /*--------------------------------------------------------------------- 
+  footer-section 
+  ---------------------------------------------------------------------*/
+
+  .footer-brand {
+    transform: translate(-50%, 110%);
+  }
+
+  .main {
+    margin-top: 20px;
+  }
+
+  .footer-third-part::after {
+    width: 650px;
+  }
+}
+
+/*=====================================================================================
+   mediaQuries at 768px
+   ==================================================================================== */
+
+@media screen and (max-width: 768px) {
+  /*---------------------------------------------------------------
+     common-section
+     -------------------------------------------------------------- */
+  .col-24 {
+    width: 50%;
+  }
+
+  .tittle-one {
+    font-size: 48px;
+  }
+
+  .sub-para {
+    font-size: 24px;
+  }
+
+  /*------------------------------------------------------------------
+   about-section 
+   ------------------------------------------------------------------*/
+
+  .about-section {
+    padding: 80px 0 200px;
+  }
+
+  .about-top::after {
+    width: 500px;
+  }
+
+  .about-para::after {
+    width: 80px;
+    right: 75%;
+  }
+
+  #comment {
+    min-width: 512px;
+  }
+
+  #name {
+    min-width: 512px;
+  }
+
+  #email {
+    min-width: 512px;
+  }
+
+  #web {
+    min-width: 512px;
+  }
+
+  .about-small-card {
+    margin-top: 30px;
+  }
+  /*------------------------------------------------------- 
+  footer-section 
+  --------------------------------------------------------*/
+
+  .footer-brand {
+    transform: translate(-50%, 110%);
+  }
+
+  .footer-third-part::after {
+    width: 475px;
+  }
+}
+
+/*=====================================================================================
+   mediaQuries at 576px
+   ==================================================================================== */
+
+@media screen and (max-width: 576px) {
+  /*---------------------------------------------------------------
+     common-section 
+     ---------------------------------------------------------------*/
+  .col-24 {
+    width: 100%;
+  }
+
+  .tittle-one {
+    font-size: 32px;
+    text-align: center;
+  }
+  .sub-para {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  /*-------------------------------------------------------------------
+   header-section 
+   --------------------------------------------------------------------*/
+
+  .navbar-brand > a {
+    max-width: 100px;
+    transform: translate(-75%, 25%);
+  }
+
+  /*------------------------------------------------------ 
+  banner-section
+  ------------------------------------------------------ */
+
+  .banner-section {
+    min-height: 500px;
+  }
+
+  /*------------------------------------------------------------------
+   about-section 
+   ------------------------------------------------------------------*/
+
+  .about-section {
+    padding: 50px 0 100px;
+  }
+
+  .about-top::after {
+    width: 250px;
+  }
+
+  .about-top {
+    gap: 10px;
+  }
+
+  .about-para::after {
+    width: 60px;
+  }
+
+  .about-small-img {
+    max-width: 140px;
+    margin: 0 auto 20px;
+  }
+
+  /*--------------------------------------------------- 
+  form 
+  ------------------------------------------------------*/
+  form {
+    text-align: center;
+  }
+
+  .tittle-three {
+    font-size: 20px;
+  }
+
+  .tittle-four {
+    font-size: 16px;
+  }
+
+  #comment {
+    min-width: 240px;
+    min-height: 136px;
+  }
+
+  #name {
+    min-width: 240px;
+  }
+
+  #email {
+    min-width: 240px;
+  }
+
+  #web {
+    min-width: 240px;
+  }
+
+  .cmnt,
+  .nam,
+  .mail,
+  .wb {
+    font-size: 18px;
+  }
+
+  .button {
+    max-width: 180px;
+    padding: 8px 20px;
+  }
+
+  /*----------------------------------------------------- 
+  footer-section
+  --------------------------------------------------- */
+
+  .footer-brand {
+    top: -15%;
+    transform: translate(-50%, 90%);
+  }
+
+  .footer-item {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  .footer-para {
+    font-size: 16px;
+  }
+
+  .footer-third-part::after {
+    top: 120%;
+    width: 230px;
+  }
+
+  .social-item {
+    margin-right: 4px;
+  }
+  .footer-btm-para {
+    font-size: 18px;
+  }
+
+  .footer-btm-para > a {
+    font-size: 18px;
+  }
+}

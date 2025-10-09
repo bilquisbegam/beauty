@@ -1,0 +1,715 @@
+/*================================================================================================================================ 
+import-font 
+================================================================================================================================*/
+/*----------------------------------------------------------------------------------
+ playfair-display-fonts
+ --------------------------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+/*----------------------------------------------------------------------------------
+  poppin-font 
+  -----------------------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*================================================================================================================================ 
+global-css
+=============================================================================================================================== */
+
+/*===============================================================================================================================
+ common-section 
+ ===============================================================================================================================*/
+.container {
+  max-width: 1710px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/*-----------------------------------------------------
+ color
+ ------------------------------------------------------ */
+:root {
+  --primary-color: #a68268;
+  --secoendary-color: #f2f2f2;
+  --secoendary-color-two: #e8e7e6;
+  --tersiary-color: #f7f8fc;
+  --text-color: #312319;
+  --text-color-two: #f7eede;
+  --text-color-three: #7f604a;
+  --line-color: #dfcbbd;
+}
+
+/*----------------------------------------------------
+ tittle-one,tittle-two,tittle-three 
+ ----------------------------------------------------*/
+
+.tittle-one {
+  max-width: 546px;
+  margin: 0 auto;
+  font-size: 153.2px;
+  font-weight: 400;
+  line-height: 100%;
+  color: white;
+  font-family: "Playfair Display", serif !important;
+}
+
+.tittle-two {
+  font-size: 57px;
+  font-weight: 700;
+  line-height: 100%;
+  font-family: "Playfair Display", serif !important;
+  color: black;
+}
+
+.tittle-two > span {
+  font-size: 57px;
+  font-weight: 700;
+  line-height: 100%;
+  font-family: "Playfair Display", serif !important;
+  color: var(--primary-color);
+}
+/*============================================================================================================================== 
+header-section
+=============================================================================================================================== */
+header {
+  padding: 50px 0 10px;
+}
+
+.btn > img {
+  max-width: 30px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.navbar-brand > a > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.navbar-brand > a {
+  max-width: 171px;
+}
+.navbar-brand {
+  left: 50%;
+  transform: translate(-50%, 25%);
+}
+
+.nav-item {
+  margin-right: 42px;
+}
+
+.friends-btn > img {
+  max-width: 30px;
+  width: 100%;
+  object-fit: contain;
+  margin-left: 32px;
+}
+
+.cart-btn > img {
+  max-width: 30px;
+  width: 100%;
+  object-fit: contain;
+  margin-left: 32px;
+}
+
+.hrt-btn > img {
+  max-width: 30px;
+  width: 100%;
+  object-fit: contain;
+  margin-left: 32px;
+}
+
+/*==============================================================================================================================
+  banner-section
+  ============================================================================================================================= */
+.banner-section {
+  min-height: 572px;
+  background: url("../asset/images/Frame\ 212.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 62px;
+}
+
+.banner-cntn > p {
+  max-width: 252px;
+  margin: 20px auto;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 100%;
+  color: white;
+}
+
+/*============================================================================================================================ 
+  about-section 
+  =============================================================================================================================*/
+
+.about-section {
+  padding: 47px 0 125px;
+}
+.about-img > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.about-img {
+  max-width: 659px;
+}
+
+/*============================================================================================================================
+   about-btm-section 
+   ==============================================================================================================================*/
+.about-btm-section {
+  padding-bottom: 81px;
+}
+
+.about-btm-wrp {
+  max-width: 1680px;
+  max-height: 72px;
+  padding: 21px 36px;
+  border-radius: 60px;
+  background: var(--secoendary-color);
+}
+
+.about-icon {
+  margin-right: 56px;
+  color: var(--text-color);
+}
+
+.about-btm-btm > p {
+  margin-top: 66px;
+}
+
+/*============================================================================================================================ 
+  product-section 
+  ============================================================================================================================*/
+.product-section {
+  padding: 81px 0 78px;
+  background: var(--secoendary-color);
+  border-radius: 65px;
+  position: relative;
+}
+.product-wrp {
+  padding: 60px 52px 52px;
+}
+
+.product-section::before {
+  content: "";
+  height: 135px;
+  width: 135px;
+  background: url("../asset/images/lavender\ 2.png");
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/*-------------------------------------------------------------
+ product-top 
+ ------------------------------------------------------------*/
+.product-top {
+  position: relative;
+}
+
+.product-top::after {
+  content: "";
+  height: 1px;
+  width: 931px;
+  background: var(--line-color);
+  position: absolute;
+  bottom: 20%;
+  left: 26%;
+  transform: translatey(10%);
+}
+
+.product-para {
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 100%;
+  color: var(--text-color);
+  margin: 10px 0;
+}
+
+/*------------------------------------------------------------- 
+product-mid-card
+--------------------------------------------------------------- */
+.product-card {
+  max-width: 412px;
+  max-height: 600px;
+}
+.product-mid-card {
+  max-width: 407px;
+  height: 476px;
+  padding: 17px;
+  border-radius: 41px;
+  background: white;
+}
+.mid-para {
+  max-width: 87px;
+  max-height: 38px;
+  padding: 4px 11px 4px 9px;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 100%;
+  background: var(--secoendary-color-two);
+}
+.product-img-one > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.product-img-one {
+  max-width: 360px;
+  max-height: 363px;
+  margin: 0 auto;
+}
+
+.product-img-two > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.product-img-two {
+  max-width: 340px;
+  max-height: 343px;
+  margin: 0 auto;
+}
+
+.product-img-three > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.product-img-three {
+  max-width: 346px;
+  max-height: 354px;
+  margin: 0 auto;
+}
+
+.product-img-four > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.product-img-four {
+  max-width: 259px;
+  height: 239px;
+  margin: 0 auto;
+}
+.card-mid-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*----------------------------------------------------------- 
+product-btm
+----------------------------------------------------------- */
+.product-btm-card {
+  max-width: 412px;
+  min-height: 79px;
+
+  margin-top: 44px;
+}
+
+.btm-para {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%;
+  color: var(--text-color);
+}
+
+.btm-sub-para {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 100%;
+  color: var(--text-color-three);
+}
+
+.product-btm-card-img > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.product-btm-card-img {
+  max-width: 78px;
+}
+.btm-cntn {
+  max-width: 344px;
+  min-height: 76px;
+  border-radius: 50px;
+  padding: 12px 16px;
+  background: white;
+}
+
+/*============================================================================================================================= 
+  offer-section 
+  ==============================================================================================================================*/
+.offer-section {
+  padding: 162px 0 238px;
+}
+
+/*------------------------------------------------------------------------- 
+offer-card
+------------------------------------------------------------------------ */
+.offer-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* offer-card-img-one */
+
+.offer-card-img-one {
+  max-width: 106px;
+}
+
+.offer-card-img-one > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* offer-card-img-two */
+
+.offer-card-img-two {
+  max-width: 104px;
+}
+.offer-card-img-two > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* offer-card-img-three */
+
+.offer-card-img-three {
+  max-width: 119px;
+}
+.offer-card-img-three > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* offer-card-img-four */
+
+.offer-card-img-four {
+  max-width: 108px;
+}
+.offer-card-img-four > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* offer-card-para & sub-para */
+
+.offer-para {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 100%;
+  color: var(--text-color);
+  margin-bottom: 6px;
+}
+
+.offer-sub-para {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+  color: black;
+}
+/*===========================================================================================================================
+   footer-section
+   ============================================================================================================================ */
+.footer-section {
+  background: var(--secoendary-color);
+  border-top-left-radius: 65px;
+  border-top-right-radius: 65px;
+}
+
+.footer-wrp {
+  padding: 138px 53px 52px;
+  position: relative;
+}
+
+/*------------------------------- 
+footer-brand 
+--------------------------------*/
+
+.footer-brand > a > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.footer-brand > a {
+  max-width: 144px;
+}
+
+.footer-brand {
+  max-width: 144px;
+  position: absolute;
+  top: -15%;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+/*-------------------------------- 
+socaial-icon 
+--------------------------------*/
+
+.social-icon > ul {
+  max-width: 298px;
+  margin: 0 auto;
+}
+
+/******************************************************************************************************************************
+  mediaQuries 
+  ******************************************************************************************************************************/
+
+/*=====================================================================================
+   mediaQuries at 1400px
+   ==================================================================================== */
+
+@media screen and (max-width: 1400px) {
+  /*--------------------------------------------------------------------- 
+  header-section 
+  -------------------------------------------------------------------*/
+  .nav-item {
+    margin-right: 22px;
+  }
+}
+
+/*=====================================================================================
+   mediaQuries at 1200px
+   ==================================================================================== */
+
+@media screen and (max-width: 1200px) {
+  /*--------------------------------------------------------------- 
+comm0n-section
+------------------------------------------------------------------ */
+  .col-24 {
+    width: 33.33%;
+  }
+
+  /*------------------------------------------------------------------ 
+header-section 
+--------------------------------------------------------------------*/
+
+  .navbar-button {
+    margin-top: 20px;
+  }
+  .friends-btn > img {
+    margin-left: 0;
+  }
+
+  /*-------------------------------------------------------------- 
+    product-section 
+    ----------------------------------------------------------------*/
+
+  .product-mid-card {
+    margin-top: 40px;
+  }
+  .product-top {
+    text-align: center;
+  }
+
+  .product-top::after {
+    max-width: 500px;
+    bottom: -25%;
+  }
+}
+/*=====================================================================================
+   mediaQuries at 992px
+   ==================================================================================== */
+
+@media screen and (max-width: 992px) {
+  /*---------------------------------------------------- 
+  common-section
+  ----------------------------------------------------- */
+  .tittle-one {
+    font-size: 72px;
+  }
+
+  .about-btm-wrp {
+    max-height: 144px;
+  }
+
+  /*---------------------------------------------------- 
+  product-section 
+  -----------------------------------------------------*/
+
+  .product-top::after {
+    max-width: 400px;
+  }
+}
+
+/*=====================================================================================
+   mediaQuries at 768px
+   ==================================================================================== */
+
+@media screen and (max-width: 768px) {
+  /*---------------------------------------------------------------
+     common-section
+     -------------------------------------------------------------- */
+  .col-24 {
+    width: 50%;
+  }
+
+  .tittle-two {
+    font-size: 42px;
+  }
+
+  .tittle-two > span {
+    font-size: 42px;
+  }
+
+  /*----------------------------------------------------------------- 
+  product-section 
+  ------------------------------------------------------------------*/
+
+  .product-section {
+    padding-top: 75px;
+  }
+
+  .product-top::after {
+    max-width: 250px;
+    bottom: 2%;
+  }
+
+  .product-card {
+    margin-bottom: 20px;
+  }
+  .product-mid-card {
+    max-width: 300px;
+  }
+  .product-img-one {
+    max-width: 250px;
+    max-height: fit-content;
+  }
+
+  .product-img-two {
+    max-width: 250px;
+    max-height: fit-content;
+  }
+
+  .product-img-three {
+    max-width: 250px;
+    max-height: fit-content;
+  }
+
+  .product-img-four {
+    max-width: 200px;
+    max-height: fit-content;
+  }
+
+  .product-mid-card {
+    max-height: 300px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+  }
+
+  /*------------------------------------------------------- 
+  footer-section 
+  --------------------------------------------------------*/
+
+  .footer-brand {
+    transform: translate(-50%, 50%);
+  }
+}
+
+/*=====================================================================================
+   mediaQuries at 576px
+   ==================================================================================== */
+
+@media screen and (max-width: 576px) {
+  /*---------------------------------------------------------------
+     common-section 
+     ---------------------------------------------------------------*/
+  .col-24 {
+    width: 100%;
+  }
+
+  .tittle-one {
+    font-size: 36px;
+  }
+
+  .tittle-two {
+    font-size: 32px;
+  }
+
+  .tittle-two > span {
+    font-size: 32px;
+  }
+
+  /*---------------------------------------------------- 
+  header-section 
+  ------------------------------------------------------*/
+
+  .navbar-brand > a {
+    max-width: 100px;
+    transform: translate(-75%, 25%);
+  }
+
+  .about-btm-wrp {
+    max-height: 216px;
+  }
+
+  /*---------------------------------------------------------------
+   product-section
+   --------------------------------------------------------------- */
+  .product-section {
+    padding-top: 40px;
+  }
+
+  .product-top::after {
+    max-width: 100px;
+    bottom: -15%;
+  }
+
+  .product-para {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .product-card {
+    margin-bottom: 40px;
+  }
+
+  .mid-para {
+    font-size: 16px;
+  }
+
+  .product-mid-card {
+    max-width: 250px;
+  }
+
+  .product-btm-card {
+    max-height: fit-content;
+    margin-top: 20px;
+  }
+
+  .btm-para {
+    font-size: 14px;
+  }
+
+  .btm-sub-para {
+    font-size: 12px;
+  }
+
+  /*----------------------------------------------------- 
+  footer-section
+  --------------------------------------------------- */
+
+  .footer-brand {
+    transform: translate(-50%, 75%);
+  }
+}
