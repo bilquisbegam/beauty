@@ -14,6 +14,35 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+
+    <!--=========================================================================================
+     link-for-slick-css 
+     ============================================================================================-->
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <!--=================================================================================================================
+     link-for-swiper-css
+     ================================================================================================================= -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <!--============================================================================================================
+     AOS Animation Library 
+     ==============================================================================================================-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!--======================================================================================================================= 
     link-for-custom-css 
     =========================================================================================================================-->
@@ -31,16 +60,20 @@
             <!------------------------------------------------------------------------
      button 
      --------------------------------------------------------------------------->
-
-            <button class="btn" type="submit">
-              <img src="./asset/images/Search (5).png" alt="" />Search...
-            </button>
+            <form action="">
+              <button class="nav-search" type="submit">
+                <img src="./asset/images/Search (5).png" alt="" />Search...
+              </button>
+              <input type="text" name="search" id="search" placeholder="" />
+            </form>
 
             <!--------------------------------------------------------------------------- 
     navbar-brand 
     ---------------------------------------------------------------------------->
             <div class="navbar-brand position-absolute">
-              <a href=""><img src="./asset/images/Frame 179.png" alt="" /></a>
+              <a href="about.html"
+                ><img src="./asset/images/Frame 179.png" alt=""
+              /></a>
             </div>
 
             <!--------------------------------------------------------------------------- 
@@ -62,8 +95,9 @@
     navbar-collapse 
     ------------------------------------------------------------------------------->
             <div class="offcanvas offcanvas-end" id="navbarSupportedContent">
-              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <ul class="navbar-nav mb-2 mb-lg-0">
                 <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasLabel">Offcanvas</h5>
                   <button
                     type="button"
                     class="btn-close"
@@ -82,9 +116,9 @@
                 <!--------------------------------
                  nav-item 
                  -------------------------------->
-                <li class="nav-item dropdown">
+                <li class="nav-item nav-left-left dropdown">
                   <a
-                    class="nav-link dropdown-toggle"
+                    class="nav-link nav-link-a dropdown-toggle"
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -106,7 +140,7 @@
                 <!----------------------------------- 
                 nav-item 
                 ------------------------------------>
-                <li class="nav-item unic dropdown">
+                <li class="nav-item nav-right-right dropdown">
                   <a
                     class="nav-link dropdown-toggle"
                     href="#"
@@ -156,7 +190,7 @@
                 --------------------------------->
                 <li class="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle"
+                    class="nav-link nav-link-b dropdown-toggle"
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -225,25 +259,33 @@
      =======================================================================================================================-->
     <section class="banner-section">
       <div class="container">
-        <!---------------------------------------------------
-         banner-top 
-         ---------------------------------------------------->
-        <div class="banner-top">
+        <div
+          class="banner-wrpr d-flex justify-content-center align-items-center mx-auto"
+        >
           <div class="row">
             <div class="col-md-12 col-lg-6"></div>
             <div class="col-xl-6">
-              <h1 class="tittle-one"><span>Glow</span> Naturally</h1>
-              <p class="sub-para">
+              <h1
+                data-aos="fade-down"
+                data-aos-duration="1200"
+                class="tittle-one"
+              >
+                <span>Glow</span> Naturally
+              </h1>
+              <p data-aos="fade-left" data-aos-duration="1200" class="sub-para">
                 Luxury Skincare & Makeup inspired by persian Herbal Remedies
                 Shop Now
               </p>
-              <a class="primary-btn text-decoration-none" href="">Shop Now</a>
+              <a
+                data-aos="fade-up-left"
+                data-aos-duration="1200"
+                class="primary-btn text-decoration-none"
+                href=""
+                >Shop Now</a
+              >
             </div>
           </div>
         </div>
-        <!------------------------------------------------------------
-       banner-btm 
-       --------------------------------------------------------------->
       </div>
     </section>
     <!--=========================================================================================================================
@@ -251,63 +293,281 @@
      ==========================================================================================================================-->
     <section class="banner-btm-section">
       <div class="container">
-        <div class="row">
-          <!------------------------------------
-             banner-card-one
-             ------------------------------------>
-          <div class="col-24">
-            <div class="banner-card">
-              <div class="banner-sign">
-                <img src="./asset/images/star (3) 1.png" alt="" />
+        <!-- <div class="row"> -->
+        <!-- Slider main container -->
+        <div class="swiper5">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="banner-card mx-auto">
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  class="banner-sign"
+                >
+                  <img src="./asset/images/star (3) 1.png" alt="" />
+                </div>
+                <p
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  class="banner-btm-para"
+                >
+                  Hair Nourishing Oil
+                </p>
               </div>
-              <p>Hair Nourishing Oil</p>
             </div>
-          </div>
-          <!------------------------------------
-             banner-card-two 
-             -------------------------------------->
-          <div class="col-24">
-            <div class="banner-card">
-              <div class="banner-sign">
-                <img src="./asset/images/star (3) 1.png" alt="" />
+            <div class="swiper-slide">
+              <div class="banner-card mx-auto">
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  class="banner-sign"
+                >
+                  <img src="./asset/images/star (3) 1.png" alt="" />
+                </div>
+                <p
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  class="banner-btm-para"
+                >
+                  Vitamin A Face Cream
+                </p>
               </div>
-              <p>Vitamin A Face Cream</p>
             </div>
-          </div>
-          <!--------------------------------------
-             banner-card-three 
-             -------------------------------------->
-          <div class="col-24">
-            <div class="banner-card">
-              <div class="banner-sign">
-                <img src="./asset/images/star (3) 1.png" alt="" />
+            <div class="swiper-slide">
+              <div class="banner-card mx-auto">
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  class="banner-sign"
+                >
+                  <img src="./asset/images/star (3) 1.png" alt="" />
+                </div>
+                <p
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  class="banner-btm-para"
+                >
+                  Luxury Face Care
+                </p>
               </div>
-              <p>Luxury Face Care</p>
             </div>
-          </div>
-          <!--------------------------------------
-             banner-card-four 
-             -------------------------------------->
-          <div class="col-24">
-            <div class="banner-card">
-              <div class="banner-sign">
-                <img src="./asset/images/star (3) 1.png" alt="" />
+            <div class="swiper-slide">
+              <div class="banner-card mx-auto">
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  class="banner-sign"
+                >
+                  <img src="./asset/images/star (3) 1.png" alt="" />
+                </div>
+                <p
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  class="banner-btm-para"
+                >
+                  Cruelty-Free Beauty
+                </p>
               </div>
-              <p>Cruelty-Free Beauty</p>
             </div>
-          </div>
-          <!-------------------------------------- 
-            banner-card-five
-            -------------------------------------- -->
-          <div class="col-24">
-            <div class="banner-card">
-              <div class="banner-sign">
-                <img src="./asset/images/star (3) 1.png" alt="" />
+            <div class="swiper-slide">
+              <div class="banner-card mx-auto">
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  class="banner-sign"
+                >
+                  <img src="./asset/images/star (3) 1.png" alt="" />
+                </div>
+                <p
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  class="banner-btm-para"
+                >
+                  Botanical Hair Shampoo
+                </p>
               </div>
-              <p>Botanical Hair Shampoo</p>
+            </div>
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="banner-card mx-auto">
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  class="banner-sign"
+                >
+                  <img src="./asset/images/star (3) 1.png" alt="" />
+                </div>
+                <p
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  class="banner-btm-para"
+                >
+                  Hair Nourishing Oil
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="banner-card mx-auto">
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  class="banner-sign"
+                >
+                  <img src="./asset/images/star (3) 1.png" alt="" />
+                </div>
+                <p
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  class="banner-btm-para"
+                >
+                  Vitamin A Face Cream
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="banner-card mx-auto">
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  class="banner-sign"
+                >
+                  <img src="./asset/images/star (3) 1.png" alt="" />
+                </div>
+                <p
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  class="banner-btm-para"
+                >
+                  Luxury Face Care
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="banner-card mx-auto">
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  class="banner-sign"
+                >
+                  <img src="./asset/images/star (3) 1.png" alt="" />
+                </div>
+                <p
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  class="banner-btm-para"
+                >
+                  Cruelty-Free Beauty
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="banner-card mx-auto">
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  class="banner-sign"
+                >
+                  <img src="./asset/images/star (3) 1.png" alt="" />
+                </div>
+                <p
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  class="banner-btm-para"
+                >
+                  Botanical Hair Shampoo
+                </p>
+              </div>
             </div>
           </div>
         </div>
+        <!------------------------------------
+             banner-card-one
+             ------------------------------------>
+        <!-- <div class="col-24">
+            <div class="banner-card">
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                class="banner-sign"
+              >
+                <img src="./asset/images/star (3) 1.png" alt="" />
+              </div>
+              <p data-aos="fade-left" data-aos-duration="1000">
+                Hair Nourishing Oil
+              </p>
+            </div>
+          </div> -->
+        <!------------------------------------
+             banner-card-two 
+             -------------------------------------->
+        <!-- <div class="col-24">
+            <div class="banner-card">
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                class="banner-sign"
+              >
+                <img src="./asset/images/star (3) 1.png" alt="" />
+              </div>
+              <p data-aos="fade-left" data-aos-duration="1000">
+                Vitamin A Face Cream
+              </p>
+            </div>
+          </div> -->
+        <!--------------------------------------
+             banner-card-three 
+             -------------------------------------->
+        <!-- <div class="col-24">
+            <div class="banner-card">
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                class="banner-sign"
+              >
+                <img src="./asset/images/star (3) 1.png" alt="" />
+              </div>
+              <p data-aos="fade-left" data-aos-duration="1000">
+                Luxury Face Care
+              </p>
+            </div>
+          </div> -->
+        <!--------------------------------------
+             banner-card-four 
+             -------------------------------------->
+        <!-- <div class="col-24">
+            <div class="banner-card">
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                class="banner-sign"
+              >
+                <img src="./asset/images/star (3) 1.png" alt="" />
+              </div>
+              <p data-aos="fade-left" data-aos-duration="1000">
+                Cruelty-Free Beauty
+              </p>
+            </div>
+          </div> -->
+        <!-------------------------------------- 
+            banner-card-five
+            -------------------------------------- -->
+        <!-- <div class="col-24">
+            <div class="banner-card">
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                class="banner-sign"
+              >
+                <img src="./asset/images/star (3) 1.png" alt="" />
+              </div>
+              <p data-aos="fade-left" data-aos-duration="1000">
+                Botanical Hair Shampoo
+              </p>
+            </div>
+          </div> -->
+        <!-- </div> -->
       </div>
     </section>
 
@@ -317,11 +577,21 @@
     <section class="about-section">
       <div class="container-sm">
         <div class="about-cntn">
-          <h2 class="tittle-two about-hed">About <span>Us</span></h2>
-          <p class="about-sub-para">
+          <h2
+            data-aos="fade-down"
+            data-aos-duration="1200"
+            class="tittle-two about-hed"
+          >
+            About <span>Us</span>
+          </h2>
+          <p
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            class="about-sub-para"
+          >
             Inspired by Persian Herbal Remedies, Crafted for You
           </p>
-          <p class="about-para">
+          <p data-aos="fade-up" data-aos-duration="1000" class="about-para">
             We are a young and passionate team from Denmark bringing you premium
             skincare and haircare products, inspired by ancient persian herbal
             traditions. At YAZ we believe beauty should feel natural, luxurious,
@@ -342,9 +612,15 @@
         <!----------------------------------------------------------------
          discover-top 
          ----------------------------------------------------------------->
-        <div class="discover-top">
-          <h2 class="tittle-two">Discover Our <span>Story</span></h2>
-          <p class="discover-para">
+        <div class="discover-top text-center">
+          <h2 data-aos="fade-down" data-aos-duration="1200" class="tittle-two">
+            Discover Our <span>Story</span>
+          </h2>
+          <p
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            class="discover-para mx-auto"
+          >
             “I believe all women are pretty without makeup- but with the right
             makeup can be pretty powerful."
           </p>
@@ -359,7 +635,13 @@
             ---------------------------------------------->
             <div class="col-12 col-lg-4">
               <div class="discover-card-one mx-auto">
-                <p class="discover-card-para">What we doing?</p>
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1200"
+                  class="discover-img-one mx-auto"
+                >
+                  <img src="./asset/images/Frame 75 (3).png" alt="" />
+                </div>
               </div>
             </div>
             <!---------------------------------------------- 
@@ -367,7 +649,13 @@
             ----------------------------------------------->
             <div class="col-12 col-lg-4">
               <div class="discover-card-two mx-auto">
-                <p class="discover-card-para">Our Mission & Vision</p>
+                <div
+                  data-aos="fade-down"
+                  data-aos-duration="1200"
+                  class="discover-img-two mx-auto"
+                >
+                  <img src="./asset/images/Frame 73.png" alt="" />
+                </div>
               </div>
             </div>
             <!----------------------------------------------
@@ -375,7 +663,13 @@
              ---------------------------------------------->
             <div class="col-12 col-lg-4">
               <div class="discover-card-three mx-auto">
-                <p class="discover-card-para">History of Us</p>
+                <div
+                  data-aos="fade-left"
+                  data-aos-duration="1200"
+                  class="discover-img-three mx-auto"
+                >
+                  <img src="./asset/images/Frame 74 (1).png" alt="" />
+                </div>
               </div>
             </div>
           </div>
@@ -394,124 +688,132 @@
             product-top 
             ---------------------------------------------------------->
           <div class="product-top">
-            <h2 class="tittle-two">Our <span>Products</span></h2>
-            <p class="product-para">Our Favourities for You</p>
+            <h2
+              data-aos="fade-down"
+              data-aos-duration="1200"
+              class="tittle-two"
+            >
+              Our <span>Products</span>
+            </h2>
+            <p
+              data-aos="fade-left"
+              data-aos-duration="1200"
+              class="product-para"
+            >
+              Our Favourities for You
+            </p>
           </div>
-          <!----------------------------------------------------------- 
-          product-mid 
-          ------------------------------------------------------------>
-          <div class="product-mid">
-            <div class="row">
-              <!--------------------------------------
-               mid-card-one 
-               ------------------------------------->
-              <div class="col-sm-12 col-md-6 col-xxl-3">
-                <div class="product-card mx-auto">
-                  <div class="product-mid-card">
-                    <div class="mid-top d-flex justify-content-between">
-                      <p class="mid-para">200 ml</p>
-                      <div class="card-mid-img">
-                        <img src="./asset/images/Heart.png" alt="" />
-                      </div>
+          <div class="journal-navigation">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <!------------------------------------------------------------- 
+          product-btm-section 
+          ---------------------------------------------------------------->
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper product-wrapper">
+              <!-- Slides -->
+              <!--------------------------- 
+    slide-one 
+    ------------------------------>
+              <div class="swiper-slide">
+                <div
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                  class="product-card"
+                >
+                  <div
+                    class="product-card-top d-flex justify-content-between align-items-center"
+                  >
+                    <p class="product-sub">200 ml</p>
+                    <div class="product-sign">
+                      <img src="./asset/images/Heart.png" alt="" />
                     </div>
+                  </div>
+                  <div class="product-card-btm">
                     <div class="product-img-one">
                       <img
-                        src="./asset/images/YAZ Vitamin A - Face 2.png"
+                        src="./asset/images/YAZ HAIR SHAMPOO (20 1 (1).png"
                         alt=""
                       />
                     </div>
                   </div>
-                  <div
-                    class="product-btm-card d-flex justify-content-center align-items-center"
-                  >
-                    <div class="btm-cntn">
-                      <p class="btm-para">YAZ Vitamin A - Face Mask</p>
-                      <span class="btm-sub-para">169.00 Kr.</span>
-                    </div>
-                    <div class="product-btm-card-img">
-                      <img src="./asset/images/Frame 38.png" alt="" />
-                    </div>
-                  </div>
                 </div>
               </div>
-              <!----------------------------------
-                 mid-card-two
-                 ----------------------------------->
-              <div class="col-sm-12 col-md-6 col-xxl-3">
-                <div class="product-card mx-auto">
-                  <div class="product-mid-card">
-                    <div class="mid-top d-flex justify-content-between">
-                      <p class="mid-para">200 ml</p>
-                      <div class="card-mid-img">
-                        <img src="./asset/images/Heart.png" alt="" />
-                      </div>
+              <!---------------------------- 
+    slides-two 
+    ----------------------------->
+              <div
+                data-aos="fade-down"
+                data-aos-duration="1000"
+                class="swiper-slide"
+              >
+                <div class="product-card">
+                  <div
+                    class="product-card-top d-flex justify-content-between align-items-center"
+                  >
+                    <p class="product-sub">200 ml</p>
+                    <div class="product-sign">
+                      <img src="./asset/images/Heart.png" alt="" />
                     </div>
+                  </div>
+                  <div class="product-card-btm">
                     <div class="product-img-two">
                       <img
-                        src="./asset/images/YAZ Vitamin A - Face 2.png"
+                        src="./asset/images/YAZ Vitamin A - Face 2 (1).png"
                         alt=""
                       />
                     </div>
                   </div>
-                  <div
-                    class="product-btm-card mx-auto d-flex justify-content-center align-items-center"
-                  >
-                    <div class="btm-cntn">
-                      <p class="btm-para">YAZ Vitamin A - Face Mask</p>
-                      <span class="btm-sub-para">169.00 Kr.</span>
-                    </div>
-                    <div class="product-btm-card-img">
-                      <img src="./asset/images/Frame 38.png" alt="" />
-                    </div>
-                  </div>
                 </div>
               </div>
-
-              <!--------------------------------------------------
-           mid-card-three 
-           -------------------------------------------------->
-              <div class="col-sm-12 col-md-6 col-xxl-3">
-                <div class="product-card mx-auto">
-                  <div class="product-mid-card">
-                    <div class="mid-top d-flex justify-content-between">
-                      <p class="mid-para">200 ml</p>
-                      <div class="card-mid-img">
-                        <img src="./asset/images/Heart.png" alt="" />
-                      </div>
+              <!------------------------------
+     slides-three 
+     ------------------------------>
+              <div
+                data-aos="fade-down"
+                data-aos-duration="1000"
+                class="swiper-slide"
+              >
+                <div class="product-card">
+                  <div
+                    class="product-card-top d-flex justify-content-between align-items-center"
+                  >
+                    <p class="product-sub">100 ml</p>
+                    <div class="product-sign">
+                      <img src="./asset/images/Heart.png" alt="" />
                     </div>
+                  </div>
+                  <div class="product-card-btm">
                     <div class="product-img-three">
                       <img
-                        src="./asset/images/YAZ Vitamin A - Face 1.png"
+                        src="./asset/images/YAZ Vitamin A - Face 1 (1).png"
                         alt=""
                       />
                     </div>
                   </div>
-                  <div
-                    class="product-btm-card mx-auto d-flex justify-content-center align-items-center"
-                  >
-                    <div class="btm-cntn">
-                      <p class="btm-para">YAZ Vitamin A - Face Mask</p>
-                      <span class="btm-sub-para">169.00 Kr.</span>
-                    </div>
-                    <div class="product-btm-card-img">
-                      <img src="./asset/images/Frame 38.png" alt="" />
-                    </div>
-                  </div>
                 </div>
               </div>
-
-              <!------------------------------------------------------- 
-          mid-card-four 
-          ------------------------------------------------------->
-              <div class="col-sm-12 col-md-6 col-xxl-3">
-                <div class="product-card mx-auto">
-                  <div class="product-mid-card">
-                    <div class="mid-top d-flex justify-content-between">
-                      <p class="mid-para">200 ml</p>
-                      <div class="card-mid-img">
-                        <img src="./asset/images/Heart.png" alt="" />
-                      </div>
+              <!------------------------------ 
+    slides-four 
+    -------------------------------->
+              <div
+                data-aos="fade-down"
+                data-aos-duration="1000"
+                class="swiper-slide"
+              >
+                <div class="product-card">
+                  <div
+                    class="product-card-top d-flex justify-content-between align-items-center"
+                  >
+                    <p class="product-sub">20 ml</p>
+                    <div class="product-sign">
+                      <img src="./asset/images/Heart.png" alt="" />
                     </div>
+                  </div>
+                  <div class="product-card-btm">
                     <div class="product-img-four">
                       <img
                         src="./asset/images/YAZ_PERSIAN_HERBS_Øj_2__3_-removebg-preview.png"
@@ -519,15 +821,287 @@
                       />
                     </div>
                   </div>
+                </div>
+              </div>
+              <!------------------------------ 
+        slides-five 
+        ------------------------------->
+              <div
+                data-aos="fade-down"
+                data-aos-duration="1000"
+                class="swiper-slide"
+              >
+                <div class="product-card">
                   <div
-                    class="product-btm-card mx-auto d-flex justify-content-center align-items-center"
+                    class="product-card-top d-flex justify-content-between align-items-center"
                   >
-                    <div class="btm-cntn">
-                      <p class="btm-para">YAZ Vitamin A - Face Mask</p>
-                      <span class="btm-sub-para">169.00 Kr.</span>
+                    <p class="product-sub">200 ml</p>
+                    <div class="product-sign">
+                      <img src="./asset/images/Heart.png" alt="" />
                     </div>
-                    <div class="product-btm-card-img">
-                      <img src="./asset/images/Frame 38.png" alt="" />
+                  </div>
+                  <div class="product-card-btm">
+                    <div class="product-img-one">
+                      <img
+                        src="./asset/images/YAZ HAIR SHAMPOO (20 1 (1).png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--------------------------------
+     slides-six 
+     ------------------------------------>
+              <div
+                data-aos="fade-down"
+                data-aos-duration="1000"
+                class="swiper-slide"
+              >
+                <div class="product-card">
+                  <div
+                    class="product-card-top d-flex justify-content-between align-items-center"
+                  >
+                    <p class="product-sub">200 ml</p>
+                    <div class="product-sign">
+                      <img src="./asset/images/Heart.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="product-card-btm">
+                    <div class="product-img-two">
+                      <img
+                        src="./asset/images/YAZ Vitamin A - Face 2 (1).png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-------------------------------
+     slides-seven 
+     -------------------------------->
+              <div
+                data-aos="fade-down"
+                data-aos-duration="1000"
+                class="swiper-slide"
+              >
+                <div class="product-card">
+                  <div
+                    class="product-card-top d-flex justify-content-between align-items-center"
+                  >
+                    <p class="product-sub">100 ml</p>
+                    <div class="product-sign">
+                      <img src="./asset/images/Heart.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="product-card-btm">
+                    <div class="product-img-three">
+                      <img
+                        src="./asset/images/YAZ Vitamin A - Face 1 (1).png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--------------------------------
+         slides-eight 
+         ----------------------------------->
+              <div
+                data-aos="fade-down"
+                data-aos-duration="1000"
+                class="swiper-slide"
+              >
+                <div class="product-card">
+                  <div
+                    class="product-card-top d-flex justify-content-between align-items-center"
+                  >
+                    <p class="product-sub">20 ml</p>
+                    <div class="product-sign">
+                      <img src="./asset/images/Heart.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="product-card-btm">
+                    <div class="product-img-four">
+                      <img
+                        src="./asset/images/YAZ_PERSIAN_HERBS_Øj_2__3_-removebg-preview.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+          <div class="swiper2">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper product-btm-wrapper">
+              <!-- Slides -->
+              <!--------------------------- 
+    slide-one 
+    ------------------------------>
+              <div class="swiper-slide">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  class="product-btm-card d-flex align-items-center"
+                >
+                  <div class="product-sm-card-one">
+                    <div class="product-btm-hed">YAZ HAIR SHAMPOO</div>
+                    <p class="product-btm-para">169.00 Kr.</p>
+                  </div>
+                  <div class="product-icon">
+                    <div class="icon-img">
+                      <img src="./asset/images/Frame 40.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!---------------------------- 
+    slides-two 
+    ----------------------------->
+              <div class="swiper-slide">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  class="product-btm-card d-flex align-items-center"
+                >
+                  <div class="product-sm-card-two">
+                    <div class="product-btm-hed">YAZ Vitamin A - Face Mask</div>
+                    <p class="product-btm-para">169.00 Kr.</p>
+                  </div>
+                  <div class="product-icon">
+                    <div class="icon-img">
+                      <img src="./asset/images/Frame 40.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!------------------------------
+     slides-three 
+     ------------------------------>
+              <div class="swiper-slide">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  class="product-btm-card d-flex align-items-center"
+                >
+                  <div class="product-sm-card-three">
+                    <div class="product-btm-hed">
+                      YAZ Vitamin A - Face Cream
+                    </div>
+                    <p class="product-btm-para">169.00 Kr.</p>
+                  </div>
+                  <div class="product-icon">
+                    <div class="icon-img">
+                      <img src="./asset/images/Frame 40.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!------------------------------ 
+    slides-four 
+    -------------------------------->
+              <div class="swiper-slide">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  class="product-btm-card d-flex align-items-center"
+                >
+                  <div class="product-sm-card-four">
+                    <div class="product-btm-hed">
+                      YAZ Persian Herbs - Eye Cream
+                    </div>
+                    <p class="product-btm-para">169.00 Kr</p>
+                  </div>
+                  <div class="product-icon">
+                    <div class="icon-img">
+                      <img src="./asset/images/Frame 40.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!------------------------------ 
+        slides-five 
+        ------------------------------->
+              <div class="swiper-slide">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  class="product-btm-card d-flex align-items-center"
+                >
+                  <div class="product-sm-card-one">
+                    <div class="product-btm-hed">YAZ HAIR SHAMPOO</div>
+                    <p class="product-btm-para">169.00 Kr.</p>
+                  </div>
+                  <div class="product-icon">
+                    <div class="icon-img">
+                      <img src="./asset/images/Frame 40.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--------------------------------
+     slides-six 
+     ------------------------------------>
+              <div class="swiper-slide">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  class="product-btm-card d-flex align-items-center"
+                >
+                  <div class="product-sm-card-two">
+                    <div class="product-btm-hed">YAZ Vitamin A - Face Mask</div>
+                    <p class="product-btm-para">169.00 Kr.</p>
+                  </div>
+                  <div class="product-icon">
+                    <div class="icon-img">
+                      <img src="./asset/images/Frame 40.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-------------------------------
+     slides-seven 
+     -------------------------------->
+              <div class="swiper-slide">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  class="product-btm-card d-flex align-items-center"
+                >
+                  <div class="product-sm-card-three">
+                    <div class="product-btm-hed">
+                      YAZ Vitamin A - Face Cream
+                    </div>
+                    <p class="product-btm-para">169.00 Kr.</p>
+                  </div>
+                  <div class="product-icon">
+                    <div class="icon-img">
+                      <img src="./asset/images/Frame 40.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--------------------------------
+         slides-eight 
+         ----------------------------------->
+              <div class="swiper-slide">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  class="product-btm-card d-flex align-items-center"
+                >
+                  <div class="product-sm-card-four">
+                    <div class="product-btm-hed">
+                      YAZ Persian Herbs - Eye Cream
+                    </div>
+                    <p class="product-btm-para">169.00 Kr.</p>
+                  </div>
+                  <div class="product-icon">
+                    <div class="icon-img">
+                      <img src="./asset/images/Frame 40.png" alt="" />
                     </div>
                   </div>
                 </div>
@@ -549,10 +1123,23 @@
              ------------------------------------------------------>
           <div class="col-sm-12 col-lg-6">
             <div class="choose-cntn-top">
-              <h2 class="tittle-two choose-hed">
-                Why Choose <span>LuxeShop</span>
+              <h2
+                data-aos="fade-down"
+                data-aos-duration="1200"
+                class="tittle-two choose-hed"
+              >
+                Why Choose
+                <span data-aos="fade-down" data-aos-duration="1200"
+                  >LuxeShop</span
+                >
               </h2>
-              <p class="choose-para">Discover what make us different</p>
+              <p
+                data-aos="fade-up"
+                data-aos-duration="1200"
+                class="choose-para"
+              >
+                Discover what make us different
+              </p>
             </div>
             <div class="choose-cntn-btm">
               <!----------------------------------------------------------------- 
@@ -561,12 +1148,25 @@
               <div
                 class="choose-cntn d-flex justify-content-center align-items-center"
               >
-                <div class="sign-img">
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  class="sign-img"
+                >
                   <img src="./asset/images/Frame 83.png" alt="" />
                 </div>
                 <div class="sign-cntn">
-                  <p class="sign-para">Premium Natural Ingredients</p>
-                  <span class="sign-sub-para"
+                  <p
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                    class="sign-para"
+                  >
+                    Premium Natural Ingredients
+                  </p>
+                  <span
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                    class="sign-sub-para"
                     >We carefully select the finest herbal and natural
                     ingredients inspired by ancient persian remedies for safe,
                     effective, and luxurious care.</span
@@ -579,12 +1179,25 @@
               <div
                 class="choose-cntn d-flex justify-content-center align-items-center"
               >
-                <div class="sign-img">
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  class="sign-img"
+                >
                   <img src="./asset/images/Frame 85.png" alt="" />
                 </div>
                 <div class="sign-cntn">
-                  <p class="sign-para">Vegan & Cruelty-Free</p>
-                  <span class="sign-sub-para"
+                  <p
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                    class="sign-para"
+                  >
+                    Vegan & Cruelty-Free
+                  </p>
+                  <span
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                    class="sign-sub-para"
                     >All our products are 100% vegan and cruelty-free kind to
                     your skin animals, and the planet</span
                   >
@@ -596,12 +1209,25 @@
               <div
                 class="choose-cntn d-flex justify-content-center align-items-center"
               >
-                <div class="sign-img">
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  class="sign-img"
+                >
                   <img src="./asset/images/Frame 84.png" alt="" />
                 </div>
                 <div class="sign-cntn">
-                  <p class="sign-para">Passion-Driven Creativity</p>
-                  <span class="sign-sub-para"
+                  <p
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                    class="sign-para"
+                  >
+                    Passion-Driven Creativity
+                  </p>
+                  <span
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                    class="sign-sub-para"
                     >Our young and energetic team pours love, creativity, and
                     attention into every product and customer experience.</span
                   >
@@ -615,10 +1241,18 @@
            -------------------------------------------------------->
           <div class="col-sm-12 col-lg-6">
             <div class="choose-img mx-auto">
-              <figure class="choose-img-one">
+              <figure
+                data-aos="fade-down"
+                data-aos-duration="1200"
+                class="choose-img-one"
+              >
                 <img src="./asset/images/Mask group (100).png" alt="" />
               </figure>
-              <div class="choose-img-two">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="1200"
+                class="choose-img-two"
+              >
                 <img
                   src="./asset/images/Mask group - 2025-09-26T235022.163.png"
                   alt=""
@@ -633,14 +1267,18 @@
     <!--======================================================================================================================== 
         newsletter-section 
         =======================================================================================================================-->
-    <section class="newsletter-section">
+    <section class="newsletter-section d-flex justify-content-center align-items-center">
       <div class="container">
-        <div class="news-row row">
+        <div class="news-row row ">
           <!--------------------------------------------------------
                      newsletter-img 
                      --------------------------------------------------------->
-          <div class="col-lg-6">
-            <div class="newsletter-img">
+          <div class="col-12 col-xl-7">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1200"
+              class="newsletter-img"
+            >
               <img
                 src="./asset/images/look-studio-KUjVATctN1I-unsplash-removebg-preview 1.png"
                 alt=""
@@ -651,12 +1289,22 @@
           <!--------------------------------------------------------- 
                     newsletter-cntn 
                     ----------------------------------------------------------->
-          <div class="col-lg-6">
+          <div class="col-12 col-xl-5">
             <div class="newsletter-cntn mx-auto">
               <span class="news-sub">Join The</span>
-              <h2 class="news-hed">Newsletter!</h2>
+              <h2
+                data-aos="fade-left"
+                data-aos-duration="1200"
+                class="news-hed"
+              >
+                Newsletter!
+              </h2>
               <div class="newsletter-btn">
-                <a class="news-btn text-decoration-none" href=""
+                <a
+                  data-aos="fade-left"
+                  data-aos-duration="1200"
+                  class="news-btn text-decoration-none"
+                  href=""
                   >Your E-Mail Address<span><img src="" alt="" /></span
                 ></a>
               </div>
@@ -675,15 +1323,146 @@
         customer-top 
         -------------------------------------------------------->
         <div class="customer-top">
-          <h2 class="tittle-two cust-hed">
+          <h2
+            data-aos="fade-down"
+            data-aos-duration="1200"
+            class="tittle-two cust-hed"
+          >
             What Our <span>Customers Say</span>
           </h2>
-          <p class="cust-para">Real stories from our happy customers.</p>
+          <p data-aos="fade-left" data-aos-duration="1200" class="cust-para">
+            Real stories from our happy customers.
+          </p>
         </div>
+
         <!------------------------------------------------------- 
         customer-btm 
         -------------------------------------------------------->
-        <div class="customer-btm"></div>
+        <div class="swiper testimonialSwiper">
+          <div class="swiper-wrapper">
+            <!-- slide-one -->
+            <div class="swiper-slide">
+              <div class="small-card">
+                <div class="test-img">
+                  <img src="./asset/images/Rectangle 12 (1).png" alt="" />
+                </div>
+                <h4>Sara D.</h4>
+              </div>
+            </div>
+
+            <!-- slide-two -->
+
+            <div class="swiper-slide">
+              <div class="small-card">
+                <div class="test-img">
+                  <img src="./asset/images/Rectangle 10 (2).png" alt="" />
+                </div>
+                <h4>Aylin R.</h4>
+              </div>
+            </div>
+
+            <!-- slide-three -->
+
+            <div class="swiper-slide">
+              <div class="main-card">
+                <div class="test-img">
+                  <img src="./asset/images/Rectangle 9 (1).png" alt="" />
+                </div>
+                <h4>Emily S.</h4>
+                <p class="text-center">
+                  Yaz Skincare products completely transformed my skin. The
+                  Passion Herbs Face Oil is my absolute favorite – it feels
+                  luxurious and makes my skin glow naturally!
+                </p>
+                <span>2 days ago</span>
+              </div>
+            </div>
+
+            <!-- slide-four -->
+
+            <div class="swiper-slide">
+              <div class="small-card">
+                <div class="test-img">
+                  <img src="./asset/images/Rectangle 10 (3).png" alt="" />
+                </div>
+                <h4>Rose M.</h4>
+              </div>
+            </div>
+
+            <!-- slide-five -->
+
+            <div class="swiper-slide">
+              <div class="small-card">
+                <div class="test-img">
+                  <img src="./asset/images/Rectangle 11 (1).png" alt="" />
+                </div>
+                <h4>Emily S.</h4>
+              </div>
+            </div>
+            <!-- //////////////////////////////////////////////////////////////////////////////////// -->
+            <!-- slide-six -->
+            <div class="swiper-slide">
+              <div class="small-card">
+                <div class="test-img">
+                  <img src="./asset/images/Rectangle 12 (1).png" alt="" />
+                </div>
+                <h4>Sara D.</h4>
+              </div>
+            </div>
+
+            <!-- slide-seven -->
+
+            <div class="swiper-slide">
+              <div class="small-card">
+                <div class="test-img">
+                  <img src="./asset/images/Rectangle 10 (2).png" alt="" />
+                </div>
+                <h4>Aylin R.</h4>
+              </div>
+            </div>
+
+            <!-- slide-eight -->
+
+            <div class="swiper-slide">
+              <div class="main-card">
+                <div class="test-img">
+                  <img src="./asset/images/Rectangle 9 (1).png" alt="" />
+                </div>
+                <h4>Emily S.</h4>
+                <p class="text-center">
+                  Yaz Skincare products completely transformed my skin. The
+                  Passion Herbs Face Oil is my absolute favorite – it feels
+                  luxurious and makes my skin glow naturally!
+                </p>
+                <span>2 days ago</span>
+              </div>
+            </div>
+
+            <!-- slide-nine -->
+
+            <div class="swiper-slide">
+              <div class="small-card">
+                <div class="test-img">
+                  <img src="./asset/images/Rectangle 10 (3).png" alt="" />
+                </div>
+                <h4>Rose M.</h4>
+              </div>
+            </div>
+
+            <!-- slide-ten -->
+
+            <div class="swiper-slide">
+              <div class="small-card">
+                <div class="test-img">
+                  <img src="./asset/images/Rectangle 11 (1).png" alt="" />
+                </div>
+                <h4 class="text-vertical">Emily S.</h4>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
       </div>
     </section>
 
@@ -702,80 +1481,154 @@
               Discover skincare tips, haircare secrets
             </p>
           </div>
+          <!-- Navigation buttons at top-right -->
+          <div class="journal-navigation">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <!-- Slider main container -->
+          <div class="swiper3">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <!----------------------------------------
+               slide-one 
+               ---------------------------------------->
+              <div class="swiper-slide">
+              <div class="beauty-journal-card">
+                  <div  class="journal-img">
+                  <img src="./asset/images/Frame 121.png" alt="" />
+                </div>
+                <div class="journal-card">
+                  <p class="journal-card-para">
+                    5 Benefits of Persian Herbal Skincare You Didn’t Know
+                  </p>
+                </div>
+              </div>
+              </div>
+              <!-----------------------------------------
+               slide-two 
+               ------------------------------------------>
+              <div class="swiper-slide">
+               <div class="beauty-journal-card">
+                 <div  class="journal-img">
+                  <img
+                    src="./asset/images/Mask group - 2025-09-26T235223.523.png"
+                    alt=""
+                  />
+                </div>
+                <div  class="journal-card">
+                  <p class="journal-card-para">
+                    How to Choose the Perfect Natural Haircare Routine?
+                  </p>
+                </div>
+               </div>
+              </div>
+              <!-------------------------------------------
+               slide-three 
+               ------------------------------------------>
+              <div class="swiper-slide">
+              <div class="beauty-journal-card">
+                  <div class="journal-img">
+                  <img
+                    src="./asset/images/Mask group - 2025-09-26T235343.567.png"
+                    alt=""
+                  />
+                </div>
+                <div d class="journal-card">
+                  <p class="journal-card-para">
+                    The Secret Power of Vitamin C in Skincare
+                  </p>
+                </div>
+              </div>
+              </div>
+              <!-----------------------------------------------------
+               slide-four 
+               ----------------------------------------------------->
+              <div class="swiper-slide">
+           <div class="beauty-journal-card">
+                 <div  class="journal-img">
+                  <img
+                    src="./asset/images/Mask group - 2025-09-26T235418.608.png"
+                    alt=""
+                  />
+                </div>
+                <div  class="journal-card">
+                  <p class="journal-card-para">
+                    The Art of Layering Skincare Products Correctly
+                  </p>
+                </div>
+           </div>
+              </div>
+              <!-------------------------------------------------
+               slide-five 
+               ------------------------------------------------->
+              <div class="swiper-slide">
+               <div class="beauty-journal-card">
+                 <div class="journal-img">
+                  <img src="./asset/images/Frame 121.png" alt="" />
+                </div>
+                <div class="journal-card">
+                  <p class="journal-card-para">
+                    5 Benefits of Persian Herbal Skincare You Didn’t Know
+                  </p>
+                </div>
+               </div>
+              </div>
 
-          <!------------------------------------------------------------------- 
-          journal-btm 
-          --------------------------------------------------------------------->
-          <div class="journal-btm">
-            <div class="row">
-              <!------------------------------------------------ 
-                journal-card-one 
-                ----------------------------------------------->
-              <div class="col-sm-12 col-md-6 col-xl-3">
-                <div class="journal-card mx-auto">
-                  <div class="journal-card-img">
-                    <img src="./asset/images/Frame 121.png" alt="" />
-                  </div>
-                  <div class="jounal-cntn">
-                    <p class="journal-para">
-                      5 Benefits of Persian Herbal Skincare You Didn’t Know
-                    </p>
-                  </div>
+              <!-----------------------------------------------------
+               slide-six 
+               ------------------------------------------------------>
+              <div class="swiper-slide">
+               <div class="beauty-journal-card">
+                 <div  class="journal-img">
+                  <img
+                    src="./asset/images/Mask group - 2025-09-26T235223.523.png"
+                    alt=""
+                  />
                 </div>
-              </div>
-              <!----------------------------------------------- 
-              journal-card-two 
-              ------------------------------------------------->
-              <div class="col-sm-12 col-md-6 col-xl-3">
-                <div class="journal-card mx-auto">
-                  <div class="journal-card-img">
-                    <img
-                      src="./asset/images/Mask group - 2025-09-26T235223.523.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="jounal-cntn">
-                    <p class="journal-para">
-                      How to Choose the Perfect Natural Haircare Routine?
-                    </p>
-                  </div>
+                <div class="journal-card">
+                  <p class="journal-card-para">
+                    How to Choose the Perfect Natural Haircare Routine?
+                  </p>
                 </div>
-              </div>
-              <!--------------------------------------------------- 
-              journal-card-three 
-              ---------------------------------------------------->
-              <div class="col-sm-12 col-md-6 col-xl-3">
-                <div class="journal-card mx-auto">
-                  <div class="journal-card-img">
-                    <img
-                      src="./asset/images/Mask group - 2025-09-26T235343.567.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="jounal-cntn">
-                    <p class="journal-para">
-                      The Secret Power of Vitamin C in Skincare
-                    </p>
-                  </div>
-                </div>
+               </div>
               </div>
               <!----------------------------------------------------
-               journal-card-four
+               slide-seven 
                ---------------------------------------------------->
-              <div class="col-sm-12 col-md-6 col-xl-3">
-                <div class="journal-card mx-auto">
-                  <div class="journal-card-img">
-                    <img
-                      src="./asset/images/Mask group - 2025-09-26T235418.608.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="jounal-cntn">
-                    <p class="journal-para">
-                      The Art of Layering Skincare Products Correctly
-                    </p>
-                  </div>
+              <div  class="swiper-slide">
+            <div class="beauty-journal-card">
+                  <div class="journal-img">
+                  <img
+                    src="./asset/images/Mask group - 2025-09-26T235343.567.png"
+                    alt=""
+                  />
                 </div>
+                <div  class="journal-card">
+                  <p class="journal-card-para">
+                    The Secret Power of Vitamin C in Skincare
+                  </p>
+                </div>
+            </div>
+              </div>
+              <!-------------------------------------------------------
+               slide-eight 
+               -------------------------------------------------------->
+              <div class="swiper-slide">
+               <div class="beauty-journal-card">
+                 <div  class="journal-img">
+                  <img
+                    src="./asset/images/Mask group - 2025-09-26T235418.608.png"
+                    alt=""
+                  />
+                </div>
+                <div  class="journal-card">
+                  <p class="journal-card-para">
+                    The Art of Layering Skincare Products Correctly
+                  </p>
+                </div>
+               </div>
               </div>
             </div>
           </div>
@@ -788,64 +1641,376 @@
           ====================================================================================================================-->
     <section class="offer-section">
       <div class="container">
-        <div class="row">
-          <!-----------------------------------------------------
-             card-one 
-             ----------------------------------------------------->
-          <div class="col-sm-12 col-md-6 col-xxl-3">
-            <div class="offer-card mx-auto">
-              <div class="offer-card-img-one">
-                <img src="./asset/images/premium-badge 1.png" alt="" />
-              </div>
-              <div class="offer-card-text">
-                <p class="offer-para">Premium Qualikty</p>
-                <span class="offer-sub-para">Top-quality,related product</span>
-              </div>
-            </div>
-          </div>
-          <!--------------------------------------------------------
-           card-two
-           --------------------------------------------------------->
-          <div class="col-sm-12 col-md-6 col-xxl-3">
-            <div class="offer-card mx-auto">
-              <div class="offer-card-img-two">
-                <img src="./asset/images/discount 1.png" alt="" />
-              </div>
-              <div class="offer-card-text">
-                <p class="offer-para">Special Discounts</p>
-                <span class="offer-sub-para">Exclusive seasonal offers</span>
-              </div>
-            </div>
-          </div>
-          <!---------------------------------------------------------- 
-          card-three 
-          ----------------------------------------------------------->
-          <div class="col-sm-12 col-md-6 col-xxl-3">
-            <div class="offer-card mx-auto">
-              <div class="offer-card-img-three">
-                <img src="./asset/images/fast 1.png" alt="" />
-              </div>
-              <div class="offer-card-text">
-                <p class="offer-para">Fast Delivery</p>
-                <span class="offer-sub-para">Quick & safe shipping</span>
+        <!-- Slider main container -->
+        <div class="swiper6">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div
+                class="offer-card d-flex justify-content-center align-items-center mx-auto"
+              >
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1200"
+                  class="offer-card-img-one"
+                >
+                  <img src="./asset/images/premium-badge 1.png" alt="" />
+                </div>
+                <div class="offer-card-text">
+                  <p
+                    data-aos="fade-left"
+                    data-aos-duration="1200"
+                    class="offer-para"
+                  >
+                    Premium Qualikty
+                  </p>
+                  <div
+                    data-aos="fade-rightt"
+                    data-aos-duration="1200"
+                    class="offer-sub-para"
+                  >
+                    Top-quality,related product
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <!--------------------------------------------------------- 
-          card-four 
-          ----------------------------------------------------------->
-          <div class="col-sm-12 col-md-6 col-xxl-3">
-            <div class="offer-card mx-auto">
-              <div class="offer-card-img-four">
-                <img src="./asset/images/Frame 140.png" alt="" />
+            <div class="swiper-slide">
+              <div
+                class="offer-card d-flex justify-content-center align-items-center mx-auto"
+              >
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1200"
+                  class="offer-card-img-two"
+                >
+                  <img src="./asset/images/discount 1.png" alt="" />
+                </div>
+                <div class="offer-card-text">
+                  <p
+                    data-aos="fade-left"
+                    data-aos-duration="1200"
+                    class="offer-para"
+                  >
+                    Special Discounts
+                  </p>
+                  <div
+                    data-aos="fade-rightt"
+                    data-aos-duration="1200"
+                    class="offer-sub-para"
+                  >
+                    Exclusive seasonal offers
+                  </div>
+                </div>
               </div>
-              <div class="offer-card-text">
-                <p class="offer-para">24/7 Support</p>
-                <span class="offer-sub-para">Always here to help.</span>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="offer-card d-flex justify-content-center align-items-center mx-auto"
+              >
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1200"
+                  class="offer-card-img-three"
+                >
+                  <img src="./asset/images/fast 1.png" alt="" />
+                </div>
+                <div class="offer-card-text">
+                  <p
+                    data-aos="fade-left"
+                    data-aos-duration="1200"
+                    class="offer-para"
+                  >
+                    Fast Delivery
+                  </p>
+                  <div
+                    data-aos="fade-rightt"
+                    data-aos-duration="1200"
+                    class="offer-sub-para"
+                  >
+                    Quick & safe shipping
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="offer-card d-flex justify-content-center align-items-center mx-auto"
+              >
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1200"
+                  class="offer-card-img-four"
+                >
+                  <img src="./asset/images/Frame 140.png" alt="" />
+                </div>
+                <div class="offer-card-text">
+                  <p
+                    data-aos="fade-left"
+                    data-aos-duration="1200"
+                    class="offer-para"
+                  >
+                    24/7 Support
+                  </p>
+                  <div
+                    data-aos="fade-rightt"
+                    data-aos-duration="1200"
+                    class="offer-sub-para"
+                  >
+                    Always here to help.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="offer-card d-flex justify-content-center align-items-center mx-auto"
+              >
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1200"
+                  class="offer-card-img-one"
+                >
+                  <img src="./asset/images/premium-badge 1.png" alt="" />
+                </div>
+                <div class="offer-card-text">
+                  <p
+                    data-aos="fade-left"
+                    data-aos-duration="1200"
+                    class="offer-para"
+                  >
+                    Premium Qualikty
+                  </p>
+                  <div
+                    data-aos="fade-rightt"
+                    data-aos-duration="1200"
+                    class="offer-sub-para"
+                  >
+                    Top-quality,related product
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="offer-card d-flex justify-content-center align-items-center mx-auto"
+              >
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1200"
+                  class="offer-card-img-two"
+                >
+                  <img src="./asset/images/discount 1.png" alt="" />
+                </div>
+                <div class="offer-card-text">
+                  <p
+                    data-aos="fade-left"
+                    data-aos-duration="1200"
+                    class="offer-para"
+                  >
+                    Special Discounts
+                  </p>
+                  <div
+                    data-aos="fade-rightt"
+                    data-aos-duration="1200"
+                    class="offer-sub-para"
+                  >
+                    Exclusive seasonal offers
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="offer-card d-flex justify-content-center align-items-center mx-auto"
+              >
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1200"
+                  class="offer-card-img-three"
+                >
+                  <img src="./asset/images/fast 1.png" alt="" />
+                </div>
+                <div class="offer-card-text">
+                  <p
+                    data-aos="fade-left"
+                    data-aos-duration="1200"
+                    class="offer-para"
+                  >
+                    Fast Delivery
+                  </p>
+                  <div
+                    data-aos="fade-rightt"
+                    data-aos-duration="1200"
+                    class="offer-sub-para"
+                  >
+                    Quick & safe shipping
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="offer-card d-flex justify-content-center align-items-center mx-auto"
+              >
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1200"
+                  class="offer-card-img-four"
+                >
+                  <img src="./asset/images/Frame 140.png" alt="" />
+                </div>
+                <div class="offer-card-text">
+                  <p
+                    data-aos="fade-left"
+                    data-aos-duration="1200"
+                    class="offer-para"
+                  >
+                    24/7 Support
+                  </p>
+                  <div
+                    data-aos="fade-rightt"
+                    data-aos-duration="1200"
+                    class="offer-sub-para"
+                  >
+                    Always here to help.
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <!-- 
+        <div class="row"> -->
+        <!-----------------------------------------------------
+             card-one 
+             ----------------------------------------------------->
+        <!-- <div class="col-sm-12 col-md-6 col-xxl-3">
+            <div
+              class="offer-card d-flex justify-content-center align-items-center mx-auto"
+            >
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1200"
+                class="offer-card-img-one"
+              >
+                <img src="./asset/images/premium-badge 1.png" alt="" />
+              </div>
+              <div class="offer-card-text">
+                <p
+                  data-aos="fade-left"
+                  data-aos-duration="1200"
+                  class="offer-para"
+                >
+                  Premium Qualikty
+                </p>
+                <div
+                  data-aos="fade-rightt"
+                  data-aos-duration="1200"
+                  class="offer-sub-para"
+                >
+                  Top-quality,related product
+                </div>
+              </div>
+            </div>
+          </div> -->
+        <!--------------------------------------------------------
+           card-two
+           --------------------------------------------------------->
+        <!-- <div class="col-sm-12 col-md-6 col-xxl-3">
+            <div
+              class="offer-card d-flex justify-content-center align-items-center mx-auto"
+            >
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1200"
+                class="offer-card-img-two"
+              >
+                <img src="./asset/images/discount 1.png" alt="" />
+              </div>
+              <div class="offer-card-text">
+                <p
+                  data-aos="fade-left"
+                  data-aos-duration="1200"
+                  class="offer-para"
+                >
+                  Special Discounts
+                </p>
+                <div
+                  data-aos="fade-rightt"
+                  data-aos-duration="1200"
+                  class="offer-sub-para"
+                >
+                  Exclusive seasonal offers
+                </div>
+              </div>
+            </div>
+          </div> -->
+        <!---------------------------------------------------------- 
+          card-three 
+          ----------------------------------------------------------->
+        <!-- <div class="col-sm-12 col-md-6 col-xxl-3">
+            <div
+              class="offer-card d-flex justify-content-center align-items-center mx-auto"
+            >
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1200"
+                class="offer-card-img-three"
+              >
+                <img src="./asset/images/fast 1.png" alt="" />
+              </div>
+              <div class="offer-card-text">
+                <p
+                  data-aos="fade-left"
+                  data-aos-duration="1200"
+                  class="offer-para"
+                >
+                  Fast Delivery
+                </p>
+                <div
+                  data-aos="fade-rightt"
+                  data-aos-duration="1200"
+                  class="offer-sub-para"
+                >
+                  Quick & safe shipping
+                </div>
+              </div>
+            </div>
+          </div> -->
+        <!--------------------------------------------------------- 
+          card-four 
+          ----------------------------------------------------------->
+        <!-- <div class="col-sm-12 col-md-6 col-xxl-3">
+            <div
+              class="offer-card-unic d-flex justify-content-center align-items-center mx-auto"
+            >
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1200"
+                class="offer-card-img-four"
+              >
+                <img src="./asset/images/Frame 140.png" alt="" />
+              </div>
+              <div class="offer-card-text">
+                <p
+                  data-aos="fade-left"
+                  data-aos-duration="1200"
+                  class="offer-para"
+                >
+                  24/7 Support
+                </p>
+                <div
+                  data-aos="fade-rightt"
+                  data-aos-duration="1200"
+                  class="offer-sub-para"
+                >
+                  Always here to help.
+                </div>
+              </div>
+            </div>
+          </div> -->
+        <!-- </div> -->
       </div>
     </section>
 
@@ -860,7 +2025,7 @@
                     -------------------------------------------------------->
           <div class="footer-first-part">
             <div class="footer-brand">
-              <a href=""
+              <a href="index.html"
                 ><img src="./asset/images/beauty logo with ele 2.png" alt=""
               /></a>
             </div>
@@ -874,33 +2039,59 @@
                part-one 
                --------------------------------------->
               <div class="col-sm-12 col-lg-6 col-xl-4">
-                <p class="footer-para">
+                <p
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  class="footer-para"
+                >
                   LuxeShop is your trusted destination for premium, natural, and
                   innovation beauty products. Every product is carefully
                   selected to enhance your confidence and natural glow.
                 </p>
-                <ul class="pay-list d-flex flex-wrap align-items-center list-unstyled">
-                  <li class="pay-item">
+                <ul
+                  class="pay-list d-flex flex-wrap align-items-center list-unstyled"
+                >
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    class="pay-item"
+                  >
                     <a href=""
                       ><img src="./asset/images/Frame 151.png" alt=""
                     /></a>
                   </li>
-                  <li class="pay-item">
+                  <li
+                    data-aos="fade-down"
+                    data-aos-duration="1000"
+                    class="pay-item"
+                  >
                     <a href=""
                       ><img src="./asset/images/Frame 155.png" alt=""
                     /></a>
                   </li>
-                  <li class="pay-item">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    class="pay-item"
+                  >
                     <a href=""
                       ><img src="./asset/images/Frame 154.png" alt=""
                     /></a>
                   </li>
-                  <li class="pay-item">
+                  <li
+                    data-aos="fade-down"
+                    data-aos-duration="1000"
+                    class="pay-item"
+                  >
                     <a href=""
                       ><img src="./asset/images/Frame 153.png" alt=""
                     /></a>
                   </li>
-                  <li class="pay-item">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    class="pay-item"
+                  >
                     <a href=""
                       ><img src="./asset/images/Frame 152.png" alt=""
                     /></a>
@@ -911,9 +2102,19 @@
               part-two 
               --------------------------------------->
               <div class="col-sm-12 col-lg-6 col-xl-4">
-                <div class="footer-hed">Contact Us</div>
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  class="footer-hed"
+                >
+                  Contact Us
+                </div>
                 <ul class="list-unstyled">
-                  <li class="footer-item">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    class="footer-item"
+                  >
                     <a class="text-decoration-none footer-link" href=""
                       ><span class="prior"
                         ><img
@@ -922,27 +2123,44 @@
                       >Tage-Hansens Gade 35, 8000 Aarhus</a
                     >
                   </li>
-                  <li class="footer-item">
+                  <li
+                    data-aos="fade-down"
+                    data-aos-duration="1000"
+                    class="footer-item"
+                  >
                     <a class="text-decoration-none footer-link" href=""
                       ><span class="prior"
                         ><img src="./asset/images/Email (1).png" alt="" /></span
                       >info@luxeshop.com</a
                     >
                   </li>
-                  <li class="footer-item">
-                    <a class="text-decoration-none footer-link" href=""
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    class="footer-item"
+                  >
+                    <a
+                      class="text-decoration-none footer-link"
+                      href="tel:+1234567890"
                       ><span class="prior"
                         ><img src="./asset/images/Comment.png" alt="" /></span
                       >+1952724472</a
                     >
                   </li>
-                  <li class="footer-item">
-                    <a class="text-decoration-none footer-link" href=""
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    class="footer-item"
+                  >
+                    <a
+                      class="text-decoration-none footer-link"
+                      href="tel:+1234567890"
                       ><span class="prior"
                         ><img
                           src="./asset/images/Telephone (1).png"
-                          alt="" /></span></a
-                    >0019-52724472
+                          alt="" /></span
+                      >0019-52724472</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -950,24 +2168,46 @@
               part-three 
               ------------------------------------------>
               <div class="col-sm-12 col-lg-6 col-xl-2">
-                <div class="footer-hed">Quick Access</div>
+                <div
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  class="footer-hed"
+                >
+                  Quick Access
+                </div>
                 <ul class="list-unstyled">
-                  <li class="footer-item">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    class="footer-item"
+                  >
                     <a class="text-decoration-none footer-link" href=""
                       >Why Us</a
                     >
                   </li>
-                  <li class="footer-item">
+                  <li
+                    data-aos="fade-down"
+                    data-aos-duration="1000"
+                    class="footer-item"
+                  >
                     <a class="text-decoration-none footer-link" href=""
                       >Term & conditions</a
                     >
                   </li>
-                  <li class="footer-item">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    class="footer-item"
+                  >
                     <a class="text-decoration-none footer-link" href=""
                       >Bank Transfer Information</a
                     >
                   </li>
-                  <li class="footer-item">
+                  <li
+                    data-aos="fade-down"
+                    data-aos-duration="1000"
+                    class="footer-item"
+                  >
                     <a class="text-decoration-none footer-link" href=""
                       >Delivery Information</a
                     >
@@ -977,25 +2217,41 @@
               <!---------------------------------------- 
               part-four
               ----------------------------------------->
-              <div class="col-sm-12  col-lg-6 col-xl-2">
+              <div class="col-sm-12 col-lg-6 col-xl-2">
                 <div></div>
-                <ul class="list-unstyled">
+                <ul
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  class="list-unstyled"
+                >
                   <li class="footer-item main">
                     <a class="text-decoration-none footer-link" href=""
                       >How to Pay</a
                     >
                   </li>
-                  <li class="footer-item">
+                  <li
+                    data-aos="fade-down"
+                    data-aos-duration="1000"
+                    class="footer-item"
+                  >
                     <a class="text-decoration-none footer-link" href=""
                       >Returns & Refunds</a
                     >
                   </li>
-                  <li class="footer-item">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    class="footer-item"
+                  >
                     <a class="text-decoration-none footer-link" href=""
                       >How to Order</a
                     >
                   </li>
-                  <li class="footer-item">
+                  <li
+                    data-aos="fade-down"
+                    data-aos-duration="1000"
+                    class="footer-item"
+                  >
                     <a class="text-decoration-none footer-link" href=""
                       >Get in Touch</a
                     >
@@ -1011,28 +2267,48 @@
           <div class="footer-third-part">
             <div class="social-icon">
               <ul class="d-flex align-items-center list-unstyled">
-                <li class="social-item">
-                  <a class="text-decoration-none" href=""
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  class="social-item"
+                >
+                  <a class="social-link text-decoration-none" href=""
                     ><img src="./asset/images/Frame 146.png" alt=""
                   /></a>
                 </li>
-                <li class="social-item">
-                  <a class="text-decoration-none" href=""
+                <li
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                  class="social-item"
+                >
+                  <a class="social-link text-decoration-none" href=""
                     ><img src="./asset/images/Frame 150.png" alt=""
                   /></a>
                 </li>
-                <li class="social-item">
-                  <a class="text-decoration-none" href=""
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  class="social-item"
+                >
+                  <a class="social-link text-decoration-none" href=""
                     ><img src="./asset/images/Frame 149.png" alt=""
                   /></a>
                 </li>
-                <li class="social-item">
-                  <a class="text-decoration-none" href=""
+                <li
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                  class="social-item"
+                >
+                  <a class="social-link text-decoration-none" href=""
                     ><img src="./asset/images/Frame 148.png" alt=""
                   /></a>
                 </li>
-                <li class="social-item">
-                  <a class="text-decoration-none" href=""
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  class="social-item"
+                >
+                  <a class="social-link text-decoration-none" href=""
                     ><img src="./asset/images/Frame 147 (1).png" alt=""
                   /></a>
                 </li>
@@ -1044,23 +2320,23 @@
                     --------------------------------------------------------->
           <div class="footer-fourth-part">
             <div class="footer-btm d-flex flex-wrap justify-content-between">
-              <div
-                class="footer-btm-one d-flex justify-content-center align-items-center"
-              >
+              <div class="footer-btm-one d-flex align-items-center">
                 <div class="btm-one-img">
                   <img src="./asset/images/Frame 171.png" alt="" />
                 </div>
                 <div>
-                  <p class="footer-btm-para">
-                    2025<a class="text-decoration-none" href="">LuxeShop,</a
-                    ><a class="text-decoration-none" href=""
-                      >All rights reserved</a
-                    >
-                  </p>
+                  <div>
+                    <p class="footer-btm-para-one">
+                      2025<a class="text-decoration-none" href="">LuxeShop,</a
+                      ><a class="text-decoration-none" href=""
+                        >All rights reserved</a
+                      >
+                    </p>
+                  </div>
                 </div>
               </div>
               <div class="footer-btm-two">
-                <p class="footer-btm-para">Design by Susmita</p>
+                <p class="footer-btm-para-two">Design by Susmita</p>
               </div>
             </div>
           </div>
@@ -1069,13 +2345,40 @@
     </section>
 
     <!--================================================================================================================= 
-          link-for-bootstrap-css 
+          link-for-bootstrap-js 
           ===================================================================================================================-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <!--==================================================================================================================== 
+    jquery 
+    =====================================================================================================================-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!--===================================================================================================================
+     slick-js 
+     ====================================================================================================================-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <!--=============================================================================================================== 
+    for-swiper-js 
+    ================================================================================================================-->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!--================================================================================================================ 
+    link-for-aos 
+    ===================================================================================================================-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!--================================================================================================================ 
           link-for-js 

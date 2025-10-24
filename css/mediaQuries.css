@@ -2,19 +2,91 @@
 mediaQuries at 1400px 
 ================================================================================================================================*/
 @media screen and (max-width: 1400px) {
+  /*----------------------------------------------------------------------
+common-section 
+----------------------------------------------------------------------*/
+  .tittle-one {
+    font-size: 136px;
+  }
   /*--------------------------------------------------------------------- 
   header-section 
-  -------------------------------------------------------------------*/
+  ----------------------------------------------------------------------*/
+
   .nav-item {
-    margin-right: 22px;
+    margin-right: 0px;
+    margin-left: 5px;
   }
 
-  /*----------------------------------------------------------------- 
+  .friend-btn > img,
+  .cart-btn > img,
+  .hrt-btn > img {
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+
+  .nav-right-right {
+    margin-right: 40px;
+  }
+
+  .navbar-nav {
+    margin-right: auto;
+    flex-grow: 1;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+
+
+  /*--------------------------------------------------------------------- 
+journal-section 
+---------------------------------------------------------------------*/
+
+  .journal-card-para {
+    font-size: 16px;
+  }
+
+  .journal-top::after {
+    width: 350px;
+    transform: translateX(100%);
+  }
+
+  .swiper-button-prev {
+    width: 36px;
+    height: 36px;
+  }
+
+  .swiper-button-next {
+    width: 36px;
+    height: 36px;
+  }
+
+  .journal-wrp {
+    padding-bottom: 24px;
+  }
+
+  /*----------------------------------------------------
+   product-section 
+   -------------------------------------------------*/
+  .product-top::after {
+    width: 731px;
+    bottom: -12px;
+  }
+
+  .product-btm-hed {
+    font-size: 16px;
+  }
+
+  .product-btm-para {
+    font-size: 14px;
+  }
+  /*-------------------------------------------------------------------
   footer-section 
-  ----------------------------------------------------------------*/
+  ----------------------------------------------------------------------*/
 
   .footer-third-part::after {
-    width: 1100px;
+    /* width: 1100px; */
+    transform: translateX(-10%);
   }
 }
 
@@ -36,7 +108,9 @@ comm0n-section
   /*------------------------------------------------------------------ 
 header-section 
 --------------------------------------------------------------------*/
-
+  .navbar-nav {
+    margin: 0 auto;
+  }
   .navbar-button {
     margin-top: 20px;
   }
@@ -44,6 +118,18 @@ header-section
     margin-left: 0;
   }
 
+  .navbar-toggler {
+    margin-left: auto;
+  }
+  .nav-right-right {
+    margin-right: 0;
+  }
+  .nav-link-a {
+    margin-right: o;
+  }
+  .nav-link-b {
+    margin-left: 0;
+  }
   /*----------------------------------------------------------------
    banner-section
    --------------------------------------------------------------- */
@@ -52,11 +138,37 @@ header-section
     max-width: 100%;
   }
 
+    /*------------------------------------------------------------------ 
+  banner-btm-section 
+  -----------------------------------------------------------------*/
+  .banner-btm-para{
+    font-size: 18px;
+  }
+
   /*------------------------------------------------------------- 
     journal-section 
     --------------------------------------------------------------*/
-  .journal-card {
-    margin-bottom: 100px;
+  .slider-card {
+    padding: 20px;
+  }
+
+  .journal-top::after {
+    width: 180px;
+    transform: translateX(220%);
+  }
+
+  .journal-wrp {
+    padding-bottom: 74px;
+  }
+
+  .swiper-button-prev {
+    width: 24px;
+    height: 24px;
+  }
+
+  .swiper-button-next {
+    width: 24px;
+    height: 24px;
   }
 
   /*-------------------------------------------------------------- 
@@ -75,22 +187,55 @@ header-section
     bottom: -25%;
   }
 
+  .product-btm-hed {
+    font-size: 16px;
+  }
+
+  .product-btm-para {
+    font-size: 12px;
+  }
+
+  /*----------------------------------------------------
+   discover-section
+   --------------------------------------------------- */
+  .discover-img-one:hover::after {
+    transform: translateX(18%);
+    font-size: 28px;
+  }
+
+  .discover-img-two:hover::after {
+    transform: translateX(12%);
+    font-size: 28px;
+  }
+
+  .discover-img-one:hover::after {
+    font-size: 28px;
+  }
+
   /*------------------------------------------------------
    newsletter-section 
    -----------------------------------------------------*/
+.newsletter-section{
+ min-height: 600px;
+ 
+ 
+}
 
-  .news-hed {
-    font-size: 64px;
-    margin: 25px 0;
-  }
+.newsletter-img{
+  max-width: 550px;
+  max-height: 700px;
+  top:-43%;
+  left:22%;
+}
 
-  .news-sub {
-    font-size: 36px;
-  }
+.newsletter-cntn{
+  text-align: center;
+  position: absolute;
+  left: 25%;
+}
 
-  .newsletter-btn {
-    max-width: 300px;
-  }
+
+
   /*----------------------------------------------------------------- 
 footer-section 
 ------------------------------------------------------------------*/
@@ -105,10 +250,6 @@ footer-section
   .footer-brand {
     transform: translate(-50%, 60%);
   }
-
-  .footer-third-part::after {
-    width: 900px;
-  }
 }
 
 /*==============================================================================================================================
@@ -121,6 +262,15 @@ footer-section
   .tittle-one {
     font-size: 92px;
   }
+
+  .tittle-two {
+    font-size: 42px;
+  }
+
+  .tittle-two > span {
+    font-size: 42px;
+  }
+
   /*------------------------------------------------------------------ 
 product-section 
 --------------------------------------------------------------------*/
@@ -128,23 +278,46 @@ product-section
     max-width: 400px;
   }
 
+  .product-sm-card-one {
+    padding: 12px 115px 13px 16px;
+  }
+
+  /*---------------------------------------------------
+   discover-section 
+   -------------------------------------------------*/
+.discover-top>h2{
+  margin-bottom: 20px;
+
+}
+
+.discover-para{
+  font-size: 18px;
+}
   .discover-card-one {
-    /* min-height: 400px; */
     margin-bottom: 20px;
   }
 
   .discover-card-two {
-    /* min-height: 400px; */
     margin-bottom: 20px;
   }
 
   .discover-card-three {
-    /* min-height: 400px; */
     margin-bottom: 20px;
   }
 
-  .discover-para {
-    font-size: 24px;
+  .discover-img-one:hover::after {
+    transform: translateX(10%);
+    font-size: 32px;
+  }
+
+  .discover-img-two:hover::after {
+    transform: translateX(5%);
+    font-size: 32px;
+  }
+
+  .discover-img-one:hover::after {
+    transform: translateX(5%);
+    font-size: 32px;
   }
 
   /*------------------------------------------------------
@@ -157,31 +330,53 @@ product-section
   /*----------------------------------------------------- 
 newsletter-section 
 -----------------------------------------------------*/
+.news-hed{
+  font-size: 56px;
+}
+.news-sub{
+    font-size: 32pxpx;
+}
 
-  .newsletter-section {
-    min-height: 100px;
-  }
+.newsletter-btn{
+  max-width: 300px;
+}
 
-  .newsletter-cntn {
-    margin: 0 auto;
-    text-align: center;
-  }
+.newsletter-cntn{
+  left: 32%;
+}
 
-  .newsletter-btn {
-    margin-bottom: 30px;
-    margin: 0 auto 20px;
-  }
-
-  .newsletter-img {
-    max-width: 400px;
-    max-height: 350px;
-    margin: 0 auto 20px;
-  }
+.newsletter-img{
+  left: 17%;
+}
   /*------------------------------------------------------------ 
   journal-section 
   ------------------------------------------------------------*/
-  .journal-para {
-    font-size: 18px;
+  .slider-card {
+    padding: 20px 25px;
+  }
+
+  .journal-top::after {
+    display: none;
+  }
+
+  .journal-sub-para {
+    font-size: 24px;
+  }
+
+  .journal-wrp {
+    padding-bottom: 154px;
+  }
+
+  .swiper-button-prev {
+    width: 24px;
+    height: 24px;
+    transform: translate(-45%, -35%);
+  }
+
+  .swiper-button-next {
+    width: 24px;
+    height: 24px;
+    transform: translate(45%, -35%);
   }
 
   /*--------------------------------------------------------------------- 
@@ -194,10 +389,6 @@ newsletter-section
 
   .main {
     margin-top: 20px;
-  }
-
-  .footer-third-part::after {
-    width: 650px;
   }
 }
 
@@ -217,11 +408,19 @@ newsletter-section
   }
 
   .tittle-two {
-    font-size: 42px;
+    font-size: 32px;
   }
 
   .tittle-two > span {
-    font-size: 42px;
+    font-size: 32px;
+  }
+
+  
+    /*------------------------------------------------------------------ 
+  banner-btm-section 
+  -----------------------------------------------------------------*/
+  .banner-btm-para{
+    font-size: 18px;
   }
 
   /*-----------------------------------------------------
@@ -236,13 +435,17 @@ newsletter-section
     font-size: 24px;
   }
 
-  /*-----------------------------------------------------
-  discover-section
-  ---------------------------------------------------- */
 
-  .discover-para {
-    font-size: 24px;
-  }
+  /*--------------------------------------------------- 
+  newsletter-section 
+  ---------------------------------------------------*/
+  .newsletter-cntn{
+  left: 27%;
+}
+
+.newsletter-img{
+  left: 8%;
+}
 
   /*----------------------------------------------------------------- 
   product-section 
@@ -289,6 +492,37 @@ newsletter-section
     margin: 0 auto;
   }
 
+  .product-sm-card-one {
+    padding: 22px 145px 13px 36px;
+  }
+
+  .product-sm-card-two {
+    padding: 22px 61px 13px 36px;
+  }
+
+  .product-sm-card-three {
+    padding: 22px 61px 13px 36px;
+  }
+
+  .product-sm-card-four {
+    padding: 22px 36px 12px 36px;
+  }
+
+  .product-top::after {
+    max-width: 400px;
+    bottom: -40%;
+    transform: translateX(-20%);
+  }
+
+  .product-card {
+    margin: 0 auto;
+  }
+
+  .product-btm-card {
+    max-width: 411px;
+    margin: 0 auto;
+  }
+
   /*------------------------------------------------------
    choose-section 
    ------------------------------------------------------*/
@@ -325,15 +559,34 @@ newsletter-section
    beauty-journal-section 
    ------------------------------------------------------*/
   .journal-sub-para {
-    font-size: 24px;
-    margin: 30px 0 80px;
+    font-size: 16px;
+    margin: 5px 0 50px;
   }
+
+  .swiper-button-prev {
+    width: 16px;
+    height: 16px;
+    transform: translate(-250%, -55%);
+  }
+
+  .swiper-button-next {
+    width: 16px;
+    height: 16px;
+    transform: translate(150%, -55%);
+  }
+
+  .beauty-journal-card{
+    margin: 0 auto 20px;
+  }
+
+
+
   /*-------------------------------------------------------- 
   offer-section 
   ---------------------------------------------------------*/
 
   .offer-section {
-    padding: 80px 0 120px;
+    padding: 120px 0 160px;
   }
   .offer-card {
     margin-bottom: 20px;
@@ -345,10 +598,6 @@ newsletter-section
 
   .footer-brand {
     transform: translate(-50%, 110%);
-  }
-
-  .footer-third-part::after {
-    width: 475px;
   }
 }
 
@@ -375,6 +624,10 @@ mediaQuries at 576px
     font-size: 24px;
   }
 
+  .customer-top > h2 {
+    font-size: 18px;
+  }
+
   /*----------------------------------------------------------------- 
   header-section 
   -----------------------------------------------------------------*/
@@ -384,12 +637,17 @@ mediaQuries at 576px
     transform: translate(-75%, 25%);
   }
 
+  header {
+    padding: 0;
+  }
+
   /*-------------------------------------------------------------------
  banner-section
  ------------------------------------------------------------------ */
-
-  .banner-section {
+  .banner-wrpr {
     min-height: 500px;
+    margin: 0 -10px;
+   
   }
 
   .sub-para {
@@ -400,10 +658,19 @@ mediaQuries at 576px
     font-size: 20px;
   }
 
+      /*------------------------------------------------------------------ 
+  banner-btm-section 
+  -----------------------------------------------------------------*/
+  .banner-btm-para{
+    font-size: 18px;
+  }
+
   /*-----------------------------------------------------
    about-section 
    ----------------------------------------------------*/
-
+.about-section{
+  padding-top: 40px;
+}
   .about-hed::after {
     transform: translate(-70%, -10%);
   }
@@ -428,6 +695,12 @@ mediaQuries at 576px
 discover-section 
 ------------------------------------------------------*/
 
+.discover-para{
+  font-size: 16px;
+}
+  .discover-section {
+    padding: 70px 0 60px;
+  }
   .discover-card-one {
     min-height: 400px;
   }
@@ -438,17 +711,36 @@ discover-section
   .discover-card-three {
     min-height: 400px;
   }
+  .discover-img-one:hover::after {
+    transform: translateX(30%);
+    font-size: 24px;
+  }
+
+  .discover-img-two:hover::after {
+    transform: translateX(25%);
+    font-size: 24px;
+  }
+
+  .discover-img-three:hover::after {
+    transform: translateX(15%);
+    font-size: 24px;
+  }
 
   /*---------------------------------------------------------------
    product-section
    --------------------------------------------------------------- */
   .product-section {
-    padding-top: 40px;
+    padding-top: 10px;
+  }
+
+  .product-wrp {
+    padding: 40px 10px 80px;
   }
 
   .product-top::after {
-    max-width: 100px;
-    bottom: -15%;
+    max-width: 200px;
+    bottom: -40%;
+    transform: translateX(-20%);
   }
 
   .product-para {
@@ -456,8 +748,12 @@ discover-section
     margin-bottom: 30px;
   }
 
+  .swiper {
+    height: 300px;
+  }
+
   .product-card {
-    margin-bottom: 40px;
+    max-height: 300px;
   }
 
   .mid-para {
@@ -481,25 +777,63 @@ discover-section
     font-size: 12px;
   }
 
+  .product-btm-hed {
+    font-size: 14px;
+  }
+
+  .product-btm-para {
+    font-size: 10px;
+  }
+
+  .product-sm-card-one {
+    padding: 22px 20px 13px 21px;
+  }
+
+  .product-sm-card-two {
+    padding: 22px 21px 13px 16px;
+  }
+
+  .product-sm-card-three {
+    padding: 22px 21px 13px 16px;
+  }
+
+  .product-sm-card-four {
+    padding: 12px 26px 12px 16px;
+  }
+
   /*------------------------------------------------------
    newsletter-section 
    -----------------------------------------------------*/
+.newsletter-section{
+  min-height: 500px;
+}
+  .newsletter-cntn{
 
-  .news-hed {
-    font-size: 42px;
-    margin: 10px 0;
-  }
+  left: 16%;
+  /* transform: translateY(25%); */
+}
 
-  .news-sub {
-    font-size: 24px;
-  }
+.newsletter-img{
+  max-width: 500px;
+  max-height: 550px;
+  top: -40%;
+  left: -8%;
+}
 
-  .newsletter-btn {
-    max-width: 250px;
-  }
-  .news-btn {
-    font-size: 16px;
-  }
+.news-hed{
+font-size: 42px;
+margin: 25px 0;
+}
+
+.news-sub{
+
+font-size: 24px;
+}
+
+.news-btn{
+max-width: 250px;
+font-size: 16px;
+}
 
   /*------------------------------------------------------
    choose-section 
@@ -537,8 +871,6 @@ discover-section
   ------------------------------------------------------------*/
   .journal-para {
     max-height: fit-content;
-
-    padding: 20px;
   }
 
   .journal-sub-para {
@@ -546,20 +878,60 @@ discover-section
     margin: 30px 0 30px;
   }
 
+  .swiper{
+    height: 320px;
+  }
+
+  .beauty-journal-card{
+    max-width: 300px;
+  }
+
+  .journal-img{
+    max-width: 300px;
+    margin-top: 30px;
+  }
+
+  .journal-card{
+    max-width: 300px;
+  }
+
+
+
+
+  .journal-wrp {
+    padding: 40px 20px 20px;
+  }
+
+  .journal-card-para {
+    font-size: 14px;
+  }
+
+  .swiper-button-prev {
+    width: 16px;
+    height: 16px;
+    transform: translate(-200%, -300%);
+  }
+
+  .swiper-button-next {
+    width: 16px;
+    height: 16px;
+    transform: translate(200%, -300%);
+  }
+
   /*-------------------------------------------------------- 
   offer-section 
   ---------------------------------------------------------*/
 
   .offer-section {
-    padding: 100px 0 120px;
+    padding: 140px 0 180px;
   }
 
   .offer-para {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .offer-sub-para {
-    font-size: 16px;
+    font-size: 18px;
   }
   /*----------------------------------------------------- 
   footer-section
@@ -581,17 +953,32 @@ discover-section
 
   .footer-third-part::after {
     top: 120%;
-    width: 230px;
+    /* width: 230px; */
   }
 
   .social-item {
     margin-right: 4px;
   }
-  .footer-btm-para {
-    font-size: 18px;
+
+  .footer-btm-para-one {
+    font-size: 16px;
   }
 
-  .footer-btm-para > a {
-    font-size: 18px;
+  .footer-btm-para-one > a {
+    font-size: 16px;
+  }
+
+  .footer-btm-para-two {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+
+  .btm-one-img {
+    margin-right: 2px;
   }
 }
+
+
+
+
+

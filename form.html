@@ -13,6 +13,10 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <!--============================================================================================================
+     AOS Animation Library 
+     ==============================================================================================================-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!--========================================================================================================================
      link-for-custom-css 
      ===========================================================================================================================-->
@@ -29,16 +33,20 @@
             <!------------------------------------------------------------------------
      button 
      --------------------------------------------------------------------------->
-
-            <button class="btn" type="submit">
-              <img src="./asset/images/Search (5).png" alt="" />Search...
-            </button>
+            <form class="nav-form" action="">
+              <button class="nav-search" type="submit">
+                <img src="./asset/images/Search (5).png" alt="" />Search...
+              </button>
+              <input type="text" name="search" id="search" placeholder="" />
+            </form>
 
             <!--------------------------------------------------------------------------- 
     navbar-brand 
     ---------------------------------------------------------------------------->
             <div class="navbar-brand position-absolute">
-              <a href=""><img src="./asset/images/Frame 179.png" alt="" /></a>
+              <a href="creatAccount.html"
+                ><img src="./asset/images/Frame 179.png" alt=""
+              /></a>
             </div>
 
             <!--------------------------------------------------------------------------- 
@@ -59,9 +67,10 @@
             <!----------------------------------------------------------------------------- 
     navbar-collapse 
     ------------------------------------------------------------------------------->
-            <div class="offcanvas offcanvas-start" id="navbarSupportedContent">
-              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <div class="offcanvas offcanvas-end" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0">
                 <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasLabel">Offcanvas</h5>
                   <button
                     type="button"
                     class="btn-close"
@@ -69,16 +78,20 @@
                     aria-label="Close"
                   ></button>
                 </div>
-                <!-- nav-item -->
+                <!--------------------------------- 
+                nav-item 
+                --------------------------------->
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#"
                     >Home</a
                   >
                 </li>
-                <!-- nav-item -->
-                <li class="nav-item dropdown">
+                <!--------------------------------
+                 nav-item 
+                 -------------------------------->
+                <li class="nav-item nav-left-left dropdown">
                   <a
-                    class="nav-link dropdown-toggle"
+                    class="nav-link nav-link-a dropdown-toggle"
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -97,8 +110,10 @@
                   </ul>
                 </li>
 
-                <!-- nav-item -->
-                <li class="nav-item unic dropdown">
+                <!----------------------------------- 
+                nav-item 
+                ------------------------------------>
+                <li class="nav-item nav-right-right dropdown">
                   <a
                     class="nav-link dropdown-toggle"
                     href="#"
@@ -118,7 +133,10 @@
                     </li>
                   </ul>
                 </li>
-                <!-- nav-item -->
+
+                <!--------------------------------- 
+                nav-item 
+                ---------------------------------->
 
                 <li class="nav-item prime dropdown">
                   <a
@@ -140,10 +158,12 @@
                     </li>
                   </ul>
                 </li>
-                <!-- nav-item -->
+                <!-------------------------------- 
+                nav-item 
+                --------------------------------->
                 <li class="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle"
+                    class="nav-link nav-link-b dropdown-toggle"
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -161,7 +181,9 @@
                     </li>
                   </ul>
                 </li>
-                <!-- nav-item -->
+                <!------------------------------ 
+                nav-item 
+                ------------------------------->
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
@@ -204,6 +226,7 @@
         </nav>
       </div>
     </header>
+
     <!--=======================================================================================================================
       form-section
       =======================================================================================================================-->
@@ -213,15 +236,19 @@
           <form action="">
             <div class="row">
               <div class="col-12 col-lg-6">
-                <label class="add" for="address"
+                <label data-aos="fade-left"
+          data-aos-duration="1200" class="add" for="address"
                   >Username or email address *</label
                 >
                 <br />
-                <input type="text" name="address" id="address" placeholder="" />
+                <input data-aos="fade-right"
+          data-aos-duration="1200" type="text" name="address" id="address" placeholder="" />
                 <br />
-                <label class="pass" for="password">Password*</label>
+                <label data-aos="fade-left"
+          data-aos-duration="1200" class="pass" for="password">Password*</label>
                 <br />
-                <input
+                <input data-aos="fade-right"
+          data-aos-duration="1200"
                   type="text"
                   name="password"
                   id="password"
@@ -229,25 +256,42 @@
                 />
                 <br />
 
-                <input
-                class="radio"
+                <input data-aos="fade-left"
+          data-aos-duration="1200"
+                  class="radio"
                   type="radio"
                   name="radio"
                   id="radio"
                   placeholder=""
                 />
-                <label class="rem" for="radio">Remember me</label>
+                <label data-aos="fade-right"
+          data-aos-duration="1200" class="rem" for="radio">Remember me</label>
                 <br />
                 <!-- <button class="log" type="submit">Log in</button> -->
-                <a class="primary-btn d-inline-block text-decoration-none" href="">Log in</a>
-                <div class="tittle-three">Lost your password?</div>
+                <a
+                  class="primary-btn d-inline-block text-decoration-none"
+                  href="./index.html"
+                  >Log in</a
+                >
+                <div data-aos="fade-left"
+          data-aos-duration="1200" class="tittle-three">Lost your password?</div>
               </div>
               <div class="col-12 col-lg-6">
-                <label class="mail" for="">Email address *</label>
+                <label data-aos="fade-right"
+          data-aos-duration="1200" class="mail" for="">Email address *</label>
                 <br />
-                <input type="text" name="email" id="email" placeholder="" />
-                <div class="tittle-four">A password will be send on your email address</div>
-                <button class=" reg-btn" type="submit">Register</button>
+                <input data-aos="fade-left"
+          data-aos-duration="1200" type="text" name="email" id="email" placeholder="" />
+                <div data-aos="fade-right"
+          data-aos-duration="1200" class="tittle-four">
+                  A password will be send on your email address
+                </div>
+                <button data-aos="fade-left"
+          data-aos-duration="1200" class="reg-btn" type="submit">
+                  <a class="text-decoration-none" href="creatAccount.html"
+                    >Register</a
+                  >
+                </button>
               </div>
             </div>
           </form>
@@ -257,7 +301,7 @@
     <!--======================================================================================================================= 
           footer-section 
           ====================================================================================================================-->
-      <section class="footer-section">
+    <section class="footer-section">
       <div class="container">
         <div class="footer-wrp">
           <!------------------------------------------------------- 
@@ -279,33 +323,41 @@
                part-one 
                --------------------------------------->
               <div class="col-sm-12 col-lg-6 col-xl-4">
-                <p class="footer-para">
+                <p data-aos="fade-left"
+          data-aos-duration="1200" class="footer-para">
                   LuxeShop is your trusted destination for premium, natural, and
                   innovation beauty products. Every product is carefully
                   selected to enhance your confidence and natural glow.
                 </p>
-                <ul class=" pay-list d-flex flex-wrap align-items-center list-unstyled">
-                  <li class="pay-item">
+                <ul
+                  class="pay-list d-flex flex-wrap align-items-center list-unstyled"
+                >
+                  <li data-aos="fade-up"
+          data-aos-duration="1200" class="pay-item">
                     <a href=""
                       ><img src="./asset/images/Frame 151.png" alt=""
                     /></a>
                   </li>
-                  <li class="pay-item">
+                  <li data-aos="fade-down"
+          data-aos-duration="1200" class="pay-item">
                     <a href=""
                       ><img src="./asset/images/Frame 155.png" alt=""
                     /></a>
                   </li>
-                  <li class="pay-item">
+                  <li data-aos="fade-up"
+          data-aos-duration="1200" class="pay-item">
                     <a href=""
                       ><img src="./asset/images/Frame 154.png" alt=""
                     /></a>
                   </li>
-                  <li class="pay-item">
+                  <li data-aos="fade-down"
+          data-aos-duration="1200" class="pay-item">
                     <a href=""
                       ><img src="./asset/images/Frame 153.png" alt=""
                     /></a>
                   </li>
-                  <li class="pay-item">
+                  <li data-aos="fade-up"
+          data-aos-duration="1200" class="pay-item">
                     <a href=""
                       ><img src="./asset/images/Frame 152.png" alt=""
                     /></a>
@@ -316,9 +368,11 @@
               part-two 
               --------------------------------------->
               <div class="col-sm-12 col-lg-6 col-xl-4">
-                <div class="footer-hed">Contact Us</div>
+                <div data-aos="fade-left"
+          data-aos-duration="1200" class="footer-hed">Contact Us</div>
                 <ul class="list-unstyled">
-                  <li class="footer-item">
+                  <li data-aos="fade-up"
+          data-aos-duration="1200" class="footer-item">
                     <a class="text-decoration-none footer-link" href=""
                       ><span class="prior"
                         ><img
@@ -327,27 +381,34 @@
                       >Tage-Hansens Gade 35, 8000 Aarhus</a
                     >
                   </li>
-                  <li class="footer-item">
+                  <li data-aos="fade-down"
+          data-aos-duration="1200" class="footer-item">
                     <a class="text-decoration-none footer-link" href=""
                       ><span class="prior"
                         ><img src="./asset/images/Email (1).png" alt="" /></span
                       >info@luxeshop.com</a
                     >
                   </li>
-                  <li class="footer-item">
-                    <a class="text-decoration-none footer-link" href=""
+                  <li data-aos="fade-up"
+          data-aos-duration="1200" class="footer-item">
+                    <a
+                      class="text-decoration-none footer-link"
+                      href="tel:+1234567890"
                       ><span class="prior"
                         ><img src="./asset/images/Comment.png" alt="" /></span
                       >+1952724472</a
                     >
                   </li>
-                  <li class="footer-item">
-                    <a class="text-decoration-none footer-link" href=""
+                  <li data-aos="fade-up"
+          data-aos-duration="1200"class="footer-item">
+                    <a
+                      class="text-decoration-none footer-link"
+                      href="tel:+1234567890"
                       ><span class="prior"
                         ><img
                           src="./asset/images/Telephone (1).png"
-                          alt="" /></span></a
-                    >0019-52724472
+                          alt="" /></span>0019-52724472</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -355,24 +416,29 @@
               part-three 
               ------------------------------------------>
               <div class="col-sm-12 col-lg-6 col-xl-2">
-                <div class="footer-hed">Quick Access</div>
-                <ul class="list-unstyled">
-                  <li class="footer-item">
+                <div data-aos="fade-left"
+          data-aos-duration="1200" class="footer-hed">Quick Access</div>
+                <ul  class="list-unstyled">
+                  <li data-aos="fade-up"
+          data-aos-duration="1200" class="footer-item">
                     <a class="text-decoration-none footer-link" href=""
                       >Why Us</a
                     >
                   </li>
-                  <li class="footer-item">
+                  <li data-aos="fade-down"
+          data-aos-duration="1200" class="footer-item">
                     <a class="text-decoration-none footer-link" href=""
                       >Term & conditions</a
                     >
                   </li>
-                  <li class="footer-item">
+                  <li data-aos="fade-up"
+          data-aos-duration="1200" class="footer-item">
                     <a class="text-decoration-none footer-link" href=""
                       >Bank Transfer Information</a
                     >
                   </li>
-                  <li class="footer-item">
+                  <li data-aos="fade-down"
+          data-aos-duration="1200" class="footer-item">
                     <a class="text-decoration-none footer-link" href=""
                       >Delivery Information</a
                     >
@@ -382,25 +448,29 @@
               <!---------------------------------------- 
               part-four
               ----------------------------------------->
-              <div class="col-sm-12  col-lg-6 col-xl-2">
+              <div class="col-sm-12 col-lg-6 col-xl-2">
                 <div></div>
                 <ul class="list-unstyled">
-                  <li class="footer-item main">
+                  <li data-aos="fade-up"
+          data-aos-duration="1200" class="footer-item main">
                     <a class="text-decoration-none footer-link" href=""
                       >How to Pay</a
                     >
                   </li>
-                  <li class="footer-item">
+                  <li data-aos="fade-down"
+          data-aos-duration="1200" class="footer-item">
                     <a class="text-decoration-none footer-link" href=""
                       >Returns & Refunds</a
                     >
                   </li>
-                  <li class="footer-item">
+                  <li data-aos="fade-up"
+          data-aos-duration="1200" class="footer-item">
                     <a class="text-decoration-none footer-link" href=""
                       >How to Order</a
                     >
                   </li>
-                  <li class="footer-item">
+                  <li data-aos="fade-up"
+          data-aos-duration="1200" class="footer-item">
                     <a class="text-decoration-none footer-link" href=""
                       >Get in Touch</a
                     >
@@ -416,27 +486,32 @@
           <div class="footer-third-part">
             <div class="social-icon">
               <ul class="d-flex align-items-center list-unstyled">
-                <li class="social-item">
+                <li data-aos="fade-up"
+          data-aos-duration="1200" class="social-item">
                   <a class="text-decoration-none" href=""
                     ><img src="./asset/images/Frame 146.png" alt=""
                   /></a>
                 </li>
-                <li class="social-item">
+                <li data-aos="fade-down"
+          data-aos-duration="1200" class="social-item">
                   <a class="text-decoration-none" href=""
                     ><img src="./asset/images/Frame 150.png" alt=""
                   /></a>
                 </li>
-                <li class="social-item">
+                <li data-aos="fade-up"
+          data-aos-duration="1200" class="social-item">
                   <a class="text-decoration-none" href=""
                     ><img src="./asset/images/Frame 149.png" alt=""
                   /></a>
                 </li>
-                <li class="social-item">
+                <li data-aos="fade-down"
+          data-aos-duration="1200" class="social-item">
                   <a class="text-decoration-none" href=""
                     ><img src="./asset/images/Frame 148.png" alt=""
                   /></a>
                 </li>
-                <li class="social-item">
+                <li data-aos="fade-up"
+          data-aos-duration="1200" class="social-item">
                   <a class="text-decoration-none" href=""
                     ><img src="./asset/images/Frame 147 (1).png" alt=""
                   /></a>
@@ -456,7 +531,7 @@
                   <img src="./asset/images/Frame 171.png" alt="" />
                 </div>
                 <div>
-                  <p class="footer-btm-para">
+                  <p class="footer-btm-para-one">
                     2025<a class="text-decoration-none" href="">LuxeShop,</a
                     ><a class="text-decoration-none" href=""
                       >All rights reserved</a
@@ -465,7 +540,7 @@
                 </div>
               </div>
               <div class="footer-btm-two">
-                <p class="footer-btm-para">Design by Susmita</p>
+                <p class="footer-btm-para-two">Design by Susmita</p>
               </div>
             </div>
           </div>
@@ -481,10 +556,17 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <!--================================================================================================================ 
+    link-for-aos 
+    ===================================================================================================================-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!--================================================================================================================ 
           link-for-js 
           =====================================================================================================================-->
     <script src="./js/script.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

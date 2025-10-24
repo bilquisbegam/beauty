@@ -13,6 +13,10 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+      <!--============================================================================================================
+     AOS Animation Library 
+     ==============================================================================================================-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!--========================================================================================================================= 
     link-for-custom-css 
     ==========================================================================================================================-->
@@ -22,23 +26,27 @@
     <!--=======================================================================================================================
      header-section 
      =======================================================================================================================-->
-  <header class="position-relative">
+    <header class="position-relative">
       <div class="container">
         <nav class="navbar navbar-expand-xl">
           <div class="container">
             <!------------------------------------------------------------------------
      button 
      --------------------------------------------------------------------------->
-
-            <button class="btn" type="submit">
-              <img src="./asset/images/Search (5).png" alt="" />Search...
-            </button>
+            <form class="form-nav" action="">
+              <button class="nav-search" type="submit">
+                <img src="./asset/images/Search (5).png" alt="" />Search...
+              </button>
+              <input type="text" name="search" id="search" placeholder="" />
+            </form>
 
             <!--------------------------------------------------------------------------- 
     navbar-brand 
     ---------------------------------------------------------------------------->
             <div class="navbar-brand position-absolute">
-              <a href=""><img src="./asset/images/Frame 179.png" alt="" /></a>
+              <a href="blog.html"
+                ><img src="./asset/images/Frame 179.png" alt=""
+              /></a>
             </div>
 
             <!--------------------------------------------------------------------------- 
@@ -60,8 +68,9 @@
     navbar-collapse 
     ------------------------------------------------------------------------------->
             <div class="offcanvas offcanvas-end" id="navbarSupportedContent">
-              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <ul class="navbar-nav mb-2 mb-lg-0">
                 <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasLabel">Offcanvas</h5>
                   <button
                     type="button"
                     class="btn-close"
@@ -69,16 +78,20 @@
                     aria-label="Close"
                   ></button>
                 </div>
-                <!-- nav-item -->
+                <!--------------------------------- 
+                nav-item 
+                --------------------------------->
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#"
                     >Home</a
                   >
                 </li>
-                <!-- nav-item -->
-                <li class="nav-item dropdown">
+                <!--------------------------------
+                 nav-item 
+                 -------------------------------->
+                <li class="nav-item nav-left-left dropdown">
                   <a
-                    class="nav-link dropdown-toggle"
+                    class="nav-link nav-link-a dropdown-toggle"
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -97,8 +110,10 @@
                   </ul>
                 </li>
 
-                <!-- nav-item -->
-                <li class="nav-item unic dropdown">
+                <!----------------------------------- 
+                nav-item 
+                ------------------------------------>
+                <li class="nav-item nav-right-right dropdown">
                   <a
                     class="nav-link dropdown-toggle"
                     href="#"
@@ -119,7 +134,9 @@
                   </ul>
                 </li>
 
-                <!-- nav-item -->
+                <!--------------------------------- 
+                nav-item 
+                ---------------------------------->
 
                 <li class="nav-item prime dropdown">
                   <a
@@ -141,10 +158,12 @@
                     </li>
                   </ul>
                 </li>
-                <!-- nav-item -->
+                <!-------------------------------- 
+                nav-item 
+                --------------------------------->
                 <li class="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle"
+                    class="nav-link nav-link-b dropdown-toggle"
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -162,7 +181,9 @@
                     </li>
                   </ul>
                 </li>
-                <!-- nav-item -->
+                <!------------------------------ 
+                nav-item 
+                ------------------------------->
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
@@ -205,13 +226,16 @@
         </nav>
       </div>
     </header>
+
     <!--========================================================================================================================
       banner-section/hero-section 
       ========================================================================================================================-->
     <section class="banner-section d-flex justify-content-center align-items-center position-relative">
       <div class="container">
-     <h1 class="tittle-one">Herbs for Hair growth</h1>
-        <p class="sub-para">Home  >  Educational Videos  >  Fix Your Crepey Under Eye Skin</p>
+     <h1    data-aos="fade-left"
+                  data-aos-duration="1200" class="tittle-one">Herbs for Hair growth</h1>
+        <p    data-aos="fade-right"
+                  data-aos-duration="1200" class="sub-para">Home  >  Educational Videos  >  Fix Your Crepey Under Eye Skin</p>
       </div>
     </section>
 
@@ -224,15 +248,18 @@
         <div class="about-row row">
           <div class="col-12 col-md-8">
             <div class="about-top d-flex flex-wrap">
-          <p class="top-para">22 April 2025</p>
-          <p class="top-para">Image Gallery</p>
+          <p    data-aos="fade-left"
+                  data-aos-duration="1200" class="top-para">22 April 2025</p>
+          <p    data-aos="fade-right"
+                  data-aos-duration="1200" class="top-para">Image Gallery</p>
             </div>
 
             <!----------------------------------------------------------
              about-big-img 
              ----------------------------------------------------------->
-            <div class="about-big-img">
-              <img src="./asset/images/Frame 273 (2).png" alt="">
+            <div data-aos="fade-left"
+                  data-aos-duration="1200" class="about-big-img">
+              <img  src="./asset/images/Frame 273 (2).png" alt="">
             </div>
             <div class="about-wrp">
               <div class="row">
@@ -240,7 +267,8 @@
                 <!------------------------------------------------------- 
                 about-small-img 
                 ---------------------------------------------------------->
-                <div class="col-4">
+                <div data-aos="fade-up"
+                  data-aos-duration="1200" class="col-4">
                   <div class="about-small-img">
                     <img src="./asset/images/Frame 274 (5).png" alt="">
                   </div>
@@ -248,7 +276,8 @@
                 <!------------------------------------------------------- 
                 about-small-img 
                 --------------------------------------------------------->
-                <div class="col-4">
+                <div data-aos="fade-down"
+                  data-aos-duration="1200" class="col-4">
                   <div class="about-small-img">
                     <img src="./asset/images/Frame 276 (2).png" alt="">
                   </div>
@@ -257,7 +286,8 @@
                 <!------------------------------------------------------- 
                 about-small-img 
                 ---------------------------------------------------------->
-                <div class="col-4">
+                <div data-aos="fade-up"
+                  data-aos-duration="1200" class="col-4">
                   <div class="about-small-img">
                     <img src="./asset/images/Frame 275 (1).png" alt="">
                   </div>
@@ -268,25 +298,34 @@
              form 
              ------------------------------------------------------------------------------->
             <form action="">
-                   <div class="tittle-three">Leave a Reply</div>
-            <div class="tittle-four">Your email address will not be published. Required fields are marked *</div>
+                   <div data-aos="fade-right"
+                  data-aos-duration="1200" class="tittle-three">Leave a Reply</div>
+            <div data-aos="fade-left"
+                  data-aos-duration="1200" class="tittle-four">Your email address will not be published. Required fields are marked *</div>
               <label  class="cmnt" for="comment">Comment *</label>
               <br>
-              <input type="text" name="comment" id="comment" placeholder="">
+              <input data-aos="fade-right"
+                  data-aos-duration="1200" type="text" name="comment" id="comment" placeholder="">
               <br>
-              <label  class="nam"  for="name">Name *</label>
+              <label data-aos="fade-left"
+                  data-aos-duration="1200"  class="nam"  for="name">Name *</label>
               <br>
-              <input type="text" name="name" id="name" placeholder="">
+              <input data-aos="fade-right"
+                  data-aos-duration="1200" type="text" name="name" id="name" placeholder="">
               <br>
-              <label  class="mail" for="email">Email *</label>
+              <label data-aos="fade-left"
+                  data-aos-duration="1200"  class="mail" for="email">Email *</label>
               <br>
-              <input type="text" name="email" id="email" placeholder="">
+              <input data-aos="fade-right"
+                  data-aos-duration="1200" type="text" name="email" id="email" placeholder="">
               <br>
-              <label class="wb"  for="web">website *</label>
+              <label data-aos="fade-left"
+                  data-aos-duration="1200" class="wb"  for="web">website *</label>
               <br>
               <input type="text" name="web" id="web" placeholder="">
               <br>
-              <button class="button" type="submit">Post Comment</button>
+              <button data-aos="fade-down"
+                  data-aos-duration="1200" class="button" type="submit">Post Comment</button>
             </form>
           </div>
 
@@ -295,18 +334,25 @@
           ------------------------------------------------------------>
           <div class="col-md-6 col-lg-4">
          <div class="about-small-card">
-             <p  class="about-para">Related Post</p>
-            <div class="about-card  d-flex align-items-center">
-              <div class="about-card-img">
+             <p  data-aos="fade-left"
+                  data-aos-duration="1200" class="about-para">Related Post</p>
+            <div  data-aos="fade-up"
+                  data-aos-duration="1200"class="about-card  d-flex align-items-center">
+              <div data-aos="fade-right"
+                  data-aos-duration="1200" class="about-card-img">
                 <img src="./asset/images/medium-shot-korean-woman-posing-with-serum 2 (2).png" alt="">
               </div>
-              <p class="small-para">herbs for face growth</p>
+              <p data-aos="fade-left"
+                  data-aos-duration="1200" class="small-para">herbs for face growth</p>
             </div>
-            <div class="about-card d-flex align-items-center">
-               <div class="about-card-img">
+            <div data-aos="fade-up"
+                  data-aos-duration="1200" class="about-card d-flex align-items-center">
+               <div data-aos="fade-right"
+                  data-aos-duration="1200" class="about-card-img">
                 <img src="./asset/images/Frame 286 (1).png" alt="">
               </div>
-              <p class="small-para">herbs for hair growth</p>
+              <p data-aos="fade-left"
+                  data-aos-duration="1200" class="small-para">herbs for hair growth</p>
             </div>
          </div>
           </div>
@@ -339,33 +385,39 @@
                part-one 
                --------------------------------------->
               <div class="col-sm-12 col-lg-6 col-xl-4">
-                <p class="footer-para">
+                <p data-aos="fade-left"
+                  data-aos-duration="1200" class="footer-para">
                   LuxeShop is your trusted destination for premium, natural, and
                   innovation beauty products. Every product is carefully
                   selected to enhance your confidence and natural glow.
                 </p>
                 <ul class="d-flex flex-wrap align-items-center list-unstyled">
-                  <li class="pay-item">
+                  <li data-aos="fade-up"
+                  data-aos-duration="1200" class="pay-item">
                     <a href=""
                       ><img src="./asset/images/Frame 151.png" alt=""
                     /></a>
                   </li>
-                  <li class="pay-item">
+                  <li data-aos="fade-down"
+                  data-aos-duration="1200" class="pay-item">
                     <a href=""
                       ><img src="./asset/images/Frame 155.png" alt=""
                     /></a>
                   </li>
-                  <li class="pay-item">
+                  <li data-aos="fade-up"
+                  data-aos-duration="1200" class="pay-item">
                     <a href=""
                       ><img src="./asset/images/Frame 154.png" alt=""
                     /></a>
                   </li>
-                  <li class="pay-item">
+                  <li data-aos="fade-down"
+                  data-aos-duration="1200" class="pay-item">
                     <a href=""
                       ><img src="./asset/images/Frame 153.png" alt=""
                     /></a>
                   </li>
-                  <li class="pay-item">
+                  <li data-aos="fade-up"
+                  data-aos-duration="1200" class="pay-item">
                     <a href=""
                       ><img src="./asset/images/Frame 152.png" alt=""
                     /></a>
@@ -376,9 +428,11 @@
               part-two 
               --------------------------------------->
               <div class="col-sm-12 col-lg-6 col-xl-4">
-                <div class="footer-hed">Contact Us</div>
+                <div data-aos="fade-left"
+                  data-aos-duration="1200" class="footer-hed">Contact Us</div>
                 <ul class="list-unstyled">
-                  <li class="footer-item">
+                  <li data-aos="fade-up"
+                  data-aos-duration="1200" class="footer-item">
                     <a class="text-decoration-none footer-link" href=""
                       ><span class="prior"
                         ><img
@@ -387,27 +441,30 @@
                       >Tage-Hansens Gade 35, 8000 Aarhus</a
                     >
                   </li>
-                  <li class="footer-item">
+                  <li data-aos="fade-down"
+                  data-aos-duration="1200" class="footer-item">
                     <a class="text-decoration-none footer-link" href=""
                       ><span class="prior"
                         ><img src="./asset/images/Email (1).png" alt="" /></span
                       >info@luxeshop.com</a
                     >
                   </li>
-                  <li class="footer-item">
-                    <a class="text-decoration-none footer-link" href=""
+                  <li data-aos="fade-up"
+                  data-aos-duration="1200" class="footer-item">
+                    <a class="text-decoration-none footer-link" href="tel:+1234567890"
                       ><span class="prior"
                         ><img src="./asset/images/Comment.png" alt="" /></span
                       >+1952724472</a
                     >
                   </li>
-                  <li class="footer-item">
-                    <a class="text-decoration-none footer-link" href=""
+                  <li data-aos="fade-down"
+                  data-aos-duration="1200" class="footer-item">
+                    <a class="text-decoration-none footer-link" href="el:+1234567890"
                       ><span class="prior"
                         ><img
                           src="./asset/images/Telephone (1).png"
-                          alt="" /></span></a
-                    >0019-52724472
+                          alt="" /></span>0019-52724472</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -415,24 +472,29 @@
               part-three 
               ------------------------------------------>
               <div class="col-sm-12 col-lg-6 col-xl-2">
-                <div class="footer-hed">Quick Access</div>
+                <div data-aos="fade-left"
+                  data-aos-duration="1200" class="footer-hed">Quick Access</div>
                 <ul class="list-unstyled">
-                  <li class="footer-item">
+                  <li data-aos="fade-up"
+                  data-aos-duration="1200" class="footer-item">
                     <a class="text-decoration-none footer-link" href=""
                       >Why Us</a
                     >
                   </li>
-                  <li class="footer-item">
+                  <li data-aos="fade-down"
+                  data-aos-duration="1200" class="footer-item">
                     <a class="text-decoration-none footer-link" href=""
                       >Term & conditions</a
                     >
                   </li>
-                  <li class="footer-item">
+                  <li data-aos="fade-up"
+                  data-aos-duration="1200" class="footer-item">
                     <a class="text-decoration-none footer-link" href=""
                       >Bank Transfer Information</a
                     >
                   </li>
-                  <li class="footer-item">
+                  <li data-aos="fade-down"
+                  data-aos-duration="1200" class="footer-item">
                     <a class="text-decoration-none footer-link" href=""
                       >Delivery Information</a
                     >
@@ -445,22 +507,26 @@
               <div class="col-sm-12 col-lg-6 col-xl-2">
                 <div></div>
                 <ul class="list-unstyled">
-                  <li class="footer-item main">
+                  <li data-aos="fade-up"
+                  data-aos-duration="1200" class="footer-item main">
                     <a class="text-decoration-none footer-link" href=""
                       >How to Pay</a
                     >
                   </li>
-                  <li class="footer-item">
+                  <li data-aos="fade-down"
+                  data-aos-duration="1200" class="footer-item">
                     <a class="text-decoration-none footer-link" href=""
                       >Returns & Refunds</a
                     >
                   </li>
-                  <li class="footer-item">
+                  <li data-aos="fade-up"
+                  data-aos-duration="1200" class="footer-item">
                     <a class="text-decoration-none footer-link" href=""
                       >How to Order</a
                     >
                   </li>
-                  <li class="footer-item">
+                  <li data-aos="fade-down"
+                  data-aos-duration="1200" class="footer-item">
                     <a class="text-decoration-none footer-link" href=""
                       >Get in Touch</a
                     >
@@ -476,27 +542,32 @@
           <div class="footer-third-part">
             <div class="social-icon">
               <ul class="d-flex align-items-center list-unstyled">
-                <li class="social-item">
+                <li data-aos="fade-up"
+                  data-aos-duration="1200" class="social-item">
                   <a class="text-decoration-none" href=""
                     ><img src="./asset/images/Frame 146.png" alt=""
                   /></a>
                 </li>
-                <li class="social-item">
+                <li data-aos="fade-down"
+                  data-aos-duration="1200" class="social-item">
                   <a class="text-decoration-none" href=""
                     ><img src="./asset/images/Frame 150.png" alt=""
                   /></a>
                 </li>
-                <li class="social-item">
+                <li data-aos="fade-up"
+                  data-aos-duration="1200" class="social-item">
                   <a class="text-decoration-none" href=""
                     ><img src="./asset/images/Frame 149.png" alt=""
                   /></a>
                 </li>
-                <li class="social-item">
+                <li data-aos="fade-down"
+                  data-aos-duration="1200" class="social-item">
                   <a class="text-decoration-none" href=""
                     ><img src="./asset/images/Frame 148.png" alt=""
                   /></a>
                 </li>
-                <li class="social-item">
+                <li data-aos="fade-up"
+                  data-aos-duration="1200" class="social-item">
                   <a class="text-decoration-none" href=""
                     ><img src="./asset/images/Frame 147 (1).png" alt=""
                   /></a>
@@ -516,7 +587,7 @@
                   <img src="./asset/images/Frame 171.png" alt="" />
                 </div>
                 <div>
-                  <p class="footer-btm-para">
+                  <p class="footer-btm-para-one">
                     2025<a class="text-decoration-none" href="">LuxeShop,</a
                     ><a class="text-decoration-none" href=""
                       >All rights reserved</a
@@ -525,7 +596,7 @@
                 </div>
               </div>
               <div class="footer-btm-two">
-                <p class="footer-btm-para">Design by Susmita</p>
+                <p class="footer-btm-para-two">Design by Susmita</p>
               </div>
             </div>
           </div>
@@ -541,10 +612,17 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+        <!--================================================================================================================ 
+    link-for-aos 
+    ===================================================================================================================-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!--================================================================================================================ 
           link-for-js 
           =====================================================================================================================-->
     <script src="./js/script.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

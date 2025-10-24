@@ -13,6 +13,10 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <!--============================================================================================================
+     AOS Animation Library 
+     ==============================================================================================================-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!--======================================================================================================================= 
     link-for-custom-css 
@@ -23,7 +27,6 @@
     <!--=========================================================================================================================
      header-section 
      ==========================================================================================================================-->
-
     <header class="position-relative">
       <div class="container">
         <nav class="navbar navbar-expand-xl">
@@ -31,16 +34,20 @@
             <!------------------------------------------------------------------------
      button 
      --------------------------------------------------------------------------->
-
-            <button class="btn" type="submit">
-              <img src="./asset/images/Search (5).png" alt="" />Search...
-            </button>
+            <form action="">
+              <button class="nav-search" type="submit">
+                <img src="./asset/images/Search (5).png" alt="" />Search...
+              </button>
+              <input type="text" name="search" id="search" placeholder="" />
+            </form>
 
             <!--------------------------------------------------------------------------- 
     navbar-brand 
     ---------------------------------------------------------------------------->
             <div class="navbar-brand position-absolute">
-              <a href=""><img src="./asset/images/Frame 179.png" alt="" /></a>
+              <a href="productDetail.html"
+                ><img src="./asset/images/Frame 179.png" alt=""
+              /></a>
             </div>
 
             <!--------------------------------------------------------------------------- 
@@ -61,9 +68,10 @@
             <!----------------------------------------------------------------------------- 
     navbar-collapse 
     ------------------------------------------------------------------------------->
-            <div class="offcanvas offcanvas-start" id="navbarSupportedContent">
-              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <div class="offcanvas offcanvas-end" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0">
                 <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasLabel">Offcanvas</h5>
                   <button
                     type="button"
                     class="btn-close"
@@ -71,16 +79,20 @@
                     aria-label="Close"
                   ></button>
                 </div>
-                <!-- nav-item -->
+                <!--------------------------------- 
+                nav-item 
+                --------------------------------->
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#"
                     >Home</a
                   >
                 </li>
-                <!-- nav-item -->
-                <li class="nav-item dropdown">
+                <!--------------------------------
+                 nav-item 
+                 -------------------------------->
+                <li class="nav-item nav-left-left dropdown">
                   <a
-                    class="nav-link dropdown-toggle"
+                    class="nav-link nav-link-a dropdown-toggle"
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -99,8 +111,10 @@
                   </ul>
                 </li>
 
-                <!-- nav-item -->
-                <li class="nav-item unic dropdown">
+                <!----------------------------------- 
+                nav-item 
+                ------------------------------------>
+                <li class="nav-item nav-right-right dropdown">
                   <a
                     class="nav-link dropdown-toggle"
                     href="#"
@@ -120,7 +134,10 @@
                     </li>
                   </ul>
                 </li>
-                <!-- nav-item -->
+
+                <!--------------------------------- 
+                nav-item 
+                ---------------------------------->
 
                 <li class="nav-item prime dropdown">
                   <a
@@ -142,10 +159,12 @@
                     </li>
                   </ul>
                 </li>
-                <!-- nav-item -->
+                <!-------------------------------- 
+                nav-item 
+                --------------------------------->
                 <li class="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle"
+                    class="nav-link nav-link-b dropdown-toggle"
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -163,7 +182,9 @@
                     </li>
                   </ul>
                 </li>
-                <!-- nav-item -->
+                <!------------------------------ 
+                nav-item 
+                ------------------------------->
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
@@ -207,6 +228,8 @@
       </div>
     </header>
 
+  
+
     <!--=========================================================================================================================
       banner-section 
       =========================================================================================================================-->
@@ -214,8 +237,16 @@
       class="banner-section d-flex justify-content-center align-items-center"
     >
       <div class="container">
-        <h1 class="tittle-one">Product</h1>
-        <p class="banner-para">Home / Product</p>
+        <h1
+          data-aos="fade-right"
+          data-aos-duration="1200"
+          class="tittle-one text-center"
+        >
+          Product
+        </h1>
+        <p data-aos="fade-left" data-aos-duration="1200" class="banner-para">
+          Home / Product
+        </p>
       </div>
     </section>
     <!--========================================================================================================================
@@ -232,9 +263,13 @@
               <!------------------------------------------
                first-card 
                ------------------------------------------>
-              <div class="first-card">
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1200"
+                class="first-card"
+              >
                 <a
-                  class="search-btn text-decoration-none d-inline-block"
+                  class="search-for-btn text-decoration-none d-inline-block"
                   href=""
                   >Search Product</a
                 >
@@ -250,26 +285,36 @@
               <!----------------------------------------- 
               secoend-card 
               ------------------------------------------>
-              <div class="secoend-card">
-                <a class="color-btn text-decoration-none d-inline-block" href="">Product Colors</a>
-                <div class="color-no">
+              <div
+                data-aos="fade-left"
+                data-aos-duration="1200"
+                class="secoend-card"
+              >
+                <a class="color-btn text-decoration-none d-inline-block" href=""
+                  >Product Colors</a
+                >
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1200"
+                  class="color-no"
+                >
                   <div
                     class="first-item d-flex justify-content-between align-items-center"
                   >
-                    <p>Blue</p>
-                    <p>(1)</p>
+                    <p data-aos="fade-up" data-aos-duration="1200">Blue</p>
+                    <p data-aos="fade-down" data-aos-duration="1200">(1)</p>
                   </div>
                   <div
                     class="secoend-item d-flex justify-content-between align-items-center"
                   >
-                    <p>Gray</p>
-                    <p>(2)</p>
+                    <p data-aos="fade-up" data-aos-duration="1200">Gray</p>
+                    <p data-aos="fade-down" data-aos-duration="1200">(2)</p>
                   </div>
                   <div
                     class="third-item d-flex justify-content-between align-items-center"
                   >
-                    <p>Red</p>
-                    <p>(3)</p>
+                    <p data-aos="fade-up" data-aos-duration="1200">Red</p>
+                    <p data-aos="fade-down" data-aos-duration="1200">(3)</p>
                   </div>
                 </div>
               </div>
@@ -277,99 +322,215 @@
               <!-----------------------------------------
                third-card 
                ----------------------------------------->
-              <div class="third-card">
-                <a class="price-btn text-decoration-none d-inline-block" href="">Filter by price</a>
-                <p class="price-para">Price: $0 - $20</p>
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1200"
+                class="third-card"
+              >
                 <form action="">
-                  <button class="filter-btn" type="submit">FILTER</button>
+                  <button class="price-button" type="submit">
+                    Filter by price
+                  </button>
+                  <br />
+                  <div class="radio-btn d-flex align-items-center">
+                    <input type="radio" name="" id="" />
+                    <img src="./asset/images/Frame 233 (3).png" alt="" />
+                    <input type="radio" name="" id="" />
+                  </div>
+                </form>
+
+                <p
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                  class="price-para"
+                >
+                  Price: $0 - $20
+                </p>
+                <form action="">
+                  <button
+                    data-aos="fade-down"
+                    data-aos-duration="1200"
+                    class="filter-btn"
+                    type="submit"
+                  >
+                    FILTER
+                  </button>
                 </form>
               </div>
               <!----------------------------------------- 
               fourth-card
               ------------------------------------------>
-              <div class="fourth-card">
+              <div
+                data-aos="fade-left"
+                data-aos-duration="1200"
+                class="fourth-card"
+              >
                 <form action="">
                   <button class="rec-btn" type="button">Recent Products</button>
                 </form>
                 <!------------------------------------------------------
                 about-small-card 
                 ------------------------------------------------------->
-                <div class="about-small-card d-flex align-items-center">
-                  <div class="about-small-card-img">
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1200"
+                  class="about-small-card d-flex align-items-center"
+                >
+                  <div
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    class="about-small-card-img"
+                  >
                     <img src="./asset/images/image 5 (4).png" alt="" />
                   </div>
-                  <div class="small-card-cntn text-center">
+                  <div
+                    data-aos="fade-down"
+                    data-aos-duration="1200"
+                    class="small-card-cntn text-center"
+                  >
                     <p>YAZ Persian Herb Face Oil</p>
-                    <div class="about-sign">
+                    <div
+                      data-aos="fade-left"
+                      data-aos-duration="1200"
+                      class="about-sign"
+                    >
                       <img src="./asset/images/stars 14.png" alt="" />
                     </div>
-                    <p>29,900 Kr.</p>
+                    <p data-aos="fade-right" data-aos-duration="1200">
+                      29,900 Kr.
+                    </p>
                   </div>
                 </div>
                 <!------------------------------------------------------------
                  about-small-card 
                  ------------------------------------------------------------>
-                <div class="about-small-card d-flex align-items-center">
-                  <div class="about-small-card-img">
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1200"
+                  class="about-small-card d-flex align-items-center"
+                >
+                  <div
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    class="about-small-card-img"
+                  >
                     <img src="./asset/images/image 2 (3).png" alt="" />
                   </div>
-                  <div class="small-card-cntn text-center">
+                  <div
+                    data-aos="fade-down"
+                    data-aos-duration="1200"
+                    class="small-card-cntn text-center"
+                  >
                     <p>YAZ Vitamin A Hand Cream</p>
-                    <div class="about-sign">
+                    <div
+                      data-aos="fade-left"
+                      data-aos-duration="1200"
+                      class="about-sign"
+                    >
                       <img src="./asset/images/stars 14.png" alt="" />
                     </div>
-                    <p>14,900 Kr.</p>
+                    <p data-aos="fade-right" data-aos-duration="1200">
+                      14,900 Kr.
+                    </p>
                   </div>
                 </div>
                 <!-------------------------------------------------------------- 
                 about-small-card
                 ------------------------------------------------------------ -->
-                <div class="about-small-card d-flex align-items-center">
-                  <div class="about-small-card-img">
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1200"
+                  class="about-small-card d-flex align-items-center"
+                >
+                  <div
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    class="about-small-card-img"
+                  >
                     <img
                       src="./asset/images/YAZ Vitamin A - Face 4.png"
                       alt=""
                     />
                   </div>
                   <div class="small-card-cntn text-center">
-                    <p>YAZ Vitamin A Hand Cream</p>
-                    <div class="about-sign">
+                    <p data-aos="fade-down" data-aos-duration="1200">
+                      YAZ Vitamin A Hand Cream
+                    </p>
+                    <div
+                      data-aos="fade-left"
+                      data-aos-duration="1200"
+                      class="about-sign"
+                    >
                       <img src="./asset/images/stars 14.png" alt="" />
                     </div>
-                    <p>14,900 Kr.</p>
+                    <p data-aos="fade-right" data-aos-duration="1200">
+                      14,900 Kr.
+                    </p>
                   </div>
                 </div>
                 <!--------------------------------------------------------------------- 
                 about-small-card 
                 --------------------------------------------------------------------->
-                <div class="about-small-card d-flex align-items-center">
-                  <div class="about-small-card-img">
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1200"
+                  class="about-small-card d-flex align-items-center"
+                >
+                  <div
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    class="about-small-card-img"
+                  >
                     <img
                       src="./asset/images/YAZ HAIR SHAMPOO (20 3.png"
                       alt=""
                     />
                   </div>
                   <div class="small-card-cntn text-center">
-                    <p>YAZ Vitamin A Face Mask</p>
-                    <div class="about-sign">
+                    <p data-aos="fade-down" data-aos-duration="1200">
+                      YAZ Vitamin A Face Mask
+                    </p>
+                    <div
+                      data-aos="fade-left"
+                      data-aos-duration="1200"
+                      class="about-sign"
+                    >
                       <img src="./asset/images/stars 14.png" alt="" />
                     </div>
-                    <p>36,000 Kr</p>
+                    <p data-aos="fade-right" data-aos-duration="1200">
+                      36,000 Kr
+                    </p>
                   </div>
                 </div>
                 <!---------------------------------------------------------------
                  about-small-card 
                  ---------------------------------------------------------------->
-                <div class="about-small-card d-flex align-items-center">
-                  <div class="about-small-card-img">
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1200"
+                  class="about-small-card d-flex align-items-center"
+                >
+                  <div
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    class="about-small-card-img"
+                  >
                     <img src="./asset/images/image 5 (5).png" alt="" />
                   </div>
                   <div class="small-card-cntn text-center">
-                    <p>YAZ Hair Shampoo</p>
-                    <div class="about-sign">
+                    <p data-aos="fade-down" data-aos-duration="1200">
+                      YAZ Hair Shampoo
+                    </p>
+                    <div
+                      data-aos="fade-left"
+                      data-aos-duration="1200"
+                      class="about-sign"
+                    >
                       <img src="./asset/images/stars 14.png" alt="" />
                     </div>
-                    <p>16,900 Kr.</p>
+                    <p data-aos="fade-right" data-aos-duration="1200">
+                      16,900 Kr.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -381,13 +542,31 @@
           --------------------------------------------------------------------------------->
           <div class="col-sm-12 col-xl-8">
             <div class="about-secoend-part">
-              <div class="about-img">
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1200"
+                class="about-img"
+              >
                 <img src="./asset/images/Frame 213.png" alt="" />
               </div>
               <div class="about-btn">
                 <div class="row">
-                  <div class="col-8"></div>
-                  <div class="col-4"></div>
+                  <div class="col-12 col-sm-7">
+                    <p class="btn-para">Showing 1 - 9 of 21 results</p>
+                  </div>
+                  <div class="col-12 col-sm-5">
+                    <a class="about-one d-inline-block" href=""
+                      ><img src="./asset/images/list.png" alt=""
+                    /></a>
+                    <a
+                      class="about-two d-inline-block text-decoration-none"
+                      href=""
+                      >Default Sorting
+                      <span
+                        ><img src="./asset/images/arrow-down.png" alt=""
+                      /></span>
+                    </a>
+                  </div>
                 </div>
               </div>
               <div class="about-wrp">
@@ -396,16 +575,40 @@
                 about-card-one 
                 ------------------------------------------------------->
                   <div class="col-sm-4">
-                    <div class="about-card mx-auto">
-                      <div class="about-card-img">
+                    <div
+                      data-aos="fade-up"
+                      data-aos-duration="1200"
+                      class="about-card mx-auto"
+                    >
+                      <div
+                        data-aos="fade-up"
+                        data-aos-duration="1200"
+                        class="about-card-img"
+                      >
                         <img src="./asset/images/image 1 (3).png" alt="" />
                       </div>
                       <div class="about-card-cntn">
-                        <p>YAZ Vitamin A Hand Cream</p>
-                        <div class="about-sign">
+                        <p
+                          class="about-sm-para"
+                          data-aos="fade-down"
+                          data-aos-duration="1200"
+                        >
+                          YAZ Vitamin A Hand Cream
+                        </p>
+                        <div
+                          data-aos="fade-right"
+                          data-aos-duration="1200"
+                          class="about-sign"
+                        >
                           <img src="./asset/images/stars 14.png" alt="" />
                         </div>
-                        <p>14,900 Kr.</p>
+                        <p
+                          class="about-sm-sub"
+                          data-aos="fade-left"
+                          data-aos-duration="1200"
+                        >
+                          14,900 Kr.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -413,19 +616,43 @@
                 about-card-two 
                 ------------------------------------------------------->
                   <div class="col-sm-4">
-                    <div class="about-card mx-auto">
-                      <div class="about-card-img">
+                    <div
+                      data-aos="fade-down"
+                      data-aos-duration="1200"
+                      class="about-card mx-auto"
+                    >
+                      <div
+                        data-aos="fade-right"
+                        data-aos-duration="1200"
+                        class="about-card-img"
+                      >
                         <img
                           src="./asset/images/YAZ Vitamin A - Face 3.png"
                           alt=""
                         />
                       </div>
                       <div class="about-card-cntn">
-                        <p>YAZ Vitamin A Face Mask</p>
-                        <div class="about-sign">
+                        <p
+                          class="about-sm-para"
+                          data-aos="fade-left"
+                          data-aos-duration="1200"
+                        >
+                          YAZ Vitamin A Face Mask
+                        </p>
+                        <div
+                          data-aos="fade-right"
+                          data-aos-duration="1200"
+                          class="about-sign"
+                        >
                           <img src="./asset/images/stars 14.png" alt="" />
                         </div>
-                        <p>36,000 Kr.</p>
+                        <p
+                          class="about-sm-sub"
+                          data-aos="fade-left"
+                          data-aos-duration="1200"
+                        >
+                          36,000 Kr.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -433,19 +660,43 @@
                 about-card-three 
                 ---------------------------------------------------------->
                   <div class="col-sm-4">
-                    <div class="about-card mx-auto">
-                      <div class="about-card-img">
+                    <div
+                      data-aos="fade-up"
+                      data-aos-duration="1200"
+                      class="about-card mx-auto"
+                    >
+                      <div
+                        data-aos="fade-right"
+                        data-aos-duration="1200"
+                        class="about-card-img"
+                      >
                         <img
                           src="./asset/images/YAZ HAIR SHAMPOO (20 2.png"
                           alt=""
                         />
                       </div>
                       <div class="about-card-cntn">
-                        <p>YAZ Hair Shampoo</p>
-                        <div class="about-sign">
+                        <p
+                          class="about-sm-para"
+                          data-aos="fade-right"
+                          data-aos-duration="1200"
+                        >
+                          YAZ Hair Shampoo
+                        </p>
+                        <div
+                          data-aos="fade-right"
+                          data-aos-duration="1200"
+                          class="about-sign"
+                        >
                           <img src="./asset/images/stars 14.png" alt="" />
                         </div>
-                        <p>16,900 Kr.</p>
+                        <p
+                          class="about-sm-sub"
+                          data-aos="fade-left"
+                          data-aos-duration="1200"
+                        >
+                          16,900 Kr.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -453,16 +704,40 @@
                  about-card-four 
                  ----------------------------------------------------------->
                   <div class="col-sm-4">
-                    <div class="about-card mx-auto">
-                      <div class="about-card-img">
+                    <div
+                      data-aos="fade-up"
+                      data-aos-duration="1200"
+                      class="about-card mx-auto"
+                    >
+                      <div
+                        data-aos="fade-right"
+                        data-aos-duration="1200"
+                        class="about-card-img"
+                      >
                         <img src="./asset/images/image 4 (6).png" alt="" />
                       </div>
                       <div class="about-card-cntn">
-                        <p>YAZ Persian Herb Face Oil</p>
-                        <div class="about-sign">
+                        <p
+                          class="about-sm-para"
+                          data-aos="fade-right"
+                          data-aos-duration="1200"
+                        >
+                          YAZ Persian Herb Face Oil
+                        </p>
+                        <div
+                          data-aos="fade-right"
+                          data-aos-duration="1200"
+                          class="about-sign"
+                        >
                           <img src="./asset/images/stars 14.png" alt="" />
                         </div>
-                        <p>29,900 Kr.</p>
+                        <p
+                          class="about-sm-sub"
+                          data-aos="fade-left"
+                          data-aos-duration="1200"
+                        >
+                          29,900 Kr.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -470,16 +745,40 @@
                 about-card-five 
                 -------------------------------------------------------------->
                   <div class="col-sm-4">
-                    <div class="about-card mx-auto">
-                      <div class="about-card-img">
+                    <div
+                      data-aos="fade-down"
+                      data-aos-duration="1200"
+                      class="about-card mx-auto"
+                    >
+                      <div
+                        data-aos="fade-right"
+                        data-aos-duration="1200"
+                        class="about-card-img"
+                      >
                         <img src="./asset/images/image 2 (2).png" alt="" />
                       </div>
                       <div class="about-card-cntn">
-                        <p>YAZ Vitamin A Face Cream</p>
-                        <div class="about-sign">
+                        <p
+                          class="about-sm-para"
+                          data-aos="fade-right"
+                          data-aos-duration="1200"
+                        >
+                          YAZ Vitamin A Face Cream
+                        </p>
+                        <div
+                          data-aos="fade-right"
+                          data-aos-duration="1200"
+                          class="about-sign"
+                        >
                           <img src="./asset/images/stars 14.png" alt="" />
                         </div>
-                        <p>27,900 Kr.</p>
+                        <p
+                          class="about-sm-sub"
+                          data-aos="fade-left"
+                          data-aos-duration="1200"
+                        >
+                          27,900 Kr.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -487,16 +786,40 @@
                 about-card-six 
                 ---------------------------------------------------------------->
                   <div class="col-sm-4">
-                    <div class="about-card mx-auto">
-                      <div class="about-card-img">
+                    <div
+                      data-aos="fade-up"
+                      data-aos-duration="1200"
+                      class="about-card mx-auto"
+                    >
+                      <div
+                        data-aos="fade-right"
+                        data-aos-duration="1200"
+                        class="about-card-img"
+                      >
                         <img src="./asset/images/image 3 (2).png" alt="" />
                       </div>
                       <div class="about-card-cntn">
-                        <p>Shaving cream clean cut</p>
-                        <div class="about-sign">
+                        <p
+                          class="about-sm-para"
+                          data-aos="fade-right"
+                          data-aos-duration="1200"
+                        >
+                          Shaving cream clean cut
+                        </p>
+                        <div
+                          data-aos="fade-right"
+                          data-aos-duration="1200"
+                          class="about-sign"
+                        >
                           <img src="./asset/images/stars 14.png" alt="" />
                         </div>
-                        <p>14,400 Kr.</p>
+                        <p
+                          class="about-sm-sub"
+                          data-aos="fade-left"
+                          data-aos-duration="1200"
+                        >
+                          14,400 Kr.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -504,19 +827,43 @@
                 about-card-seven 
                 -------------------------------------------------------------------->
                   <div class="col-sm-4">
-                    <div class="about-card mx-auto">
-                      <div class="about-card-img">
+                    <div
+                      data-aos="fade-down"
+                      data-aos-duration="1200"
+                      class="about-card mx-auto"
+                    >
+                      <div
+                        data-aos="fade-right"
+                        data-aos-duration="1200"
+                        class="about-card-img"
+                      >
                         <img
                           src="./asset/images/YAZ_PERSIAN_HERBS_Øj_2__3_-removebg-preview.png"
                           alt=""
                         />
                       </div>
                       <div class="about-card-cntn">
-                        <p>YAZ Persian Herb Med Oil</p>
-                        <div class="about-sign">
+                        <p
+                          class="about-sm-para"
+                          data-aos="fade-right"
+                          data-aos-duration="1200"
+                        >
+                          YAZ Persian Herb Med Oil
+                        </p>
+                        <div
+                          data-aos="fade-right"
+                          data-aos-duration="1200"
+                          class="about-sign"
+                        >
                           <img src="./asset/images/stars 14.png" alt="" />
                         </div>
-                        <p>12,000 Kr.</p>
+                        <p
+                          class="about-sm-sub"
+                          data-aos="fade-left"
+                          data-aos-duration="1200"
+                        >
+                          12,000 Kr.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -524,16 +871,40 @@
                  about-card-eight 
                  --------------------------------------------------------------->
                   <div class="col-sm-4">
-                    <div class="about-card mx-auto">
-                      <div class="about-card-img">
+                    <div
+                      data-aos="fade-up"
+                      data-aos-duration="1200"
+                      class="about-card mx-auto"
+                    >
+                      <div
+                        data-aos="fade-right"
+                        data-aos-duration="1200"
+                        class="about-card-img"
+                      >
                         <img src="./asset/images/Frame 226.png" alt="" />
                       </div>
                       <div class="about-card-cntn">
-                        <p>YAZ Saya Eye Cream</p>
-                        <div class="about-sign">
+                        <p
+                          class="about-sm-para"
+                          data-aos="fade-right"
+                          data-aos-duration="1200"
+                        >
+                          YAZ Saya Eye Cream
+                        </p>
+                        <div
+                          data-aos="fade-right"
+                          data-aos-duration="1200"
+                          class="about-sign"
+                        >
                           <img src="./asset/images/stars 14.png" alt="" />
                         </div>
-                        <p>30,000 Kr.</p>
+                        <p
+                          class="about-sm-sub"
+                          data-aos="fade-left"
+                          data-aos-duration="1200"
+                        >
+                          30,000 Kr.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -541,19 +912,43 @@
                 about-card-nine 
                 ----------------------------------------------------------->
                   <div class="col-sm-4">
-                    <div class="about-card mx-auto">
-                      <div class="about-card-img">
+                    <div
+                      data-aos="fade-down"
+                      data-aos-duration="1200"
+                      class="about-card mx-auto"
+                    >
+                      <div
+                        data-aos="fade-right"
+                        data-aos-duration="1200"
+                        class="about-card-img"
+                      >
                         <img
                           src="./asset/images/image_5__6_-removebg-preview.png"
                           alt=""
                         />
                       </div>
                       <div class="about-card-cntn mx-auto text-center">
-                        <p>YAZ Antioxidant Serum</p>
-                        <div class="about-sign">
+                        <p
+                          class="about-sm-para"
+                          data-aos="fade-right"
+                          data-aos-duration="1200"
+                        >
+                          YAZ Antioxidant Serum
+                        </p>
+                        <div
+                          data-aos="fade-right"
+                          data-aos-duration="1200"
+                          class="about-sign"
+                        >
                           <img src="./asset/images/stars 14.png" alt="" />
                         </div>
-                        <p>35,000 Kr.</p>
+                        <p
+                          class="about-sm-sub"
+                          data-aos="fade-left"
+                          data-aos-duration="1200"
+                        >
+                          35,000 Kr.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -575,12 +970,30 @@
              card-one 
              ----------------------------------------------------->
           <div class="col-sm-12 col-md-6 col-xxl-3">
-            <div class="offer-card mx-auto">
-              <div class="offer-card-img-one">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              class="offer-card mx-auto"
+            >
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1200"
+                class="offer-card-img-one"
+              >
                 <img src="./asset/images/premium-badge 1.png" alt="" />
               </div>
-              <div class="offer-card-text">
-                <p class="offer-para">Premium Qualikty</p>
+              <div
+                data-aos="fade-left"
+                data-aos-duration="1200"
+                class="offer-card-text"
+              >
+                <p
+                  data-aos="fade-down"
+                  data-aos-duration="1200"
+                  class="offer-para"
+                >
+                  Premium Qualikty
+                </p>
                 <span class="offer-sub-para">Top-quality,related product</span>
               </div>
             </div>
@@ -589,12 +1002,30 @@
            card-two
            --------------------------------------------------------->
           <div class="col-sm-12 col-md-6 col-xxl-3">
-            <div class="offer-card mx-auto">
-              <div class="offer-card-img-two">
+            <div
+              data-aos="fade-down"
+              data-aos-duration="1200"
+              class="offer-card mx-auto"
+            >
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1200"
+                class="offer-card-img-two"
+              >
                 <img src="./asset/images/discount 1.png" alt="" />
               </div>
-              <div class="offer-card-text">
-                <p class="offer-para">Special Discounts</p>
+              <div
+                data-aos="fade-left"
+                data-aos-duration="1200"
+                class="offer-card-text"
+              >
+                <p
+                  data-aos="fade-down"
+                  data-aos-duration="1200"
+                  class="offer-para"
+                >
+                  Special Discounts
+                </p>
                 <span class="offer-sub-para">Exclusive seasonal offers</span>
               </div>
             </div>
@@ -603,12 +1034,30 @@
           card-three 
           ----------------------------------------------------------->
           <div class="col-sm-12 col-md-6 col-xxl-3">
-            <div class="offer-card mx-auto">
-              <div class="offer-card-img-three">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              class="offer-card mx-auto"
+            >
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1200"
+                class="offer-card-img-three"
+              >
                 <img src="./asset/images/fast 1.png" alt="" />
               </div>
-              <div class="offer-card-text">
-                <p class="offer-para">Fast Delivery</p>
+              <div
+                data-aos="fade-left"
+                data-aos-duration="1200"
+                class="offer-card-text"
+              >
+                <p
+                  data-aos="fade-down"
+                  data-aos-duration="1200"
+                  class="offer-para"
+                >
+                  Fast Delivery
+                </p>
                 <span class="offer-sub-para">Quick & safe shipping</span>
               </div>
             </div>
@@ -617,12 +1066,30 @@
           card-four 
           ----------------------------------------------------------->
           <div class="col-sm-12 col-md-6 col-xxl-3">
-            <div class="offer-card mx-auto">
-              <div class="offer-card-img-four">
+            <div
+              data-aos="fade-down"
+              data-aos-duration="1200"
+              class="offer-card mx-auto"
+            >
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1200"
+                class="offer-card-img-four"
+              >
                 <img src="./asset/images/Frame 140.png" alt="" />
               </div>
-              <div class="offer-card-text">
-                <p class="offer-para">24/7 Support</p>
+              <div
+                data-aos="fade-left"
+                data-aos-duration="1200"
+                class="offer-card-text"
+              >
+                <p
+                  data-aos="fade-down"
+                  data-aos-duration="1200"
+                  class="offer-para"
+                >
+                  24/7 Support
+                </p>
                 <span class="offer-sub-para">Always here to help.</span>
               </div>
             </div>
@@ -656,33 +1123,57 @@
                part-one 
                --------------------------------------->
               <div class="col-sm-12 col-lg-6 col-xl-4">
-                <p class="footer-para">
+                <p
+                  data-aos="fade-right"
+                  data-aos-duration="1200"
+                  class="footer-para"
+                >
                   LuxeShop is your trusted destination for premium, natural, and
                   innovation beauty products. Every product is carefully
                   selected to enhance your confidence and natural glow.
                 </p>
-                <ul class="d-flex flex-wrap align-items-center list-unstyled">
-                  <li class="pay-item">
-                    <a href=""
+                <ul class=" pay-list d-flex  flex-wrap align-items-center list-unstyled">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    class="pay-item"
+                  >
+                    <a class="pay-link" href=""
                       ><img src="./asset/images/Frame 151.png" alt=""
                     /></a>
                   </li>
-                  <li class="pay-item">
+                  <li
+                    data-aos="fade-down"
+                    data-aos-duration="1200"
+                    class="pay-item"
+                  >
                     <a href=""
                       ><img src="./asset/images/Frame 155.png" alt=""
                     /></a>
                   </li>
-                  <li class="pay-item">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    class="pay-item"
+                  >
                     <a href=""
                       ><img src="./asset/images/Frame 154.png" alt=""
                     /></a>
                   </li>
-                  <li class="pay-item">
+                  <li
+                    data-aos="fade-down"
+                    data-aos-duration="1200"
+                    class="pay-item"
+                  >
                     <a href=""
                       ><img src="./asset/images/Frame 153.png" alt=""
                     /></a>
                   </li>
-                  <li class="pay-item">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    class="pay-item"
+                  >
                     <a href=""
                       ><img src="./asset/images/Frame 152.png" alt=""
                     /></a>
@@ -693,9 +1184,19 @@
               part-two 
               --------------------------------------->
               <div class="col-sm-12 col-lg-6 col-xl-4">
-                <div class="footer-hed">Contact Us</div>
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1200"
+                  class="footer-hed"
+                >
+                  Contact Us
+                </div>
                 <ul class="list-unstyled">
-                  <li class="footer-item">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    class="footer-item"
+                  >
                     <a class="text-decoration-none footer-link" href=""
                       ><span class="prior"
                         ><img
@@ -704,27 +1205,43 @@
                       >Tage-Hansens Gade 35, 8000 Aarhus</a
                     >
                   </li>
-                  <li class="footer-item">
+                  <li
+                    data-aos="fade-down"
+                    data-aos-duration="1200"
+                    class="footer-item"
+                  >
                     <a class="text-decoration-none footer-link" href=""
                       ><span class="prior"
                         ><img src="./asset/images/Email (1).png" alt="" /></span
                       >info@luxeshop.com</a
                     >
                   </li>
-                  <li class="footer-item">
-                    <a class="text-decoration-none footer-link" href=""
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    class="footer-item"
+                  >
+                    <a
+                      class="text-decoration-none footer-link"
+                      href="tel:+1234567890"
                       ><span class="prior"
                         ><img src="./asset/images/Comment.png" alt="" /></span
                       >+1952724472</a
                     >
                   </li>
-                  <li class="footer-item">
-                    <a class="text-decoration-none footer-link" href=""
+                  <li
+                    data-aos="fade-down"
+                    data-aos-duration="1200"
+                    class="footer-item"
+                  >
+                    <a
+                      class="text-decoration-none footer-link"
+                      href="tel:+1234567890"
                       ><span class="prior"
                         ><img
                           src="./asset/images/Telephone (1).png"
-                          alt="" /></span></a
-                    >0019-52724472
+                          alt="" /></span>0019-52724472</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -732,24 +1249,46 @@
               part-three 
               ------------------------------------------>
               <div class="col-sm-12 col-lg-6 col-xl-2">
-                <div class="footer-hed">Quick Access</div>
+                <div
+                  data-aos="fade-left"
+                  data-aos-duration="1200"
+                  class="footer-hed"
+                >
+                  Quick Access
+                </div>
                 <ul class="list-unstyled">
-                  <li class="footer-item">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    class="footer-item"
+                  >
                     <a class="text-decoration-none footer-link" href=""
                       >Why Us</a
                     >
                   </li>
-                  <li class="footer-item">
+                  <li
+                    data-aos="fade-down"
+                    data-aos-duration="1200"
+                    class="footer-item"
+                  >
                     <a class="text-decoration-none footer-link" href=""
                       >Term & conditions</a
                     >
                   </li>
-                  <li class="footer-item">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    class="footer-item"
+                  >
                     <a class="text-decoration-none footer-link" href=""
                       >Bank Transfer Information</a
                     >
                   </li>
-                  <li class="footer-item">
+                  <li
+                    data-aos="fade-down"
+                    data-aos-duration="1200"
+                    class="footer-item"
+                  >
                     <a class="text-decoration-none footer-link" href=""
                       >Delivery Information</a
                     >
@@ -762,22 +1301,38 @@
               <div class="col-sm-12 col-lg-6 col-xl-2">
                 <div></div>
                 <ul class="list-unstyled">
-                  <li class="footer-item main">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    class="footer-item main"
+                  >
                     <a class="text-decoration-none footer-link" href=""
                       >How to Pay</a
                     >
                   </li>
-                  <li class="footer-item">
+                  <li
+                    data-aos="fade-down"
+                    data-aos-duration="1200"
+                    class="footer-item"
+                  >
                     <a class="text-decoration-none footer-link" href=""
                       >Returns & Refunds</a
                     >
                   </li>
-                  <li class="footer-item">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    class="footer-item"
+                  >
                     <a class="text-decoration-none footer-link" href=""
                       >How to Order</a
                     >
                   </li>
-                  <li class="footer-item">
+                  <li
+                    data-aos="fade-down"
+                    data-aos-duration="1200"
+                    class="footer-item"
+                  >
                     <a class="text-decoration-none footer-link" href=""
                       >Get in Touch</a
                     >
@@ -793,27 +1348,49 @@
           <div class="footer-third-part">
             <div class="social-icon">
               <ul class="d-flex align-items-center list-unstyled">
-                <li class="social-item">
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                  class="social-item"
+                >
                   <a class="text-decoration-none" href=""
                     ><img src="./asset/images/Frame 146.png" alt=""
                   /></a>
                 </li>
-                <li class="social-item">
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                  class="social-item"
+                >
                   <a class="text-decoration-none" href=""
                     ><img src="./asset/images/Frame 150.png" alt=""
                   /></a>
                 </li>
-                <li class="social-item">
+                <li
+                  data-aos="fade-down"
+                  data-aos-duration="1200"
+                  data-aos="fade-down"
+                  data-aos-duration="1200"
+                  class="social-item"
+                >
                   <a class="text-decoration-none" href=""
                     ><img src="./asset/images/Frame 149.png" alt=""
                   /></a>
                 </li>
-                <li class="social-item">
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                  class="social-item"
+                >
                   <a class="text-decoration-none" href=""
                     ><img src="./asset/images/Frame 148.png" alt=""
                   /></a>
                 </li>
-                <li class="social-item">
+                <li
+                  data-aos="fade-down"
+                  data-aos-duration="1200"
+                  class="social-item"
+                >
                   <a class="text-decoration-none" href=""
                     ><img src="./asset/images/Frame 147 (1).png" alt=""
                   /></a>
@@ -833,7 +1410,7 @@
                   <img src="./asset/images/Frame 171.png" alt="" />
                 </div>
                 <div>
-                  <p class="footer-btm-para">
+                  <p class="footer-btm-para-one">
                     2025<a class="text-decoration-none" href="">LuxeShop,</a
                     ><a class="text-decoration-none" href=""
                       >All rights reserved</a
@@ -842,7 +1419,7 @@
                 </div>
               </div>
               <div class="footer-btm-two">
-                <p class="footer-btm-para">Design by Susmita</p>
+                <p class="footer-btm-para-two">Design by Susmita</p>
               </div>
             </div>
           </div>
@@ -858,10 +1435,17 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <!--================================================================================================================ 
+    link-for-aos 
+    ===================================================================================================================-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!--================================================================================================================ 
           link-for-js 
           =====================================================================================================================-->
     <script src="./js/script.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

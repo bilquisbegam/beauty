@@ -27,6 +27,12 @@ global-css
 
 body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  margin: 0 10px;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 .tittle-one {
@@ -45,13 +51,13 @@ body {
 :root {
   --primary-color: #a68268;
   --secoendary-color: #f2f2f2;
-  --secoendary-color-two: #e8e7e6;
+  --secoendary-color-silver: #e8e7e6;
   --tersiary-color: #f7f8fc;
   --text-color: #312319;
-  --text-color-two: #f7eede;
-  --text-color-three: #7f604a;
+  --text-color-silver: #f7eede;
+  --text-color-brown: #7f604a;
   --line-color: #dfcbbd;
-  --tersiary-color-two: #f4e9e0;
+  --tersiary-color-silver: #f4e9e0;
   --btn-color: #dfcbbd;
 }
 
@@ -62,10 +68,23 @@ header {
   padding: 50px 0 10px;
 }
 
-.btn > img {
+.nav-search > img {
   max-width: 30px;
   width: 100%;
   object-fit: contain;
+}
+
+.nav-search {
+  border: none;
+  background: transparent;
+}
+
+.nav-search + input#search {
+  border: none;
+}
+
+#search:focus {
+  outline: none;
 }
 
 .navbar-brand > a > img {
@@ -83,7 +102,7 @@ header {
 }
 
 .nav-item {
-  margin-right: 42px;
+  margin-right: 32px;
 }
 
 .friends-btn > img {
@@ -104,9 +123,71 @@ header {
   max-width: 30px;
   width: 100%;
   object-fit: contain;
-  margin-left: 32px;
+  margin-left: 42px;
 }
 
+.nav-right-right {
+  margin-right: 150px;
+}
+.nav-link-a {
+  margin-right: 5px;
+}
+.nav-link-b {
+  margin-left: 50px;
+}
+
+.navbar-nav {
+  flex-grow: 2;
+}
+
+/*-------------------------------------------------------------------------
+ nav-link-hover-effect
+ -------------------------------------------------------------------------- */
+.nav-link {
+  width: 90px;
+  position: relative;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+  color: var(--text-color);
+}
+
+.nav-link::before {
+  content: "";
+  height: 8px;
+  width: 0px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  position: absolute;
+  top: 120%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  transition: all 0.6s linear;
+}
+
+.nav-link:hover::before {
+  width: 8px;
+}
+
+/*---------------------------------------------------------------- 
+navbar-toggler
+---------------------------------------------------------------- */
+.navbar-toggler {
+  border: 5px solid var(--primary-color);
+}
+
+/*-----------------------------------------------------------------
+ offcanvas
+ ---------------------------------------------------------------- */
+.offcanvas-title {
+  color: var(--primary-color);
+  font-size: 32px;
+  margin-right: 20px;
+}
+
+.btn-close {
+  border: 5px solid var(--primary-color);
+}
 /*=========================================================================================================================== 
  bannner-section/hero-section
  ============================================================================================================================ */
@@ -210,18 +291,19 @@ about-section
 }
 
 .small-card-cntn {
+  max-width: 299px;
   margin-left: 38px;
 }
 
 /*------------------------------------------------------- 
 about-fist-part-button
 -------------------------------------------------------- */
-.search-btn {
+.search-for-btn {
   min-width: 411px;
   max-height: 58px;
   padding: 11px 22px;
   border-radius: 20px;
-  background: var(--tersiary-color-two);
+  background: var(--tersiary-color-silver);
   font-size: 20px;
   font-weight: 300;
   line-height: 100%;
@@ -234,7 +316,7 @@ about-fist-part-button
   max-height: 58px;
   padding: 11px 22px 11px;
   border-radius: 20px;
-  border: 1px solid var(--tersiary-color-two);
+  border: 1px solid var(--tersiary-color-silver);
   font-size: 20px;
   font-weight: 300;
   line-height: 100%;
@@ -264,33 +346,35 @@ about-fist-part-button
   max-height: 58px;
   padding: 11px 22px;
   border-radius: 20px;
-  background: var(--tersiary-color-two);
+  background: var(--tersiary-color-silver);
   font-size: 24px;
   font-weight: 400;
   line-height: 100%;
   color: var(--text-color);
 }
 
-.price-btn {
+.price-button {
   min-width: 411px;
   max-height: 58px;
+  border: none;
   padding: 11px 22px;
   border-radius: 20px;
-  background: var(--tersiary-color-two);
+  background: var(--tersiary-color-silver);
   font-size: 24px;
   font-weight: 400;
   line-height: 100%;
   color: black;
-  position: relative;
+  margin-bottom: 51px;
 }
-.price-btn::after {
-  content: "";
-  height: 9px;
-  width: 374px;
-  background: url("../asset/images/Frame\ 233\ \(2\).png");
-  position: absolute;
-  top: 150%;
-  transform: translateX(-45%);
+
+.radio-btn > img {
+  max-width: 374px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.radio-btn {
+  max-width: 385px;
 }
 
 .price-para {
@@ -305,7 +389,7 @@ about-fist-part-button
   max-height: 78px;
   padding: 21px 57px;
   border-radius: 20px;
-  background: var(--tersiary-color-two);
+  background: var(--tersiary-color-silver);
   font-size: 24px;
   font-weight: 400;
   line-height: 100%;
@@ -319,7 +403,7 @@ about-fist-part-button
   max-height: 58px;
   padding: 11px 22px;
   border-radius: 20px;
-  background: var(--tersiary-color-two);
+  background: var(--tersiary-color-silver);
   font-size: 24px;
   font-weight: 300;
   line-height: 100%;
@@ -333,14 +417,13 @@ about-fist-part-button
 about-secoend-part
 ------------------------------------------------------- */
 
-.about-img {
-  max-width: 1279px;
-}
-
 .about-card {
   max-width: 415px;
-  max-height: 800px;
+  max-height: 530px;
   text-align: center;
+}
+.about-img {
+  max-width: 1279px;
 }
 
 .about-img > img {
@@ -349,6 +432,61 @@ about-secoend-part
   object-fit: contain;
 }
 
+.about-btn {
+  position: relative;
+}
+
+.btn-para {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+  color: var(--primary-color);
+  margin-top: 166px;
+}
+
+.about-btn::after {
+  content: "";
+  width: 1279px;
+  height: 1px;
+  background: var(--primary-color);
+  position: absolute;
+}
+
+.about-one {
+  min-width: 106px;
+  max-height: 51px;
+  padding: 8px 35px;
+  border: 1px solid var(--primary-color);
+  margin-top: 24px;
+  margin-right: 14px;
+  margin-bottom: 47px;
+}
+
+.about-one > img {
+  max-width: 35px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.about-two {
+  min-width: 255px;
+  max-height: 79px;
+  padding: 21px 18px;
+  border: 1px solid var(--primary-color);
+  margin-top: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 33px;
+  color: var(--primary-color);
+}
+
+.about-two > img {
+  max-width: 24px;
+  width: 100%;
+  object-fit: contain;
+}
+/* about-card */
 .about-card-img > img {
   height: 100%;
   width: 100%;
@@ -358,14 +496,38 @@ about-secoend-part
 .about-card-img {
   max-width: 415px;
   height: 400px;
-  background: var(--tersiary-color-two) !important;
+  background: var(--tersiary-color-silver) !important;
   border-radius: 20px;
   margin-bottom: 26px;
 }
 
-/*=============================================================================================================================
- offer-section
- ============================================================================================================================= */
+.about-sign > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.about-sign {
+  max-width: 178px;
+  margin: 0 auto;
+}
+
+.about-sm-para {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 100%;
+  color: black;
+  margin-bottom: 14px;
+}
+
+.about-sm-sub {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 100%;
+  color: var(--primary-color);
+  margin-top: 11px;
+}
+
 /*======================================================================================================================== 
     offer-section 
     ===========================================================================================================================*/
@@ -380,6 +542,16 @@ offer-card
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.offer-card::after {
+  content: "";
+  height: 206px;
+  width: 1px;
+  background: var(--secoendary-color-silver);
+  position: absolute;
+  left: 105%;
 }
 
 /*--------------------------------------------
@@ -491,15 +663,27 @@ footer-brand
   transform: translate(-50%, 25%);
 }
 
+.pay-list{
+  max-width:474px ;
+}
+
+
 .pay-item {
+  max-width: 72px;
   margin-left: 8px;
   margin-bottom: 10px;
+  transition: 0.6s linear;
 }
 
 .pay-item > a > img {
   max-width: 72px;
   width: 100%;
   object-fit: contain;
+}
+
+.pay-item:hover{
+  border: 2px solid var(--primary-color);
+  
 }
 
 /*-------------------------------- 
@@ -512,13 +696,32 @@ socaial-icon
 }
 
 .social-item {
+  max-width: 34px;
   margin-right: 32px;
+  position: relative;
 }
 
 .social-item > a > img {
   max-width: 34px;
   width: 100%;
   object-fit: contain;
+}
+
+.social-item::after {
+  content: "";
+  height: 6px;
+  width: 0px;
+  border-radius: 50%;
+  background: var(--text-color);
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.6s linear;
+}
+
+.social-item:hover::after {
+  width: 6px;
 }
 
 /*---------------------------------- 
@@ -549,14 +752,14 @@ footer-item
   font-weight: 700;
   line-height: 100%;
   margin-bottom: 30px;
-  color: var(--text-color-three);
+  color: var(--text-color-brown);
 }
 
 .footer-para {
   font-size: 20px;
   font-weight: 400;
   line-height: 100%;
-  color: var(--text-color-three);
+  color: var(--text-color-brown);
   margin-bottom: 54px;
 }
 
@@ -569,7 +772,7 @@ footer-item
   content: "";
   height: 1px;
   width: 1320px;
-  background: var(--text-color-three);
+  background: var(--text-color-brown);
   position: absolute;
   top: 150%;
 }
@@ -578,14 +781,23 @@ footer-item
   margin-top: 37px;
 }
 
-.footer-btm-para {
+.footer-btm-para-one {
   font-size: 24px;
   font-weight: 300;
   line-height: 100%;
   color: black !important;
+  margin-top: 20px;
 }
 
-.footer-btm-para > a {
+.footer-btm-para-two {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 100%;
+  color: black !important;
+  margin-top: 20px;
+}
+
+.footer-btm-para-one > a {
   font-size: 24px;
   font-weight: 300;
   line-height: 100%;
@@ -606,10 +818,39 @@ footer-item
 /*------------------------------------------------------------------------ 
 footer-link-hover-effect
 ------------------------------------------------------------------------ */
+.footer-item {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+  margin-bottom: 50px;
+}
+
+.footer-link {
+  color: var(--text-color);
+  position: relative;
+  transition: 0.6s linear;
+}
+
+.footer-link::before {
+  content: "";
+  height: 2px;
+  width: 0;
+  background: var(--text-color);
+  position: absolute;
+  top: 100%;
+  transition: 0.6s linear;
+}
 
 .footer-link:hover {
   color: var(--primary-color);
+  transition-delay: 0.6s;
 }
+
+.footer-link:hover::before {
+  width:100%;
+}
+
+
 
 /******************************************************************************************************************************
   mediaQuries 
@@ -624,14 +865,35 @@ footer-link-hover-effect
   header-section 
   -------------------------------------------------------------------*/
   .nav-item {
-    margin-right: 22px;
+    margin-right: 0px;
+    margin-left: 5px;
+  }
+
+  .friend-btn > img,
+  .cart-btn > img,
+  .hrt-btn > img {
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+
+  .nav-right-right {
+    margin-right: 40px;
+  }
+
+  .navbar-nav {
+    margin-right: auto;
+    flex-grow: 1;
+  }
+
+  .nav-link {
+    font-size: 16px;
   }
 
   /*----------------------------------------------------- 
   about-section
   ---------------------------------------------------- */
 
-  .search-btn {
+  .search-for-btn {
     min-width: 300px;
   }
 
@@ -643,7 +905,7 @@ footer-link-hover-effect
     min-width: 300px;
   }
 
-  .price-btn {
+  .price-button {
     min-width: 300px;
   }
 
@@ -655,12 +917,18 @@ footer-link-hover-effect
   .rec-btn {
     min-width: 300px;
   }
+
+  .about-two {
+    margin-top: 0;
+  }
+
   /*----------------------------------------------------------------- 
   footer-section 
   ----------------------------------------------------------------*/
 
   .footer-third-part::after {
-    width: 1100px;
+    /* width: 1100px; */
+    transform: translateX(-10%);
   }
 }
 
@@ -684,6 +952,9 @@ comm0n-section
 header-section 
 --------------------------------------------------------------------*/
 
+  .navbar-nav {
+    margin: 0 auto;
+  }
   .navbar-button {
     margin-top: 20px;
   }
@@ -691,11 +962,24 @@ header-section
     margin-left: 0;
   }
 
+  .navbar-toggler {
+    margin-left: auto;
+  }
+  .nav-right-right {
+    margin-right: 0;
+  }
+  .nav-link-a {
+    margin-right: o;
+  }
+  .nav-link-b {
+    margin-left: 0;
+  }
+
   /*----------------------------------------------------- 
   about-section
   ---------------------------------------------------- */
 
-  .search-btn {
+  .search-for-btn {
     min-width: 500px;
   }
 
@@ -741,18 +1025,38 @@ header-section
     margin-bottom: 20px;
   }
 
+  .btn-para {
+    margin-top: 30px;
+  }
+
+  .about-sm-para {
+    font-size: 18px;
+  }
+
+  .about-sm-sub {
+    font-size: 16px;
+  }
+
+  .about-sign {
+    max-width: 120px;
+  }
+
   /*----------------------------------------------------------------- 
 footer-section 
 ------------------------------------------------------------------*/
+  .pay-list {
+    max-width: 474px;
+    margin: 0 auto 20px;
+  }
 
+  .footer-secoend-part {
+    text-align: center;
+  }
   .footer-brand {
     transform: translate(-50%, 60%);
   }
-
-  .footer-third-part::after {
-    width: 900px;
-  }
 }
+
 /*=====================================================================================
    mediaQuries at 992px
    ==================================================================================== */
@@ -766,6 +1070,13 @@ footer-section
     text-align: center;
   }
 
+  /*------------------------------------------------------- 
+  about-section 
+  -----------------------------------------------------*/
+  .btn-para {
+    margin-top: 120px;
+  }
+
   /*--------------------------------------------------------------------- 
   footer-section 
   ---------------------------------------------------------------------*/
@@ -776,10 +1087,6 @@ footer-section
 
   .main {
     margin-top: 20px;
-  }
-
-  .footer-third-part::after {
-    width: 650px;
   }
 }
 
@@ -799,10 +1106,19 @@ footer-section
     font-size: 72px;
   }
 
+  /* about-section */
+
+  .about-two {
+    min-width: 130px;
+  }
+
   /*----------------------------------------------------
    offer-section 
    ----------------------------------------------------*/
 
+  .offer-section {
+    padding: 80px 0 120px;
+  }
   .offer-card {
     margin-bottom: 20px;
   }
@@ -816,7 +1132,7 @@ footer-section
   }
 
   .footer-third-part::after {
-    width: 475px;
+    /* width: 475px; */
   }
 }
 
@@ -844,8 +1160,13 @@ footer-section
     max-width: 100px;
     transform: translate(-75%, 25%);
   }
+  header {
+    padding: 0;
+  }
 
-  /* banner-section */
+  /*-----------------------------------------------------------
+   banner-section
+   ---------------------------------------------------------- */
   .banner-section {
     min-height: 400px;
   }
@@ -874,9 +1195,9 @@ footer-section
   }
 
   .fourth-card {
-    padding: 30px;
+    padding: 30px 10px 50px;
   }
-  .search-btn {
+  .search-for-btn {
     min-width: 230px;
     font-size: 16px;
     text-align: center;
@@ -894,21 +1215,42 @@ footer-section
     text-align: center;
   }
 
-  .price-btn {
+  /* form{
+    text-align: center;
+  } */
+
+  .price-button {
     min-width: 230px;
     font-size: 18px;
-    text-align: center;
   }
 
-  .price-btn::after {
-    width: 200px;
-    transform: translateX(-80%);
+  .radio-btn > img {
+    max-width: 200px;
   }
+
+  /* .radio-btn {
+    max-width: 220px;
+    margin: 0 auto;
+  } */
+
+  /* .price-para {
+    text-align: center;
+  } */
 
   .rec-btn {
     min-width: 230px;
     font-size: 18px;
+    margin-bottom: 40px;
   }
+
+  .filter-btn {
+    min-width: 130px;
+    font-size: 18px;
+  }
+
+  /* form {
+    text-align: center;
+  } */
 
   .first-item,
   .secoend-item {
@@ -937,17 +1279,45 @@ footer-section
 
   .about-card-img {
     max-width: 200px;
-    margin: 0 auto;
+    margin: 0 auto 20px;
   }
 
-  /* offer-section */
+  .small-card-cntn {
+    margin: 0 auto 20px;
+  }
+
+  .about-two {
+    margin-top: 20px;
+  }
+
+  .btn-para {
+    margin-top: 20px;
+  }
+
+  .about-one {
+    min-width: 40px;
+    padding: 10px;
+  }
+
+  .about-two {
+    min-width: 160px;
+    padding: 20px 10px;
+  }
+
+  .about-card-img {
+    max-height: 300px;
+  }
+
+  /*---------------------------------------------------- 
+  offer-section 
+  -------------------------------------------------------*/
 
   .offer-section {
-    padding: 80px 0 130px;
+    padding: 80px 0 120px;
   }
 
   .offer-para {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .offer-sub-para {
@@ -974,17 +1344,26 @@ footer-section
 
   .footer-third-part::after {
     top: 120%;
-    width: 230px;
+    /* width: 230px; */
   }
 
   .social-item {
     margin-right: 4px;
   }
-  .footer-btm-para {
+  .footer-btm-para-one {
     font-size: 18px;
   }
 
-  .footer-btm-para > a {
+  .footer-btm-para-one > a {
     font-size: 18px;
+  }
+
+  .footer-btm-para-two {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+
+  .btm-one-img {
+    margin-right: 2px;
   }
 }

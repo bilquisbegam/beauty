@@ -28,6 +28,11 @@ common-section
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+  margin: 0 10px;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 .tittle-one {
@@ -55,11 +60,11 @@ body {
 :root {
   --primary-color: #a68268;
   --secoendary-color: #f2f2f2;
-  --secoendary-color-two: #e8e7e6;
+  --secoendary-color-silver: #e8e7e6;
   --tersiary-color: #f7f8fc;
   --text-color: #312319;
-  --text-color-two: #f7eede;
-  --text-color-three: #7f604a;
+  --text-color-silver: #f7eede;
+  --text-color-brown: #7f604a;
   --line-color: #dfcbbd;
 }
 /*================================================================================================================================
@@ -69,10 +74,23 @@ header {
   padding: 50px 0 10px;
 }
 
-.btn > img {
+.nav-search > img {
   max-width: 30px;
   width: 100%;
   object-fit: contain;
+}
+
+.nav-search {
+  border: none;
+  background: transparent;
+}
+
+.nav-search + input#search {
+  border: none;
+}
+
+#search:focus {
+  outline: none;
 }
 
 .navbar-brand > a > img {
@@ -90,7 +108,7 @@ header {
 }
 
 .nav-item {
-  margin-right: 42px;
+  margin-right: 32px;
 }
 
 .friends-btn > img {
@@ -111,7 +129,70 @@ header {
   max-width: 30px;
   width: 100%;
   object-fit: contain;
-  margin-left: 32px;
+  margin-left: 42px;
+}
+
+.nav-right-right {
+  margin-right: 150px;
+}
+.nav-link-a {
+  margin-right: 5px;
+}
+.nav-link-b {
+  margin-left: 50px;
+}
+
+.navbar-nav {
+  flex-grow: 2;
+}
+
+/*-------------------------------------------------------------------------
+ nav-link-hover-effect
+ -------------------------------------------------------------------------- */
+.nav-link {
+  width: 90px;
+  position: relative;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+  color: var(--text-color);
+}
+
+.nav-link::before {
+  content: "";
+  height: 8px;
+  width: 0px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  position: absolute;
+  top: 120%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  transition: all 0.6s linear;
+}
+
+.nav-link:hover::before {
+  width: 8px;
+}
+
+/*---------------------------------------------------------------- 
+navbar-toggler
+---------------------------------------------------------------- */
+.navbar-toggler {
+  border: 5px solid var(--primary-color);
+}
+
+/*-----------------------------------------------------------------
+ offcanvas
+ ---------------------------------------------------------------- */
+.offcanvas-title {
+  color: var(--primary-color);
+  font-size: 32px;
+  margin-right: 20px;
+}
+
+.btn-close {
+  border: 5px solid var(--primary-color);
 }
 /*=========================================================================================================================== 
  bannner-section/hero-section
@@ -122,7 +203,7 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-    border-radius: 62px;
+  border-radius: 62px;
 }
 
 /*============================================================================================================================== 
@@ -211,36 +292,134 @@ about-img
 /*------------------------------------------------------- 
 about-btm-card 
 --------------------------------------------------------*/
-
-.about-btm-card {
+.about-btm-card-one {
   max-width: 439px;
-  max-height: 84px;
-  padding: 30px 25px;
-  border-radius: 40px;
-  text-align: center;
-  position: absolute;
-  bottom: 50px;
-  left: 5px;
-}
-
-
-
-
-
-.btm-card-para {
-  /* max-width: 439px; */
-  height: 84px;
-  padding: 30px 25px;
+  /* padding: 30px 136px; */
+  padding: 20px 54px 10px;
   border-radius: 40px;
   background: white;
+  position: absolute;
+  bottom: 5%;
+  left: 11%;
+}
+
+.about-btm-card-two {
+  max-width: 439px;
+  /* padding: 30px 99px; */
+  padding: 20px 28px 10px;
+  border-radius: 40px;
+  background: white;
+  position: absolute;
+  bottom: 5%;
+  left: 6%;
+}
+.about-btm-card-three {
+  max-width: 439px;
+  /* padding: 30px 96px; */
+  padding: 20px 26px 10px;
+  border-radius: 40px;
+  background: white;
+  position: absolute;
+  bottom: 5%;
+  left: 7%;
+}
+.about-btm-card-four {
+  max-width: 439px;
+  /* padding: 30px 112px; */
+  padding: 20px 34px 10px;
+  border-radius: 40px;
+  background: white;
+  position: absolute;
+  bottom: 5%;
+  left: 9%;
+}
+.about-btm-card-five {
+  max-width: 439px;
+  /* padding: 30px 132px; */
+  padding: 20px 54px 10px;
+  border-radius: 40px;
+  background: white;
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+}
+.about-btm-card-six {
+  max-width: 439px;
+  /* padding: 30px 25px; */
+  padding: 12px 05px 4px;
+  border-radius: 40px;
+  background: white;
+  position: absolute;
+  bottom: 5%;
+}
+.about-btm-card-seven {
+  max-width: 439px;
+  /* padding: 30px 90px; */
+  padding: 20px 22px 10px;
+  border-radius: 40px;
+  background: white;
+  position: absolute;
+  bottom: 5%;
+  left: 6%;
+}
+.about-btm-card-eight {
+  max-width: 439px;
+  /* padding: 30px 90px; */
+  padding: 20px 24px 10px;
+  border-radius: 40px;
+  background: white;
+  position: absolute;
+  bottom: 5%;
+  left: 6%;
+}
+.about-btm-card-nine {
+  max-width: 439px;
+  /* padding: 30px 130px; */
+  padding: 20px 54px 10px;
+  border-radius: 40px;
+  background: white;
+  position: absolute;
+  bottom: 7%;
+  left: 10%;
+}
+.about-btm-card-ten {
+  max-width: 439px;
+  /* padding: 30px 57px; */
+  padding: 12px 20px 4px;
+  border-radius: 40px;
+  background: white;
+  position: absolute;
+  bottom: 8%;
+  left: 4%;
+}
+.about-btm-card-eleven {
+  max-width: 439px;
+  /* padding: 30px 102px; */
+  padding: 20px 24px 10px;
+  border-radius: 40px;
+  background: white;
+  position: absolute;
+  bottom: 9%;
+  left: 8%;
+}
+.about-btm-card-twelve {
+  max-width: 439px;
+  /* padding: 30px 36px; */
+  padding: 12px 18px 4px;
+  border-radius: 40px;
+  background: white;
+  position: absolute;
+  bottom: 10%;
+  left: 6%;
+}
+
+.btm-card-para {
   color: black;
   font-size: 16px;
   font-weight: 400;
   line-height: 100%;
   text-align: center;
 }
-
-
 
 /*========================================================================================================================== 
     footer-section 
@@ -249,6 +428,7 @@ about-btm-card
   background: var(--secoendary-color);
   border-top-left-radius: 65px;
   border-top-right-radius: 65px;
+  margin: 0 -10px;
 }
 
 .footer-wrp {
@@ -278,15 +458,30 @@ footer-brand
   transform: translate(-50%, 25%);
 }
 
-.pay-item {
-  margin-left: 8px;
-  margin-bottom: 10px;
-}
+/* pay-item */
 
 .pay-item > a > img {
   max-width: 72px;
   width: 100%;
   object-fit: contain;
+}
+.pay-list{
+  max-width:474px ;
+}
+
+
+.pay-item {
+  max-width: 72px;
+  margin-left: 8px;
+  margin-bottom: 10px;
+  transition: 0.6s linear;
+}
+
+
+
+.pay-item:hover{
+  border: 2px solid var(--primary-color);
+  
 }
 
 /*-------------------------------- 
@@ -299,7 +494,9 @@ socaial-icon
 }
 
 .social-item {
+  max-width: 34px;
   margin-right: 32px;
+  position: relative;
 }
 
 .social-item > a > img {
@@ -307,6 +504,26 @@ socaial-icon
   width: 100%;
   object-fit: contain;
 }
+
+
+.social-item::after {
+  content: "";
+  height: 6px;
+  width: 0px;
+  border-radius: 50%;
+  background: var(--text-color);
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    transition: all 0.6s linear;
+  
+}
+
+.social-item:hover::after{
+  width: 6px;
+}
+
 
 /*---------------------------------- 
 footer-item
@@ -337,14 +554,14 @@ footer-item
   font-weight: 700;
   line-height: 100%;
   margin-bottom: 30px;
-  color: var(--text-color-three);
+  color: var(--text-color-brown);
 }
 
 .footer-para {
   font-size: 20px;
   font-weight: 400;
   line-height: 100%;
-  color: var(--text-color-three);
+  color: var(--text-color-brown);
   margin-bottom: 54px;
 }
 
@@ -357,7 +574,7 @@ footer-item
   content: "";
   height: 1px;
   width: 1320px;
-  background: var(--text-color-three);
+  background: var(--text-color-brown);
   position: absolute;
   top: 150%;
 }
@@ -366,18 +583,28 @@ footer-item
   margin-top: 37px;
 }
 
-.footer-btm-para {
+.footer-btm-para-one {
   font-size: 24px;
   font-weight: 300;
   line-height: 100%;
   color: black !important;
+  margin-top: 15px;
 }
 
-.footer-btm-para > a {
+.footer-btm-para-one > a {
   font-size: 24px;
   font-weight: 300;
   line-height: 100%;
   color: black !important;
+  margin-top: 15px;
+}
+
+.footer-btm-para-two {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 100%;
+  color: black !important;
+  margin-top: 15px;
 }
 
 .btm-one-img > img {
@@ -395,10 +622,38 @@ footer-item
 footer-link-hover-effect
 ------------------------------------------------------------------------ */
 
-.footer-link:hover {
-  color: var(--primary-color);
+.footer-item {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+  color: var(--text-color) !important;
+  margin-bottom: 50px;
 }
 
+.footer-link {
+  color: var(--text-color);
+  position: relative;
+  transition: 0.6s linear;
+}
+
+.footer-link::before{
+content: "";
+height: 2px;
+width: 0;
+background: var(--text-color);
+position: absolute;
+top: 100%;
+ transition: 0.6s linear;
+}
+
+.footer-link:hover{
+color: var(--primary-color);
+transition-delay: 0.6s;
+}
+
+.footer-link:hover::before{
+  width: 100%;
+}
 
 /*******************************************************************************************************************************
   mediaQuries 
@@ -412,25 +667,99 @@ footer-link-hover-effect
   /*--------------------------------------------------------------------- 
   header-section 
   -------------------------------------------------------------------*/
+
   .nav-item {
-    margin-right: 22px;
+    margin-right: 0px;
+    margin-left: 5px;
   }
 
-.about-btm-card{
-  padding: 10px;
-  bottom: 10px;
-}
-
-  .about-btm-para{
-    font-size: 14px;
-    
+  .friend-btn > img,
+  .cart-btn > img,
+  .hrt-btn > img {
+    margin-left: 0px;
+    margin-right: 10px;
   }
+
+  .nav-right-right {
+    margin-right: 40px;
+  }
+
+  .navbar-nav {
+    margin-right: auto;
+    flex-grow: 1;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+
+  /*-------------------------------------------------------------------
+ about-section
+ ------------------------------------------------------------------ */
+
+  .about-btm-card-one {
+    left: 9%;
+    padding: 20px 32px 10px;
+  }
+
+  .about-btm-card-two {
+    left: -2%;
+    padding: 20px 16px 10px;
+  }
+
+  .about-btm-card-three {
+    left: -2%;
+    padding: 20px 20px 10px;
+  }
+
+  .about-btm-card-four {
+    left: -2%;
+    padding: 20px 30px 10px;
+  }
+
+  .about-btm-card-five {
+    padding: 20px 30px 10px;
+  }
+
+  .about-btm-card-six {
+    padding: 10px 05px 5px;
+  }
+
+  .about-btm-card-seven {
+    left: -2%;
+    padding: 20px 08px 10px;
+  }
+
+  .about-btm-card-eight {
+    padding: 15px 08px 05px;
+  }
+
+  .about-btm-card-nine {
+    left: 11%;
+    padding: 20px 24px 10px;
+  }
+
+  .about-btm-card-ten {
+    padding: 10px 10px 05px;
+  }
+
+  .about-btm-card-eleven {
+    left: -2%;
+    padding: 20px 10px 10px;
+  }
+
+  .about-btm-card-twelve {
+    left: -2%;
+    padding: 10px 05px 05px;
+  }
+
   /*-------------------------------------------------------------------- 
   footer-section 
   -------------------------------------------------------------------*/
 
   .footer-third-part::after {
-    width: 1100px;
+    /* width: 1100px; */
+    transform: translateX(-10%);
   }
 }
 
@@ -449,11 +778,26 @@ comm0n-section
   /*------------------------------------------------------------------ 
 header-section 
 --------------------------------------------------------------------*/
-
+  .navbar-nav {
+    margin: 0 auto;
+  }
   .navbar-button {
     margin-top: 20px;
   }
   .friends-btn > img {
+    margin-left: 0;
+  }
+
+  .navbar-toggler {
+    margin-left: auto;
+  }
+  .nav-right-right {
+    margin-right: 0;
+  }
+  .nav-link-a {
+    margin-right: o;
+  }
+  .nav-link-b {
     margin-left: 0;
   }
   /*----------------------------------------------------------------------- 
@@ -461,6 +805,63 @@ about-section
 -----------------------------------------------------------------------*/
   .about-section {
     padding-bottom: 180px;
+  }
+
+  .about-btm-card-one {
+    left: 9%;
+    padding: 20px 60px 10px;
+  }
+
+  .about-btm-card-two {
+    left: 10%;
+    padding: 20px 24px 10px;
+  }
+
+  .about-btm-card-three {
+    left: 10%;
+    padding: 20px 20px 10px;
+  }
+
+  .about-btm-card-four {
+    left: 10%;
+    padding: 20px 34px 10px;
+  }
+
+  .about-btm-card-five {
+    padding: 20px 54px 10px;
+  }
+
+  .about-btm-card-six {
+    padding: 10px 05px 5px;
+  }
+
+  .about-btm-card-seven {
+    left: 10%;
+    padding: 20px 14px 10px;
+  }
+
+  .about-btm-card-eight {
+    left: 11%;
+    padding: 20px 16px 10px;
+  }
+
+  .about-btm-card-nine {
+    left: 11%;
+    padding: 20px 54px 10px;
+  }
+
+  .about-btm-card-ten {
+    padding: 10px 10px 05px;
+  }
+
+  .about-btm-card-eleven {
+    left: 10%;
+    padding: 20px 18px 10px;
+  }
+
+  .about-btm-card-twelve {
+    left: -2%;
+    padding: 10px 02px 05px;
   }
 
   /*----------------------------------------------------------------- 
@@ -479,7 +880,7 @@ footer-section
   }
 
   .footer-third-part::after {
-    width: 900px;
+    /* width: 900px; */
   }
 }
 /*=====================================================================================
@@ -498,8 +899,64 @@ about-section
     max-width: 372px;
   }
 
-  .about-btm-card {
-    max-width: 372px;
+  .about-btm-card-one {
+    left: 17%;
+    padding: 20px 60px 10px;
+  }
+
+  .about-btm-card-two {
+    left: 17%;
+    padding: 20px 24px 10px;
+  }
+
+  .about-btm-card-three {
+    left: 18%;
+    padding: 20px 20px 10px;
+  }
+
+  .about-btm-card-four {
+    left: 18%;
+    padding: 20px 34px 10px;
+  }
+
+  .about-btm-card-five {
+    left: 18%;
+    padding: 20px 54px 10px;
+  }
+
+  .about-btm-card-six {
+    padding: 20px 15px 10px;
+  }
+
+  .about-btm-card-seven {
+    left: 18%;
+    padding: 20px 14px 10px;
+  }
+
+  .about-btm-card-eight {
+    left: 17%;
+    padding: 20px 16px 10px;
+  }
+
+  .about-btm-card-nine {
+    left: 18%;
+    padding: 20px 54px 10px;
+  }
+
+  .about-btm-card-ten {
+    left: 10%;
+    padding: 20px 10px 10px;
+  }
+
+  .about-btm-card-eleven {
+    left: 18%;
+    bottom: 5%;
+    padding: 20px 18px 10px;
+  }
+
+  .about-btm-card-twelve {
+    left: 9%;
+    padding: 20px 04px 10px;
   }
 
   /*--------------------------------------------------------------------- 
@@ -515,7 +972,7 @@ about-section
   }
 
   .footer-third-part::after {
-    width: 650px;
+    /* width: 650px; */
   }
 }
 
@@ -542,6 +999,67 @@ about-section
     font-size: 14px;
   }
 
+  .about-btm-card-one {
+    left: 17%;
+    padding: 20px 68px 10px;
+  }
+
+  .about-btm-card-two {
+    left: 17%;
+    padding: 20px 36px 10px;
+  }
+
+  .about-btm-card-three {
+    left: 18%;
+    padding: 20px 36px 10px;
+  }
+
+  .about-btm-card-four {
+    left: 18%;
+    padding: 20px 48px 10px;
+  }
+
+  .about-btm-card-five {
+    left: 18%;
+    padding: 20px 64px 10px;
+  }
+
+  .about-btm-card-six {
+    left: 6%;
+    padding: 20px 15px 10px;
+  }
+
+  .about-btm-card-seven {
+    left: 18%;
+    padding: 20px 28px 10px;
+  }
+
+  .about-btm-card-eight {
+    left: 17%;
+    padding: 20px 30px 10px;
+  }
+
+  .about-btm-card-nine {
+    left: 18%;
+    padding: 20px 64px 10px;
+  }
+
+  .about-btm-card-ten {
+    left: 15%;
+    padding: 20px 10px 10px;
+  }
+
+  .about-btm-card-eleven {
+    left: 18%;
+    bottom: 5%;
+    padding: 20px 32px 10px;
+  }
+
+  .about-btm-card-twelve {
+    left: 14%;
+    padding: 20px 04px 10px;
+  }
+
   /*------------------------------------------------------- 
   footer-section 
   --------------------------------------------------------*/
@@ -551,7 +1069,7 @@ about-section
   }
 
   .footer-third-part::after {
-    width: 475px;
+    /* width: 475px; */
   }
 }
 
@@ -568,7 +1086,7 @@ about-section
   }
 
   .tittle-one {
-    font-size: 72px;
+    font-size: 56px;
     margin: 0 auto 15px;
   }
 
@@ -581,27 +1099,92 @@ about-section
     transform: translate(-75%, 25%);
   }
 
+  
+  header {
+    padding: 0;
+  }
+
+
   /*---------------------------------------------------- 
   banner-section 
   ------------------------------------------------------*/
-.banner-section{
-  min-height: 400px;
-}
+  .banner-section {
+    min-height: 300px;
+  }
+  .sub-para {
+    font-size: 20px;
+  }
   /*----------------------------------------------------------------------- 
 about-section 
 -----------------------------------------------------------------------*/
   .about-section {
     padding-bottom: 100px;
   }
-
-  .about-unic-card-one {
-    padding: 20px;
+  .about-img {
+    max-width: 600px;
   }
 
-  .about-unic-card-two {
-    padding: 20px;
+  .about-btm-card-one {
+    left: 17%;
+    padding: 20px 68px 10px;
+    overflow: hidden;
   }
 
+  .about-btm-card-two {
+    left: 17%;
+    padding: 20px 36px 10px;
+  }
+
+  .about-btm-card-three {
+    left: 18%;
+    padding: 20px 36px 10px;
+  }
+
+  .about-btm-card-four {
+    left: 18%;
+    padding: 20px 48px 10px;
+  }
+
+  .about-btm-card-five {
+    left: 18%;
+    padding: 20px 64px 10px;
+  }
+
+  .about-btm-card-six {
+    left: 6%;
+    padding: 20px 15px 10px;
+  }
+
+  .about-btm-card-seven {
+    left: 18%;
+    padding: 20px 28px 10px;
+  }
+
+  .about-btm-card-eight {
+    left: 17%;
+    padding: 20px 30px 10px;
+  }
+
+  .about-btm-card-nine {
+    left: 18%;
+    padding: 20px 64px 10px;
+  }
+
+  .about-btm-card-ten {
+    left: 15%;
+    padding: 20px 10px 10px;
+  }
+
+  .about-btm-card-eleven {
+    left: 18%;
+    bottom: 5%;
+    padding: 20px 32px 10px;
+  }
+
+  .about-btm-card-twelve {
+    left: 14%;
+    padding: 20px 04px 10px;
+  }
 
   /*--------------------------------------------------------- 
   footer-section
@@ -623,17 +1206,91 @@ about-section
 
   .footer-third-part::after {
     top: 120%;
-    width: 230px;
+    /* width: 230px; */
   }
 
   .social-item {
-    margin-right: 4px;
+    margin-right: 2px;
   }
-  .footer-btm-para {
-    font-size: 18px;
+  .footer-btm-para-one {
+    font-size: 16px;
   }
 
-  .footer-btm-para > a {
-    font-size: 18px;
+  .footer-btm-para-one > a {
+    font-size: 16px;
+  }
+  .footer-btm-para-two {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+
+  .btm-one-img {
+    margin-right: 2px;
+  }
+}
+
+@media Screen and (max-width: 475px) {
+  /*--------------------------------------------------------------- 
+  about-section 
+  ---------------------------------------------------------------*/
+  .about-btm-card-one {
+    left: 12%;
+    padding: 20px 34px 10px;
+  }
+
+  .about-btm-card-two {
+    left: 9%;
+    padding: 20px 16px 10px;
+  }
+
+  .about-btm-card-three {
+    left: 7%;
+    padding: 20px 16px 10px;
+  }
+
+  .about-btm-card-four {
+    left: 9%;
+    padding: 20px 24px 10px;
+  }
+
+  .about-btm-card-five {
+    left: 9%;
+    padding: 20px 36px 10px;
+  }
+
+  .about-btm-card-six {
+    left: 6%;
+    padding: 10px 03px 05px;
+  }
+
+  .about-btm-card-seven {
+    left: 4%;
+    padding: 20px 18px 10px;
+  }
+
+  .about-btm-card-eight {
+    left: 7%;
+    padding: 10px 20px 05px;
+  }
+
+  .about-btm-card-nine {
+    left: 10%;
+    padding: 20px 34px 10px;
+  }
+
+  .about-btm-card-ten {
+    left: 5%;
+    padding: 20px 10px 10px;
+  }
+
+  .about-btm-card-eleven {
+    left: 8%;
+    bottom: 5%;
+    padding: 14px 12px 05px;
+  }
+
+  .about-btm-card-twelve {
+    left: 4%;
+    padding: 10px 04px 05px;
   }
 }
